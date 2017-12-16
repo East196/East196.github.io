@@ -1,6 +1,11 @@
 {
     "docs": [
         {
+            "location": "/",
+            "text": "",
+            "title": "\u4e3b\u9875"
+        },
+        {
             "location": "/lecture1/",
             "text": "\u81ea\u7136\u8bed\u8a00\u5904\u7406\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7b80\u4ecb",
             "title": "\u81ea\u7136\u8bed\u8a00\u5904\u7406\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7b80\u4ecb"
