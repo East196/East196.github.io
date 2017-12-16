@@ -1,0 +1,24 @@
+{
+    "docs": [
+        {
+            "location": "/lecture1/",
+            "text": "\u81ea\u7136\u8bed\u8a00\u5904\u7406\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7b80\u4ecb",
+            "title": "\u81ea\u7136\u8bed\u8a00\u5904\u7406\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7b80\u4ecb"
+        },
+        {
+            "location": "/lecture1/#_1",
+            "text": "",
+            "title": "\u81ea\u7136\u8bed\u8a00\u5904\u7406\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7b80\u4ecb"
+        },
+        {
+            "location": "/lecture2/",
+            "text": "",
+            "title": "\u8bcd\u5411\u91cf\u8868\u793aWord2Vec"
+        },
+        {
+            "location": "/lecture3/",
+            "text": "",
+            "title": "\u5168\u5c40\u8bcd\u5411\u91cf\u8868\u793aGloVe"
+        }
+    ]
+}
