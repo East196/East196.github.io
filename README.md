@@ -6,5 +6,7 @@
 
 ## change log
 2017/12/17: add cs224n
+
 2017/12/19: add oxdeepnlp
+
 2017/12/19: add notebook
