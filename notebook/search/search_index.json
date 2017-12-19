@@ -1,0 +1,449 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "\u968f\u7b14",
+            "title": "\u4e3b\u9875"
+        },
+        {
+            "location": "/#_1",
+            "text": "",
+            "title": "\u968f\u7b14"
+        },
+        {
+            "location": "/python/tkinter/",
+            "text": "",
+            "title": "Tkinter"
+        },
+        {
+            "location": "/python/jieba/",
+            "text": "",
+            "title": "Jieba"
+        },
+        {
+            "location": "/python/virtualenv/",
+            "text": "pip install virtualenv\n\n\nvirtualenv test_env --no-site-packages\n\n\ncd test_env/Scripts\n\n\nactivate \u8fdb\u5165\u865a\u62df\u5e7b\u5883\ndeactivate \u9000\u51fa\u865a\u62df\u5e7b\u5883\n\n\nwindows:\n\n\npip install virtualenvwrapper-win\n\u8bbe\u7f6e\u73af\u5883\u53d8\u91cf WORKON_HOME\n\n\n\u4f7f\u7528\nmkvirtual test_env\n\u521b\u5efa\u5e72\u51c0\u7684python\u73af\u5883\uff0c\u5e76\u4e14\u81ea\u52a8\u8fdb\u5165\n\n\nworkon \u5f97\u5230\u5217\u8868\nworkon test_env\ndeactivate",
+            "title": "Virtualenv"
+        },
+        {
+            "location": "/python/matplotlib/",
+            "text": "matplotlib\n\n\nin .py\n\n\n#\u6307\u5b9a\u9ed8\u8ba4\u5b57\u4f53\uff0c\u5728~/.matplotlib/fontList.json\u4e2d\u53d1\u73b0simhei\nmatplotlib.rcParams['font.family']='simhei'  \n#\u89e3\u51b3\u8d1f\u53f7'-'\u663e\u793a\u4e3a\u65b9\u5757\u7684\u95ee\u9898  \nmatplotlib.rcParams['axes.unicode_minus']=False  \n\n\n\n\nin .ipynb\n\n\n\u8c03\u6574\u5927\u5c0f\n\n\nimport pylab\npylab.rcParams['figure.figsize'] = (15.0, 8.0)",
+            "title": "Matplotlib"
+        },
+        {
+            "location": "/python/matplotlib/#matplotlib",
+            "text": "",
+            "title": "matplotlib"
+        },
+        {
+            "location": "/python/matplotlib/#in-py",
+            "text": "#\u6307\u5b9a\u9ed8\u8ba4\u5b57\u4f53\uff0c\u5728~/.matplotlib/fontList.json\u4e2d\u53d1\u73b0simhei\nmatplotlib.rcParams['font.family']='simhei'  \n#\u89e3\u51b3\u8d1f\u53f7'-'\u663e\u793a\u4e3a\u65b9\u5757\u7684\u95ee\u9898  \nmatplotlib.rcParams['axes.unicode_minus']=False",
+            "title": "in .py"
+        },
+        {
+            "location": "/python/matplotlib/#in-ipynb",
+            "text": "",
+            "title": "in .ipynb"
+        },
+        {
+            "location": "/python/matplotlib/#_1",
+            "text": "import pylab\npylab.rcParams['figure.figsize'] = (15.0, 8.0)",
+            "title": "\u8c03\u6574\u5927\u5c0f"
+        },
+        {
+            "location": "/other/angular1/",
+            "text": "NiceFish-Admin-ng1\n\n\ngit clone https://git.oschina.net/mumu-osc/NiceFish-Admin-ng1.git\ncd NiceFish-Admin-ng1\nnpm install -g grunt-cli\nnpm install\ngrunt serve\n\n\nblur-admin\n\n\ngit clone https://github.com/akveo/blur-admin.git\n\n\n\u5b57\u4f53\u5e93\n\n\n\u628a\u5b57\u4f53\u5e93\nhttp://fonts.googleapis.com\n\u53ef\u4ee5\u66ff\u6362\u4e3a360\u63d0\u4f9b\u7684\nhttp://fonts.useso.com\n\n\n\u6837\u5f0f\n\n\nsrc\\app\\theme\\theme.config.js\n \u4e2d\nbaConfigProvider.changeTheme({blur: true});\n\u8fd9\u884c\u6ce8\u91ca\u89e3\u6389",
+            "title": "Angular1"
+        },
+        {
+            "location": "/other/angular1/#nicefish-admin-ng1",
+            "text": "git clone https://git.oschina.net/mumu-osc/NiceFish-Admin-ng1.git\ncd NiceFish-Admin-ng1\nnpm install -g grunt-cli\nnpm install\ngrunt serve",
+            "title": "NiceFish-Admin-ng1"
+        },
+        {
+            "location": "/other/angular1/#blur-admin",
+            "text": "git clone https://github.com/akveo/blur-admin.git",
+            "title": "blur-admin"
+        },
+        {
+            "location": "/other/angular1/#_1",
+            "text": "\u628a\u5b57\u4f53\u5e93\nhttp://fonts.googleapis.com\n\u53ef\u4ee5\u66ff\u6362\u4e3a360\u63d0\u4f9b\u7684\nhttp://fonts.useso.com",
+            "title": "\u5b57\u4f53\u5e93"
+        },
+        {
+            "location": "/other/angular1/#_2",
+            "text": "src\\app\\theme\\theme.config.js  \u4e2d\nbaConfigProvider.changeTheme({blur: true});\n\u8fd9\u884c\u6ce8\u91ca\u89e3\u6389",
+            "title": "\u6837\u5f0f"
+        },
+        {
+            "location": "/other/angular2/",
+            "text": "angular\n\n\nangular-cli\n\n\nnpm install -g @angular/cli\n\nng new project-name\ncd project-name\nng serve\n\n\n\n\nproject-name",
+            "title": "Angular2"
+        },
+        {
+            "location": "/other/angular2/#angular",
+            "text": "",
+            "title": "angular"
+        },
+        {
+            "location": "/other/angular2/#angular-cli",
+            "text": "npm install -g @angular/cli\n\nng new project-name\ncd project-name\nng serve  project-name",
+            "title": "angular-cli"
+        },
+        {
+            "location": "/other/atom/",
+            "text": "Atom\u63d2\u4ef6\u5b89\u88c5\u6307\u5357\n\n\nmarkdown-preview-enhanced\n\n\nautocomplete-paths\n\n\natom-beautify\n\n\natom-script\n\n\natom-terminal\n\n\nterminal-plus\n\n\npdf-view\n\n\nminimap\n\n\natom-figlet\n\n\natom-pigments\n\n\natom-ternjs\n\n\nangular\n\n\nless-autocompile\n\n\natom-coffee-compile\n\n\natom-typescript\n\n\nemmet\n\n\n\n\n\n\nhydrogen\n\n\n\n\n\n\nAtom\u63d2\u4ef6\u5b89\u88c5\u6307\u5357\n\n\nif atom install fail,\u4f1f\u5927\u7684\u5899\u5206\u5206\u949f\u8ba9\u4f60\u6000\u7591\u4eba\u751f\napm fail,\u547d\u4ee4\u884c\u4e0d\u662f\u4e07\u80fd\u7684\nwe still have github^~^\u624b\u5de5\u4e0b\uff1fnpm install\uff1f\u52e4\u594b\u7684\u5b69\u5b50\n\n\nsee\napm help install\n!!!\napm install \n\n\nmarkdown-preview-enhanced\n\n\n\u6f02\u4eae\u7684atom markdown\u63d2\u4ef6\uff0c\u652f\u6301\u8bb8\u591a\u532a\u5937\u6240\u601d\u7684\u529f\u80fd\uff0c\u6bd4\u5982\u753buml\u56fe\n\u5f53\u7136\uff0c\u90a3\u6837\u7684\u8bdd\u8981\u88c5\u8f6f\u4ef6\u7684\nhttps://github.com/shd101wyy/markdown-preview-enhanced\n\n\nautocomplete-paths\n\n\n\u81ea\u52a8\u5b8c\u6210\u8def\u5f84\nhttps://github.com/atom-community/autocomplete-paths\n\n\natom-beautify\n\n\n\u7f8e\u5316\u4ee3\u7801\nhttps://github.com/Glavin001/atom-beautify\n\n\natom-script\n\n\n\u8fd0\u884c\u4ee3\u7801\nhttps://github.com/rgbkrk/atom-script\n\n\natom-terminal\n\n\n\u4eceatom\u9879\u76ee\u6839\u76ee\u5f55\u4e0b\u6253\u5f00\u547d\u4ee4\u884c\nhttps://github.com/karan/atom-terminal\n\n\nterminal-plus\n\n\n\u53f7\u79f0\u53ef\u4ee5\u66ff\u4ee3\u547d\u4ee4\u884c...\n\u4f46\u662f\u4f60\u65e0\u6cd5\u88c5\u6210\u529f...\nhttps://github.com/jeremyramin/terminal-plus\n\n\npdf-view\n\n\n\u770b\u4e2apdf\uff0c\u6ca1\u6bdb\u75c5\nhttps://atom.io/packages/pdf-view\n\n\nminimap\n\n\n\u4ee3\u7801\u7f29\u7565\u56fe\uff0c\u723d\u7684\u4e0d\u8981\u4e0d\u8981\u7684...\nhttps://github.com/atom-minimap/minimap\n\n\n\u7136\u800c\u591a\u4ea7\u7684 abe33 \u65e9\u5df2\u7f8e\u5316\u4e86\u4e00\u5207\n\n\natom-figlet\n\n\n\u76f4\u63a5\u51faascii-art\u5b57\u4f53\nhttps://github.com/abe33/atom-figlet\n\n\natom-pigments\n\n\n\u5199\u5565\u989c\u8272\u51fa\u5565\u989c\u8272\uff0c\u6709\u70b9\u6f02\u4eae\nhttps://github.com/abe33/atom-pigments\nhttps://github.com/abe33/minimap-pigments\n\n\n\u81ea\u6b64\u5f00\u542f\u524d\u7aef\u6a21\u5f0f\n\n\natom-ternjs\n\n\njs\u4ee3\u7801\u63d0\u793a\nhttps://github.com/tststs/atom-ternjs\n\n\nangular\n\n\nangular\u7684\u63d0\u793a\uff0c\u6709\u70b9\u5feb\u6377\u54e6\nhttps://github.com/angular-ui/AngularJS-Atom\n\n\nless-autocompile\n\n\n\u9700\u8981\u914d\u7f6e\uff0c\u8981\u4e0d\u4f60\u4f1a\u4ee5\u4e3aauto\u662f\u5047\u7684\nhttps://github.com/lohek/less-autocompile\n\n\natom-coffee-compile\n\n\n\u4f7f\u7528coffeescript\u6709\u5e74\u5934\u4e86\uff0c\u7528aptana\u7684\u65f6\u5019\u8d77\uff0c\u5386\u7ecfbrackets\uff0catom\uff0cvscode\uff0c\u7b2c\u4e00\u4ef6\u4e8b\u5c31\u662f\u88c5coffee\u63d2\u4ef6...\n\u8bdd\u8bf4coffeescript\u4e5f\u662f\u5927\u795e\u4f5c\u54c1\uff0c\u4f60\u542c\u8bf4\u8fc7mvc\u5148\uff08xian\uff09\u9a71\uff08lie\uff09backbone\uff0c\u4e07\u80fd\u5de5\u5177underscore\u6ca1\uff1f\nhttps://github.com/adrianlee44/atom-coffee-compile\n\n\natom-typescript\n\n\ntypescript\u662f\u6709\u7c7b\u578b\u7684javascript\uff0c\u53c8\u79f0\u63d0\u793a\u4e4b\u738b\uff0c\u4f60\u61c2\u7684\nhttps://github.com/TypeStrong/atom-typescript\n\n\nemmet\n\n\n\u524d\u7aef\u53ea\u6709\u8fd9\u4e2a\u624d\u7b97\u795e\u5668\nhttps://github.com/emmetio/emmet-atom\n\n\nhydrogen\n\n\n\u4f60\u4ee5\u4e3aipython\u5c31\u662f\u795e\u5668\u4e86\uff1f\n\u8fd9\u4e2a\u4f60\u88c5\u4e0d\u6210\u529f\u7684\nhttps://github.com/nteract/hydrogen",
+            "title": "Atom"
+        },
+        {
+            "location": "/other/atom/#atom",
+            "text": "if atom install fail,\u4f1f\u5927\u7684\u5899\u5206\u5206\u949f\u8ba9\u4f60\u6000\u7591\u4eba\u751f\napm fail,\u547d\u4ee4\u884c\u4e0d\u662f\u4e07\u80fd\u7684\nwe still have github^~^\u624b\u5de5\u4e0b\uff1fnpm install\uff1f\u52e4\u594b\u7684\u5b69\u5b50  see\napm help install\n!!!\napm install",
+            "title": "Atom\u63d2\u4ef6\u5b89\u88c5\u6307\u5357"
+        },
+        {
+            "location": "/other/atom/#markdown-preview-enhanced",
+            "text": "\u6f02\u4eae\u7684atom markdown\u63d2\u4ef6\uff0c\u652f\u6301\u8bb8\u591a\u532a\u5937\u6240\u601d\u7684\u529f\u80fd\uff0c\u6bd4\u5982\u753buml\u56fe\n\u5f53\u7136\uff0c\u90a3\u6837\u7684\u8bdd\u8981\u88c5\u8f6f\u4ef6\u7684\nhttps://github.com/shd101wyy/markdown-preview-enhanced",
+            "title": "markdown-preview-enhanced"
+        },
+        {
+            "location": "/other/atom/#autocomplete-paths",
+            "text": "\u81ea\u52a8\u5b8c\u6210\u8def\u5f84\nhttps://github.com/atom-community/autocomplete-paths",
+            "title": "autocomplete-paths"
+        },
+        {
+            "location": "/other/atom/#atom-beautify",
+            "text": "\u7f8e\u5316\u4ee3\u7801\nhttps://github.com/Glavin001/atom-beautify",
+            "title": "atom-beautify"
+        },
+        {
+            "location": "/other/atom/#atom-script",
+            "text": "\u8fd0\u884c\u4ee3\u7801\nhttps://github.com/rgbkrk/atom-script",
+            "title": "atom-script"
+        },
+        {
+            "location": "/other/atom/#atom-terminal",
+            "text": "\u4eceatom\u9879\u76ee\u6839\u76ee\u5f55\u4e0b\u6253\u5f00\u547d\u4ee4\u884c\nhttps://github.com/karan/atom-terminal",
+            "title": "atom-terminal"
+        },
+        {
+            "location": "/other/atom/#terminal-plus",
+            "text": "\u53f7\u79f0\u53ef\u4ee5\u66ff\u4ee3\u547d\u4ee4\u884c...\n\u4f46\u662f\u4f60\u65e0\u6cd5\u88c5\u6210\u529f...\nhttps://github.com/jeremyramin/terminal-plus",
+            "title": "terminal-plus"
+        },
+        {
+            "location": "/other/atom/#pdf-view",
+            "text": "\u770b\u4e2apdf\uff0c\u6ca1\u6bdb\u75c5\nhttps://atom.io/packages/pdf-view",
+            "title": "pdf-view"
+        },
+        {
+            "location": "/other/atom/#minimap",
+            "text": "\u4ee3\u7801\u7f29\u7565\u56fe\uff0c\u723d\u7684\u4e0d\u8981\u4e0d\u8981\u7684...\nhttps://github.com/atom-minimap/minimap  \u7136\u800c\u591a\u4ea7\u7684 abe33 \u65e9\u5df2\u7f8e\u5316\u4e86\u4e00\u5207",
+            "title": "minimap"
+        },
+        {
+            "location": "/other/atom/#atom-figlet",
+            "text": "\u76f4\u63a5\u51faascii-art\u5b57\u4f53\nhttps://github.com/abe33/atom-figlet",
+            "title": "atom-figlet"
+        },
+        {
+            "location": "/other/atom/#atom-pigments",
+            "text": "\u5199\u5565\u989c\u8272\u51fa\u5565\u989c\u8272\uff0c\u6709\u70b9\u6f02\u4eae\nhttps://github.com/abe33/atom-pigments\nhttps://github.com/abe33/minimap-pigments  \u81ea\u6b64\u5f00\u542f\u524d\u7aef\u6a21\u5f0f",
+            "title": "atom-pigments"
+        },
+        {
+            "location": "/other/atom/#atom-ternjs",
+            "text": "js\u4ee3\u7801\u63d0\u793a\nhttps://github.com/tststs/atom-ternjs",
+            "title": "atom-ternjs"
+        },
+        {
+            "location": "/other/atom/#angular",
+            "text": "angular\u7684\u63d0\u793a\uff0c\u6709\u70b9\u5feb\u6377\u54e6\nhttps://github.com/angular-ui/AngularJS-Atom",
+            "title": "angular"
+        },
+        {
+            "location": "/other/atom/#less-autocompile",
+            "text": "\u9700\u8981\u914d\u7f6e\uff0c\u8981\u4e0d\u4f60\u4f1a\u4ee5\u4e3aauto\u662f\u5047\u7684\nhttps://github.com/lohek/less-autocompile",
+            "title": "less-autocompile"
+        },
+        {
+            "location": "/other/atom/#atom-coffee-compile",
+            "text": "\u4f7f\u7528coffeescript\u6709\u5e74\u5934\u4e86\uff0c\u7528aptana\u7684\u65f6\u5019\u8d77\uff0c\u5386\u7ecfbrackets\uff0catom\uff0cvscode\uff0c\u7b2c\u4e00\u4ef6\u4e8b\u5c31\u662f\u88c5coffee\u63d2\u4ef6...\n\u8bdd\u8bf4coffeescript\u4e5f\u662f\u5927\u795e\u4f5c\u54c1\uff0c\u4f60\u542c\u8bf4\u8fc7mvc\u5148\uff08xian\uff09\u9a71\uff08lie\uff09backbone\uff0c\u4e07\u80fd\u5de5\u5177underscore\u6ca1\uff1f\nhttps://github.com/adrianlee44/atom-coffee-compile",
+            "title": "atom-coffee-compile"
+        },
+        {
+            "location": "/other/atom/#atom-typescript",
+            "text": "typescript\u662f\u6709\u7c7b\u578b\u7684javascript\uff0c\u53c8\u79f0\u63d0\u793a\u4e4b\u738b\uff0c\u4f60\u61c2\u7684\nhttps://github.com/TypeStrong/atom-typescript",
+            "title": "atom-typescript"
+        },
+        {
+            "location": "/other/atom/#emmet",
+            "text": "\u524d\u7aef\u53ea\u6709\u8fd9\u4e2a\u624d\u7b97\u795e\u5668\nhttps://github.com/emmetio/emmet-atom",
+            "title": "emmet"
+        },
+        {
+            "location": "/other/atom/#hydrogen",
+            "text": "\u4f60\u4ee5\u4e3aipython\u5c31\u662f\u795e\u5668\u4e86\uff1f\n\u8fd9\u4e2a\u4f60\u88c5\u4e0d\u6210\u529f\u7684\nhttps://github.com/nteract/hydrogen",
+            "title": "hydrogen"
+        },
+        {
+            "location": "/other/elasticserach/",
+            "text": "",
+            "title": "Elasticserach"
+        },
+        {
+            "location": "/other/elk/",
+            "text": "",
+            "title": "Elk"
+        },
+        {
+            "location": "/other/gitlab/",
+            "text": "",
+            "title": "Gitlab"
+        },
+        {
+            "location": "/other/hadoop/",
+            "text": "hadoop\n\n\nhdfs cli\n\n\nhadoop dfs -ls",
+            "title": "Hadoop"
+        },
+        {
+            "location": "/other/hadoop/#hadoop",
+            "text": "",
+            "title": "hadoop"
+        },
+        {
+            "location": "/other/hadoop/#hdfs-cli",
+            "text": "hadoop dfs -ls",
+            "title": "hdfs cli"
+        },
+        {
+            "location": "/other/hbase/",
+            "text": "hbase\n\n\ninstall\n\n\ncli\n\n\nlist\ncount 'tablename'\n\n\nscan 'tablename',{LIMIT=>20}\n\n\nexport\n\n\nhbase org.apache.hadoop.hbase.mapreduce.Driver export  tablename    location\nhbase org.apache.hadoop.hbase.mapreduce.Driver import  tablename    location",
+            "title": "Hbase"
+        },
+        {
+            "location": "/other/hbase/#hbase",
+            "text": "",
+            "title": "hbase"
+        },
+        {
+            "location": "/other/hbase/#install",
+            "text": "",
+            "title": "install"
+        },
+        {
+            "location": "/other/hbase/#cli",
+            "text": "list\ncount 'tablename'  scan 'tablename',{LIMIT=>20}",
+            "title": "cli"
+        },
+        {
+            "location": "/other/hbase/#export",
+            "text": "hbase org.apache.hadoop.hbase.mapreduce.Driver export  tablename    location\nhbase org.apache.hadoop.hbase.mapreduce.Driver import  tablename    location",
+            "title": "export"
+        },
+        {
+            "location": "/other/java/",
+            "text": "",
+            "title": "Java"
+        },
+        {
+            "location": "/other/jhispter/",
+            "text": "jhispter\n\n\nspringboot angular\n\n\ninstall\n\n\nnpm i yarn -g\nyarn global add generator-jhipster",
+            "title": "Jhispter"
+        },
+        {
+            "location": "/other/jhispter/#jhispter",
+            "text": "springboot angular",
+            "title": "jhispter"
+        },
+        {
+            "location": "/other/jhispter/#install",
+            "text": "npm i yarn -g\nyarn global add generator-jhipster",
+            "title": "install"
+        },
+        {
+            "location": "/other/mongodb/",
+            "text": "mongodb\n\n\ninstall\n\n\nhttps://docs.mongodb.com/master/tutorial/install-mongodb-on-red-hat/\n\n\nvim /etc/yum.repos.d/mongodb-org-3.4\n\n[mongodb-org-3.4]\nname=MongoDB Repository\nbaseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.4/x86_64/\ngpgcheck=1\nenabled=1\ngpgkey=https://www.mongodb.org/static/pgp/server-3.4.asc\n\n\ndocker install\n\n\ndocker search mongo\ndocker pull mongo\ndocker run mongo \u3002\u3002\u3002\u3002",
+            "title": "Mongodb"
+        },
+        {
+            "location": "/other/mongodb/#mongodb",
+            "text": "",
+            "title": "mongodb"
+        },
+        {
+            "location": "/other/mongodb/#install",
+            "text": "https://docs.mongodb.com/master/tutorial/install-mongodb-on-red-hat/  vim /etc/yum.repos.d/mongodb-org-3.4 [mongodb-org-3.4]\nname=MongoDB Repository\nbaseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.4/x86_64/\ngpgcheck=1\nenabled=1\ngpgkey=https://www.mongodb.org/static/pgp/server-3.4.asc",
+            "title": "install"
+        },
+        {
+            "location": "/other/mongodb/#docker-install",
+            "text": "docker search mongo\ndocker pull mongo\ndocker run mongo \u3002\u3002\u3002\u3002",
+            "title": "docker install"
+        },
+        {
+            "location": "/other/mysql/",
+            "text": "",
+            "title": "Mysql"
+        },
+        {
+            "location": "/other/nexus/",
+            "text": "nexus\n\n\nmaven\u79c1\u670d\ndocker\u79c1\u670d",
+            "title": "Nexus"
+        },
+        {
+            "location": "/other/nexus/#nexus",
+            "text": "maven\u79c1\u670d\ndocker\u79c1\u670d",
+            "title": "nexus"
+        },
+        {
+            "location": "/other/nginx/",
+            "text": "nginx\n\n\ninstall\n\n\ndocker install\n\n\ndocker search nginx\ndocker pull nginx\ndocker run nginx\n\n\ndocker run -p 80:80 -v /apps/nginx/data:/data  -v /apps/nginx/www:/www -v /apps/nginx/conf/nginx.conf:/etc/nginx/nginx.conf -v /apps/nginx/logs:/wwwlogs -d nginx --name mynginx",
+            "title": "Nginx"
+        },
+        {
+            "location": "/other/nginx/#nginx",
+            "text": "",
+            "title": "nginx"
+        },
+        {
+            "location": "/other/nginx/#install",
+            "text": "",
+            "title": "install"
+        },
+        {
+            "location": "/other/nginx/#docker-install",
+            "text": "docker search nginx\ndocker pull nginx\ndocker run nginx",
+            "title": "docker install"
+        },
+        {
+            "location": "/other/nginx/#docker-run-p-8080-v-appsnginxdatadata-v-appsnginxwwwwww-v-appsnginxconfnginxconfetcnginxnginxconf-v-appsnginxlogswwwlogs-d-nginx-name-mynginx",
+            "text": "",
+            "title": "docker run -p 80:80 -v /apps/nginx/data:/data  -v /apps/nginx/www:/www -v /apps/nginx/conf/nginx.conf:/etc/nginx/nginx.conf -v /apps/nginx/logs:/wwwlogs -d nginx --name mynginx"
+        },
+        {
+            "location": "/other/python/",
+            "text": "python\n\n\n\u68c0\u6d4b\u6587\u4ef6\u7f16\u7801\n\n\nimport chardet\n\n\n\u5f88\u597d\u7684blog\n\n\n\u7801\u519c\u573a\nhttp://www.hankcs.com/\n\u6211\u7231\u81ea\u7136\u8bed\u8a00\u5904\u7406\nhttp://www.52nlp.cn/\n\n\nml\n\n\n\u3010Python3 \u57fa\u7840\u6559\u7a0b\u3011 --> \nav9359994\n\n\n\u3010Python3 \u6570\u636e\u5904\u7406\u3011 --> \nav9854463\n\n\n\u3010Python3 \u6570\u636e\u53ef\u89c6\u5316\u3011 --> \nav9876152\n\n\n\u3010\u673a\u5668\u5b66\u4e60 TensorFlow\u6559\u7a0b\u3011 --> \nav10118932\n\n\n\u3010\u673a\u5668\u5b66\u4e60 Theano\u6559\u7a0b\u3011 --> \nav10182481\n\n\n\u3010\u673a\u5668\u5b66\u4e60 Keras\u6559\u7a0b\u3011 --> \nav10182621\n\n\n\u3010\u673a\u5668\u5b66\u4e60 SKLearn\u6559\u7a0b\u3011--> \nav10182847\n\n\nPandas\nhttp://www.bilibili.com/video/av6785636/\nSklearn\nhttp://www.bilibili.com/video/av6922044/\n\n\nTensorFlow \u5f00\u53d1\u8005\u5cf0\u4f1a 2017\nhttp://www.bilibili.com/video/av12508230/?from=search&seid=14417099001348142377\n\n\n\u5b9e\u4f8b\u8bb2\u89e3\uff1a\u4e0d\u9519\uff0c\u6ca1\u6709\u4e2d\u6587...\nyoutubo\u7f51\u7ea2Siraj Raval\nhttp://www.bilibili.com/video/av11939263/\n\n\npip\n\n\n~/pip/pip.ini\n\n\n[global]\nindex-url = http://pypi.doubanio.com/simple/\nindex-url = https://pypi.tuna.tsinghua.edu.cn/simple\nindex-url = https://mirrors.ustc.edu.cn/pypi/web/simple/",
+            "title": "Python"
+        },
+        {
+            "location": "/other/python/#python",
+            "text": "",
+            "title": "python"
+        },
+        {
+            "location": "/other/python/#_1",
+            "text": "import chardet",
+            "title": "\u68c0\u6d4b\u6587\u4ef6\u7f16\u7801"
+        },
+        {
+            "location": "/other/python/#blog",
+            "text": "\u7801\u519c\u573a\nhttp://www.hankcs.com/\n\u6211\u7231\u81ea\u7136\u8bed\u8a00\u5904\u7406\nhttp://www.52nlp.cn/",
+            "title": "\u5f88\u597d\u7684blog"
+        },
+        {
+            "location": "/other/python/#ml",
+            "text": "\u3010Python3 \u57fa\u7840\u6559\u7a0b\u3011 -->  av9359994  \u3010Python3 \u6570\u636e\u5904\u7406\u3011 -->  av9854463  \u3010Python3 \u6570\u636e\u53ef\u89c6\u5316\u3011 -->  av9876152  \u3010\u673a\u5668\u5b66\u4e60 TensorFlow\u6559\u7a0b\u3011 -->  av10118932  \u3010\u673a\u5668\u5b66\u4e60 Theano\u6559\u7a0b\u3011 -->  av10182481  \u3010\u673a\u5668\u5b66\u4e60 Keras\u6559\u7a0b\u3011 -->  av10182621  \u3010\u673a\u5668\u5b66\u4e60 SKLearn\u6559\u7a0b\u3011-->  av10182847  Pandas\nhttp://www.bilibili.com/video/av6785636/\nSklearn\nhttp://www.bilibili.com/video/av6922044/  TensorFlow \u5f00\u53d1\u8005\u5cf0\u4f1a 2017\nhttp://www.bilibili.com/video/av12508230/?from=search&seid=14417099001348142377  \u5b9e\u4f8b\u8bb2\u89e3\uff1a\u4e0d\u9519\uff0c\u6ca1\u6709\u4e2d\u6587...\nyoutubo\u7f51\u7ea2Siraj Raval\nhttp://www.bilibili.com/video/av11939263/",
+            "title": "ml"
+        },
+        {
+            "location": "/other/python/#pip",
+            "text": "~/pip/pip.ini  [global]\nindex-url = http://pypi.doubanio.com/simple/\nindex-url = https://pypi.tuna.tsinghua.edu.cn/simple\nindex-url = https://mirrors.ustc.edu.cn/pypi/web/simple/",
+            "title": "pip"
+        },
+        {
+            "location": "/other/redis/",
+            "text": "python redis\n\n\nwindows\u4e0bredis \u5f00\u673a\u81ea\u542f\u52a8\n\n\n1\uff0c\u5728redis\u7684\u76ee\u5f55\u4e0b\u6267\u884c\uff08\u6267\u884c\u540e\u5c31\u4f5c\u4e3awindows\u670d\u52a1\u4e86\uff09\n\n\nredis-server --service-install redis.windows.conf\n2\uff0c\u5b89\u88c5\u597d\u540e\u9700\u8981\u624b\u52a8\u542f\u52a8redis\n\n\nredis-server --service-start\n3\uff0c\u505c\u6b62\u670d\u52a1\n\n\nredis-server --service-start\n4\uff0c\u5378\u8f7dredis\u670d\u52a1\n\n\nredis-server --service-uninstall",
+            "title": "Redis"
+        },
+        {
+            "location": "/other/redis/#python-redis",
+            "text": "",
+            "title": "python redis"
+        },
+        {
+            "location": "/other/redis/#windowsredis",
+            "text": "1\uff0c\u5728redis\u7684\u76ee\u5f55\u4e0b\u6267\u884c\uff08\u6267\u884c\u540e\u5c31\u4f5c\u4e3awindows\u670d\u52a1\u4e86\uff09  redis-server --service-install redis.windows.conf\n2\uff0c\u5b89\u88c5\u597d\u540e\u9700\u8981\u624b\u52a8\u542f\u52a8redis  redis-server --service-start\n3\uff0c\u505c\u6b62\u670d\u52a1  redis-server --service-start\n4\uff0c\u5378\u8f7dredis\u670d\u52a1  redis-server --service-uninstall",
+            "title": "windows\u4e0bredis \u5f00\u673a\u81ea\u542f\u52a8"
+        },
+        {
+            "location": "/other/sdkman/",
+            "text": "sdkman\n\n\nInstallation\n\n\nInstalling SDKMAN! on UNIX-like platforms is as easy as ever. SDKMAN! installs smoothly on Mac OSX, Linux, Cygwin, Solaris and FreeBSD. We also support Bash and ZSH shells.\nSimply open a new terminal and enter:\n\n\n$ curl -s \"https://get.sdkman.io\" | bash\nFollow the instructions on-screen to complete installation.\nNext, open a new terminal or enter:\n\n\n$ source \"$HOME/.sdkman/bin/sdkman-init.sh\"\nLastly, run the following code snippet to ensure that installation succeeded:\n\n\n$ sdk version\nIf all went well, the version should be displayed. Something like:\n\n\nsdkman 5.0.0+51\n\n\nsdk install java\nsdk install groovy\nsdk install springboot",
+            "title": "Sdkman"
+        },
+        {
+            "location": "/other/svn/",
+            "text": "",
+            "title": "Svn"
+        },
+        {
+            "location": "/other/three/",
+            "text": "WebGL\n\n\n\u5b66\u4e60\u8def\u7ebf\u56fe\n\n\n\u5165\u5751\u6307\u5357\n\n\nhttp://blog.csdn.net/latechangce/article/details/51894053\n\n\nThree.js\n\n\nhttps://gamedevelopment.tutsplus.com/articles/how-to-learn-threejs-for-game-development--gamedev-11787\nhttp://www.alonsoruibal.com/slides/codelab_three.js/#/start\n\nwebgl\u4e2d\u6587\u7f51\n\n\n\u4f5c\u54c1\u5c55\u793a\n\n\n\u635e3d\n\n\n\u7ffc\u72d0\u7f51\n\n\nplaycanvas webgl\u6e38\u620f\u5f15\u64ce\n\n\nhttps://github.com/playcanvas/engine\n\n\nquest3d 3d\u6784\u5efa\n\n\nhttp://www.quest3d.com/index.php?id=15\nhttp://www.quest3d.com/demos/\n\n\nCesium.js \u57fa\u4e8ewebgl\u76843d GIS\u5c55\u793a\u5e93\n\n\n\u4e00\u4e2a\u4e2d\u6587\u6559\u7a0b\nhttp://www.cnblogs.com/fuckgiser/p/5706842.html\n\u96c6\u6210openlayers\nhttp://openlayers.org/ol-cesium/examples/\n\n\n\u95ee\u9898\uff1a\u4ec0\u4e48\u65f6\u5019\u9700\u8981GIS\uff0c\u4ec0\u4e48\u65f6\u5019\u4e0d\u9700\u8981",
+            "title": "Three"
+        },
+        {
+            "location": "/other/three/#webgl",
+            "text": "",
+            "title": "WebGL"
+        },
+        {
+            "location": "/other/three/#_1",
+            "text": "",
+            "title": "\u5b66\u4e60\u8def\u7ebf\u56fe"
+        },
+        {
+            "location": "/other/three/#_2",
+            "text": "http://blog.csdn.net/latechangce/article/details/51894053",
+            "title": "\u5165\u5751\u6307\u5357"
+        },
+        {
+            "location": "/other/three/#threejs",
+            "text": "https://gamedevelopment.tutsplus.com/articles/how-to-learn-threejs-for-game-development--gamedev-11787\nhttp://www.alonsoruibal.com/slides/codelab_three.js/#/start webgl\u4e2d\u6587\u7f51",
+            "title": "Three.js"
+        },
+        {
+            "location": "/other/three/#_3",
+            "text": "\u635e3d  \u7ffc\u72d0\u7f51",
+            "title": "\u4f5c\u54c1\u5c55\u793a"
+        },
+        {
+            "location": "/other/three/#playcanvas-webgl",
+            "text": "https://github.com/playcanvas/engine",
+            "title": "playcanvas webgl\u6e38\u620f\u5f15\u64ce"
+        },
+        {
+            "location": "/other/three/#quest3d-3d",
+            "text": "http://www.quest3d.com/index.php?id=15\nhttp://www.quest3d.com/demos/",
+            "title": "quest3d 3d\u6784\u5efa"
+        },
+        {
+            "location": "/other/three/#cesiumjs-webgl3d-gis",
+            "text": "\u4e00\u4e2a\u4e2d\u6587\u6559\u7a0b\nhttp://www.cnblogs.com/fuckgiser/p/5706842.html\n\u96c6\u6210openlayers\nhttp://openlayers.org/ol-cesium/examples/  \u95ee\u9898\uff1a\u4ec0\u4e48\u65f6\u5019\u9700\u8981GIS\uff0c\u4ec0\u4e48\u65f6\u5019\u4e0d\u9700\u8981",
+            "title": "Cesium.js \u57fa\u4e8ewebgl\u76843d GIS\u5c55\u793a\u5e93"
+        },
+        {
+            "location": "/about/",
+            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.\n\n\n\nTheme\n\n\nin mkdocs.yml\nadd\n\n\ntheme: readthedocs",
+            "title": "\u5173\u4e8e"
+        },
+        {
+            "location": "/about/#welcome-to-mkdocs",
+            "text": "For full documentation visit  mkdocs.org .",
+            "title": "Welcome to MkDocs"
+        },
+        {
+            "location": "/about/#commands",
+            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
+            "title": "Commands"
+        },
+        {
+            "location": "/about/#project-layout",
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "title": "Project layout"
+        },
+        {
+            "location": "/about/#theme",
+            "text": "in mkdocs.yml\nadd  theme: readthedocs",
+            "title": "Theme"
+        }
+    ]
+}
