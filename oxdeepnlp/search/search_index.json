@@ -1,0 +1,64 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "oxford-cs-deepnlp-2017\n\n\n\u725b\u6d25\u5927\u5b66xDeepMind \u81ea\u7136\u8bed\u8a00\u5904\u7406\u8bfe\u7a0b\u7b14\u8bb0\n\n\n\u8bfe\u7a0b\u8d44\u6599\n\n\nlectures\n\n\n\u89c6\u9891\n\n\n\u725b\u6d25\u5927\u5b66xDeepMind \u81ea\u7136\u8bed\u8a00\u5904\u7406\uff08\u4e2d\u6587\u5b57\u5e55\uff0c\u53ea\u6709lecture1-11\uff09\n\n\n\u6df1\u5ea6\u5b66\u4e60NLP\uff08\u725b\u6d25\u5927\u5b66 2017\uff09\uff08\u82f1\u6587\u5b57\u5e55\uff09",
+            "title": "\u5173\u4e8e\u8bfe\u7a0b"
+        },
+        {
+            "location": "/#oxford-cs-deepnlp-2017",
+            "text": "\u725b\u6d25\u5927\u5b66xDeepMind \u81ea\u7136\u8bed\u8a00\u5904\u7406\u8bfe\u7a0b\u7b14\u8bb0",
+            "title": "oxford-cs-deepnlp-2017"
+        },
+        {
+            "location": "/#_1",
+            "text": "lectures",
+            "title": "\u8bfe\u7a0b\u8d44\u6599"
+        },
+        {
+            "location": "/#_2",
+            "text": "\u725b\u6d25\u5927\u5b66xDeepMind \u81ea\u7136\u8bed\u8a00\u5904\u7406\uff08\u4e2d\u6587\u5b57\u5e55\uff0c\u53ea\u6709lecture1-11\uff09  \u6df1\u5ea6\u5b66\u4e60NLP\uff08\u725b\u6d25\u5927\u5b66 2017\uff09\uff08\u82f1\u6587\u5b57\u5e55\uff09",
+            "title": "\u89c6\u9891"
+        },
+        {
+            "location": "/lecture1a/",
+            "text": "\u7b80\u4ecb",
+            "title": "\u7b80\u4ecb"
+        },
+        {
+            "location": "/lecture1a/#_1",
+            "text": "",
+            "title": "\u7b80\u4ecb"
+        },
+        {
+            "location": "/lecture1b/",
+            "text": "\u6df1\u5ea6\u795e\u7ecf\u7f51\u7edc\u662f\u6211\u4eec\u7684\u670b\u53cb",
+            "title": "\u6df1\u5ea6\u795e\u7ecf\u7f51\u7edc\u662f\u6211\u4eec\u7684\u670b\u53cb"
+        },
+        {
+            "location": "/lecture1b/#_1",
+            "text": "",
+            "title": "\u6df1\u5ea6\u795e\u7ecf\u7f51\u7edc\u662f\u6211\u4eec\u7684\u670b\u53cb"
+        },
+        {
+            "location": "/lecture2a/",
+            "text": "\u8bcd\u8bed\u7ea7\u522b\u7684\u8bed\u4e49",
+            "title": "\u8bcd\u8bed\u7ea7\u522b\u7684\u8bed\u4e49"
+        },
+        {
+            "location": "/lecture2a/#_1",
+            "text": "",
+            "title": "\u8bcd\u8bed\u7ea7\u522b\u7684\u8bed\u4e49"
+        },
+        {
+            "location": "/lecture2b/",
+            "text": "\u5b9e\u8df5\u8bfe\u6982\u89c8",
+            "title": "\u5b9e\u8df5\u8bfe\u6982\u89c8"
+        },
+        {
+            "location": "/lecture2b/#_1",
+            "text": "",
+            "title": "\u5b9e\u8df5\u8bfe\u6982\u89c8"
+        }
+    ]
+}
