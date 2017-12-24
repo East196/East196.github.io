@@ -2,8 +2,8 @@
     "docs": [
         {
             "location": "/",
-            "text": "stanford-cs224n-winter-2017\n\n\n\u65af\u5766\u798f2017\u51ac\u5b63cs224n\u8bfe\u7a0b\u7b14\u8bb0\n\n\n\u8bfe\u7a0b\u540d\u79f0\n\n\nNatural Language Processing with Deep Learning\n\n\n\u6df1\u5ea6\u5b66\u4e60\u81ea\u7136\u8bed\u8a00\u5904\u7406\n\n\n\u8bfe\u7a0b\u8d44\u6e90\n\n\n\u5b98\u7f51\n\n\n\u89c6\u9891\n\n\n\u76f8\u5173\u8d44\u6e90\n\n\n\u7801\u519c\u573a\n \u5185\u542bcs224n\u7b14\u8bb0\n\n\n\u6211\u7231\u81ea\u7136\u8bed\u8a00\u5904\u7406\n\n\n\u6784\u5efa\u8bf4\u660e\n\n\npip install mkdocs fabric3\n python3\u5b89\u88c5mkdocs\u548cfabric3\n\n\npip install mkdocs fabric\n python2\u5b89\u88c5mkdocs\u548cfabric\n\n\nfab build\n \u6784\u5efa\u5e76copy\u81f3\u4e2a\u4eba\u4e3b\u9875\u9879\u76ee\n\n\nfab serve\n \u5f00\u542f\u670d\u52a1",
-            "title": "\u4e3b\u9875"
+            "text": "stanford-cs224n-winter-2017\n\n\n\u65af\u5766\u798f2017\u51ac\u5b63cs224n\u8bfe\u7a0b\u7b14\u8bb0\n\n\n\u8bfe\u7a0b\u540d\u79f0\n\n\nNatural Language Processing with Deep Learning\n\n\n\u65af\u5766\u798f\u6df1\u5ea6\u5b66\u4e60\u81ea\u7136\u8bed\u8a00\u5904\u7406\n\n\n\u8bfe\u7a0b\u8d44\u6e90\n\n\n\u5b98\u7f51\n\n\n\u89c6\u9891\n\n\n\u76f8\u5173\u8d44\u6e90\n\n\n\u7801\u519c\u573a\n \u5185\u542bcs224n\u7b14\u8bb0\n\n\n\u6211\u7231\u81ea\u7136\u8bed\u8a00\u5904\u7406\n\n\n\u6784\u5efa\u8bf4\u660e\n\n\npip install mkdocs fabric3\n python3\u5b89\u88c5mkdocs\u548cfabric3\n\n\npip install mkdocs fabric\n python2\u5b89\u88c5mkdocs\u548cfabric\n\n\nfab build\n \u6784\u5efa\u5e76copy\u81f3\u4e2a\u4eba\u4e3b\u9875\u9879\u76ee\n\n\nfab serve\n \u5f00\u542f\u670d\u52a1\n\n\nNotes\n\n\nmkdocs\u7684search\u4e2d\u6587\u662f\u65e0\u6548\u7684",
+            "title": "\u5173\u4e8e\u8bfe\u7a0b"
         },
         {
             "location": "/#stanford-cs224n-winter-2017",
@@ -12,7 +12,7 @@
         },
         {
             "location": "/#_1",
-            "text": "Natural Language Processing with Deep Learning  \u6df1\u5ea6\u5b66\u4e60\u81ea\u7136\u8bed\u8a00\u5904\u7406",
+            "text": "Natural Language Processing with Deep Learning  \u65af\u5766\u798f\u6df1\u5ea6\u5b66\u4e60\u81ea\u7136\u8bed\u8a00\u5904\u7406",
             "title": "\u8bfe\u7a0b\u540d\u79f0"
         },
         {
@@ -29,6 +29,11 @@
             "location": "/#_4",
             "text": "pip install mkdocs fabric3  python3\u5b89\u88c5mkdocs\u548cfabric3  pip install mkdocs fabric  python2\u5b89\u88c5mkdocs\u548cfabric  fab build  \u6784\u5efa\u5e76copy\u81f3\u4e2a\u4eba\u4e3b\u9875\u9879\u76ee  fab serve  \u5f00\u542f\u670d\u52a1",
             "title": "\u6784\u5efa\u8bf4\u660e"
+        },
+        {
+            "location": "/#notes",
+            "text": "mkdocs\u7684search\u4e2d\u6587\u662f\u65e0\u6548\u7684",
+            "title": "Notes"
         },
         {
             "location": "/lecture1/",

@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "oxford-cs-deepnlp-2017\n\n\n\u725b\u6d25\u5927\u5b66xDeepMind \u81ea\u7136\u8bed\u8a00\u5904\u7406\u8bfe\u7a0b\u7b14\u8bb0\n\n\n\u8bfe\u7a0b\u8d44\u6599\n\n\nlectures\n\n\n\u89c6\u9891\n\n\n\u725b\u6d25\u5927\u5b66xDeepMind \u81ea\u7136\u8bed\u8a00\u5904\u7406\uff08\u4e2d\u6587\u5b57\u5e55\uff0c\u53ea\u6709lecture1-11\uff09\n\n\n\u6df1\u5ea6\u5b66\u4e60NLP\uff08\u725b\u6d25\u5927\u5b66 2017\uff09\uff08\u82f1\u6587\u5b57\u5e55\uff09",
+            "text": "oxford-cs-deepnlp-2017\n\n\n\u725b\u6d25\u5927\u5b66xDeepMind \u81ea\u7136\u8bed\u8a00\u5904\u7406\u8bfe\u7a0b\u7b14\u8bb0\n\n\n\u8bfe\u7a0b\u8d44\u6599\n\n\nlectures\n\n\n\u89c6\u9891\n\n\n\u725b\u6d25\u5927\u5b66xDeepMind \u81ea\u7136\u8bed\u8a00\u5904\u7406\uff08\u4e2d\u6587\u5b57\u5e55\uff0c\u53ea\u6709lecture1-11\uff09\n\n\n\u6df1\u5ea6\u5b66\u4e60NLP\uff08\u725b\u6d25\u5927\u5b66 2017\uff09\uff08\u82f1\u6587\u5b57\u5e55\uff09\n\n\n\u6784\u5efa\u8bf4\u660e\n\n\npip install mkdocs fabric3\n python3\u5b89\u88c5mkdocs\u548cfabric3\n\n\npip install mkdocs fabric\n python2\u5b89\u88c5mkdocs\u548cfabric\n\n\nfab build\n \u6784\u5efa\u5e76copy\u81f3\u4e2a\u4eba\u4e3b\u9875\u9879\u76ee\n\n\nfab serve\n \u5f00\u542f\u670d\u52a1\n\n\nNotes\n\n\nmkdocs\u7684search\u4e2d\u6587\u662f\u65e0\u6548\u7684",
             "title": "\u5173\u4e8e\u8bfe\u7a0b"
         },
         {
@@ -19,6 +19,16 @@
             "location": "/#_2",
             "text": "\u725b\u6d25\u5927\u5b66xDeepMind \u81ea\u7136\u8bed\u8a00\u5904\u7406\uff08\u4e2d\u6587\u5b57\u5e55\uff0c\u53ea\u6709lecture1-11\uff09  \u6df1\u5ea6\u5b66\u4e60NLP\uff08\u725b\u6d25\u5927\u5b66 2017\uff09\uff08\u82f1\u6587\u5b57\u5e55\uff09",
             "title": "\u89c6\u9891"
+        },
+        {
+            "location": "/#_3",
+            "text": "pip install mkdocs fabric3  python3\u5b89\u88c5mkdocs\u548cfabric3  pip install mkdocs fabric  python2\u5b89\u88c5mkdocs\u548cfabric  fab build  \u6784\u5efa\u5e76copy\u81f3\u4e2a\u4eba\u4e3b\u9875\u9879\u76ee  fab serve  \u5f00\u542f\u670d\u52a1",
+            "title": "\u6784\u5efa\u8bf4\u660e"
+        },
+        {
+            "location": "/#notes",
+            "text": "mkdocs\u7684search\u4e2d\u6587\u662f\u65e0\u6548\u7684",
+            "title": "Notes"
         },
         {
             "location": "/lecture1a/",
@@ -59,6 +69,36 @@
             "location": "/lecture2b/#_1",
             "text": "",
             "title": "\u5b9e\u8df5\u8bfe\u6982\u89c8"
+        },
+        {
+            "location": "/lecture3/",
+            "text": "\u8bed\u8a00\u6a21\u578b\u4e0eRNN\u7b2c\u4e00\u90e8\u5206",
+            "title": "\u8bed\u8a00\u6a21\u578b\u4e0eRNN\u7b2c\u4e00\u90e8\u5206"
+        },
+        {
+            "location": "/lecture3/#rnn",
+            "text": "",
+            "title": "\u8bed\u8a00\u6a21\u578b\u4e0eRNN\u7b2c\u4e00\u90e8\u5206"
+        },
+        {
+            "location": "/lecture4/",
+            "text": "\u8bed\u8a00\u6a21\u578b\u4e0eRNN\u7b2c\u4e00\u90e8\u5206",
+            "title": "\u8bed\u8a00\u6a21\u578b\u4e0eRNN\u7b2c\u4e8c\u90e8\u5206"
+        },
+        {
+            "location": "/lecture4/#rnn",
+            "text": "",
+            "title": "\u8bed\u8a00\u6a21\u578b\u4e0eRNN\u7b2c\u4e00\u90e8\u5206"
+        },
+        {
+            "location": "/lecture5/",
+            "text": "\u5206\u7c7b",
+            "title": "\u5206\u7c7b"
+        },
+        {
+            "location": "/lecture5/#_1",
+            "text": "",
+            "title": "\u5206\u7c7b"
         }
     ]
 }

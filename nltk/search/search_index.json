@@ -1,0 +1,29 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "nltk-book-2nd\n\n\nPython\u81ea\u7136\u8bed\u8a00\u5904\u7406\u7b14\u8bb0\n\n\n\u624b\u4e0a\u6709\u672c\u300aPython\u81ea\u7136\u8bed\u8a00\u5904\u7406\u300b\n\u5bf9\u7167\nnltk\u5b98\u7f51\n\n\u5c31\u5f53\u505a\u7b2c\u4e8c\u7248\u54c8\n\n\n\u76f8\u5173\u8d44\u6e90\n\n\n\u7801\u519c\u573a\n\n\n\u6211\u7231\u81ea\u7136\u8bed\u8a00\u5904\u7406\n\n\n\u6784\u5efa\u8bf4\u660e\n\n\npip install mkdocs fabric3\n python3\u5b89\u88c5mkdocs\u548cfabric3\n\n\npip install mkdocs fabric\n python2\u5b89\u88c5mkdocs\u548cfabric\n\n\nfab build\n \u6784\u5efa\u5e76copy\u81f3\u4e2a\u4eba\u4e3b\u9875\u9879\u76ee\n\n\nfab serve\n \u5f00\u542f\u670d\u52a1\n\n\nNotes\n\n\nmkdocs\u7684search\u4e2d\u6587\u662f\u65e0\u6548\u7684",
+            "title": "nltk-book-2nd"
+        },
+        {
+            "location": "/#nltk-book-2nd",
+            "text": "Python\u81ea\u7136\u8bed\u8a00\u5904\u7406\u7b14\u8bb0  \u624b\u4e0a\u6709\u672c\u300aPython\u81ea\u7136\u8bed\u8a00\u5904\u7406\u300b\n\u5bf9\u7167 nltk\u5b98\u7f51 \n\u5c31\u5f53\u505a\u7b2c\u4e8c\u7248\u54c8",
+            "title": "nltk-book-2nd"
+        },
+        {
+            "location": "/#_1",
+            "text": "\u7801\u519c\u573a  \u6211\u7231\u81ea\u7136\u8bed\u8a00\u5904\u7406",
+            "title": "\u76f8\u5173\u8d44\u6e90"
+        },
+        {
+            "location": "/#_2",
+            "text": "pip install mkdocs fabric3  python3\u5b89\u88c5mkdocs\u548cfabric3  pip install mkdocs fabric  python2\u5b89\u88c5mkdocs\u548cfabric  fab build  \u6784\u5efa\u5e76copy\u81f3\u4e2a\u4eba\u4e3b\u9875\u9879\u76ee  fab serve  \u5f00\u542f\u670d\u52a1",
+            "title": "\u6784\u5efa\u8bf4\u660e"
+        },
+        {
+            "location": "/#notes",
+            "text": "mkdocs\u7684search\u4e2d\u6587\u662f\u65e0\u6548\u7684",
+            "title": "Notes"
+        }
+    ]
+}
