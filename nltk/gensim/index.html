@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Gensim - Python自然语言处理笔记</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Gensim";
+    var mkdocs_page_input_path = "gensim.md";
+    var mkdocs_page_url = "/gensim/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Python自然语言处理笔记</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">关于课程</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lecture1/">语言处理与Python</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lecture2/">获得文本语料和词汇资源</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lecture3/">处理原始文本</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lecture4/">编写结构化程序</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lecture5/">分类和标注词汇</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lecture6/">学习分类文本</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lecture7/">从文本提取信息</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lecture8/">分析句子结构</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lecture9/">建立基于特征的文法</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lecture10/">分析语句的含义</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lecture11/">语言数据管理</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../jieba/">结巴分词</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Gensim</a>
+    <ul class="subnav">
+            
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../cn/">中文扩展用法</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sentdex/">NLTK参考视频笔记</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Python自然语言处理笔记</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Gensim</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>pip install -i https://pypi.tuna.tsinghua.edu.cn/simple gensim</p>
+<pre><code class="python"># -*- coding: utf-8 -*-
+import logging
+logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
+</code></pre>
+
+<pre><code class="python">from gensim import corpora
+
+documents = [&quot;Human machine interface for lab abc computer applications&quot;,
+              &quot;A survey of user opinion of computer system response time&quot;,
+              &quot;The EPS user interface management system&quot;,
+              &quot;System and human system engineering testing of EPS&quot;,
+              &quot;Relation of user perceived response time to error measurement&quot;,
+              &quot;The generation of random binary unordered trees&quot;,
+              &quot;The intersection graph of paths in trees&quot;,
+              &quot;Graph minors IV Widths of trees and well quasi ordering&quot;,
+              &quot;Graph minors A survey&quot;]
+</code></pre>
+
+<pre><code>e:\ProgramData\Anaconda3\lib\site-packages\gensim\utils.py:860: UserWarning: detected Windows; aliasing chunkize to chunkize_serial
+  warnings.warn("detected Windows; aliasing chunkize to chunkize_serial")
+2017-12-25 14:51:28,440 : INFO : 'pattern' package not found; tag filters are not available for English
+</code></pre>
+<pre><code class="python">stoplist = set('for a of the and to in'.split())
+texts = [[word for word in document.lower().split() if word not in stoplist]
+          for document in documents]
+</code></pre>
+
+<pre><code class="python">import jieba
+
+content = &quot;&quot;&quot;面对当前挑战，我们应该落实2030年可持续发展议程，促进包容性发展&quot;&quot;&quot;
+content = list(jieba.cut(content, cut_all=False))
+for word in content:
+    print(word)
+</code></pre>
+
+<pre><code>Building prefix dict from the default dictionary ...
+2017-12-25 14:51:32,170 : DEBUG : Building prefix dict from the default dictionary ...
+Loading model from cache C:\Users\THREEP~1\AppData\Local\Temp\jieba.cache
+2017-12-25 14:51:32,178 : DEBUG : Loading model from cache C:\Users\THREEP~1\AppData\Local\Temp\jieba.cache
+Loading model cost 0.710 seconds.
+2017-12-25 14:51:32,881 : DEBUG : Loading model cost 0.710 seconds.
+Prefix dict has been built succesfully.
+2017-12-25 14:51:32,883 : DEBUG : Prefix dict has been built succesfully.
+
+
+面对
+当前
+挑战
+，
+我们
+应该
+落实
+2030
+年
+可
+持续
+发展
+议程
+，
+促进
+包容性
+发展
+</code></pre>
+<pre><code class="python">import matplotlib.pyplot as plt
+import pylab
+pylab.rcParams['figure.figsize'] = (15.0, 8.0)
+% matplotlib inline
+
+import numpy as np
+import pandas as pd
+
+from scipy.misc import imread
+from wordcloud import WordCloud
+</code></pre>
+
+<pre><code class="python">name = &quot;docs/assets/择天记.txt&quot;
+with open(name, encoding=&quot;utf-8&quot;) as fp:
+    book = fp.read()
+
+with open(name, encoding=&quot;utf-8&quot;) as fp:
+    lines = [line for line in fp.readlines() if len(line) &gt; 2]
+
+print(book[:100])
+print(lines[:10])
+</code></pre>
+
+<pre><code>择天记
+
+猫腻
+
+玄幻奇幻
+
+太始元年，有神石自太空飞来，分散落在人间，其中落在东土大陆的神石，上面镌刻着奇怪的图腾，人因观其图腾而悟道，后立国教。
+数千年后，十四岁的少年孤儿陈长生，为治病改命离开自
+['择天记\n', '猫腻\n', '玄幻奇幻\n', '太始元年，有神石自太空飞来，分散落在人间，其中落在东土大陆的神石，上面镌刻着奇怪的图腾，人因观其图腾而悟道，后立国教。\n', '数千年后，十四岁的少年孤儿陈长生，为治病改命离开自己的师父，带着一纸婚约来到神都，从而开启了一个逆天强者的崛起征程。\n', '各位书友要是觉得《择天记》还不错的话请不要忘记向您QQ群和微博里的朋友推荐哦！\n', '序 下山\n', '世界是相对的。\n', '中土大6隔着海洋与大西洲遥遥相对。东方地势较高，那里的天空似乎也高了起来，云雾从海上6地上升腾而起，不停向着那处飘去，最终汇聚在一起，终年不散。\n', '这里便是云墓——世间所有云的坟墓。\n']
+</code></pre>
+<pre><code class="python">import jieba
+jieba.add_word(&quot;陈长生&quot;,tag=&quot;nz&quot;)
+jieba.add_word(&quot;徐有容&quot;,tag=&quot;nz&quot;)
+jieba.add_word(&quot;落落&quot;,tag=&quot;nz&quot;)
+jieba.add_word(&quot;小黑龙&quot;,tag=&quot;nz&quot;)
+
+segments = [seg for seg in jieba.cut(book) if len(seg) &gt; 1]
+df = pd.DataFrame({'segment': segments})
+df
+</code></pre>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>segment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>择天记</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>猫腻</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>玄幻</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>奇幻</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>太始</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>元年</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>有神</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>石自</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>太空</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>飞来</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>分散</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>人间</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>其中</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>东土</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>大陆</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>神石</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>上面</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>镌刻</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>奇怪</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>图腾</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>因观</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>图腾</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>悟道</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>立国</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>数千年</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>十四岁</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>少年</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>孤儿</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>陈长生</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>治病</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1024912</th>
+      <td>常见</td>
+    </tr>
+    <tr>
+      <th>1024913</th>
+      <td>宫廷</td>
+    </tr>
+    <tr>
+      <th>1024914</th>
+      <td>故事</td>
+    </tr>
+    <tr>
+      <th>1024915</th>
+      <td>陈长生</td>
+    </tr>
+    <tr>
+      <th>1024916</th>
+      <td>说道</td>
+    </tr>
+    <tr>
+      <th>1024917</th>
+      <td>我要</td>
+    </tr>
+    <tr>
+      <th>1024918</th>
+      <td>圣城</td>
+    </tr>
+    <tr>
+      <th>1024919</th>
+      <td>我们</td>
+    </tr>
+    <tr>
+      <th>1024920</th>
+      <td>可能</td>
+    </tr>
+    <tr>
+      <th>1024921</th>
+      <td>顺路</td>
+    </tr>
+    <tr>
+      <th>1024922</th>
+      <td>铁面人</td>
+    </tr>
+    <tr>
+      <th>1024923</th>
+      <td>焦急</td>
+    </tr>
+    <tr>
+      <th>1024924</th>
+      <td>说道</td>
+    </tr>
+    <tr>
+      <th>1024925</th>
+      <td>一定</td>
+    </tr>
+    <tr>
+      <th>1024926</th>
+      <td>顺路</td>
+    </tr>
+    <tr>
+      <th>1024927</th>
+      <td>一定</td>
+    </tr>
+    <tr>
+      <th>1024928</th>
+      <td>顺路</td>
+    </tr>
+    <tr>
+      <th>1024929</th>
+      <td>就算</td>
+    </tr>
+    <tr>
+      <th>1024930</th>
+      <td>地狱</td>
+    </tr>
+    <tr>
+      <th>1024931</th>
+      <td>毫不犹豫</td>
+    </tr>
+    <tr>
+      <th>1024932</th>
+      <td>跟随</td>
+    </tr>
+    <tr>
+      <th>1024933</th>
+      <td>脚步</td>
+    </tr>
+    <tr>
+      <th>1024934</th>
+      <td>陈长生</td>
+    </tr>
+    <tr>
+      <th>1024935</th>
+      <td>说道</td>
+    </tr>
+    <tr>
+      <th>1024936</th>
+      <td>如果</td>
+    </tr>
+    <tr>
+      <th>1024937</th>
+      <td>我要</td>
+    </tr>
+    <tr>
+      <th>1024938</th>
+      <td>地方</td>
+    </tr>
+    <tr>
+      <th>1024939</th>
+      <td>神国</td>
+    </tr>
+    <tr>
+      <th>1024940</th>
+      <td>全文</td>
+    </tr>
+    <tr>
+      <th>1024941</th>
+      <td>本章</td>
+    </tr>
+  </tbody>
+</table>
+<p>1024942 rows × 1 columns</p>
+</div>
+
+<pre><code class="python">stopwords = pd.read_csv(u&quot;docs/assets/stop_words.txt&quot;)
+df = df[~df.segment.isin(stopwords.stopword)]
+df
+</code></pre>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>segment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>择天记</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>猫腻</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>玄幻</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>奇幻</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>太始</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>元年</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>有神</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>石自</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>太空</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>飞来</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>分散</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>人间</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>东土</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>大陆</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>神石</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>上面</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>镌刻</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>奇怪</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>图腾</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>因观</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>图腾</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>悟道</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>立国</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>数千年</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>十四岁</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>少年</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>孤儿</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>陈长生</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>治病</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>改命</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1024910</th>
+      <td>推演出来</td>
+    </tr>
+    <tr>
+      <th>1024911</th>
+      <td>一个</td>
+    </tr>
+    <tr>
+      <th>1024912</th>
+      <td>常见</td>
+    </tr>
+    <tr>
+      <th>1024913</th>
+      <td>宫廷</td>
+    </tr>
+    <tr>
+      <th>1024914</th>
+      <td>故事</td>
+    </tr>
+    <tr>
+      <th>1024915</th>
+      <td>陈长生</td>
+    </tr>
+    <tr>
+      <th>1024916</th>
+      <td>说道</td>
+    </tr>
+    <tr>
+      <th>1024917</th>
+      <td>我要</td>
+    </tr>
+    <tr>
+      <th>1024918</th>
+      <td>圣城</td>
+    </tr>
+    <tr>
+      <th>1024920</th>
+      <td>可能</td>
+    </tr>
+    <tr>
+      <th>1024921</th>
+      <td>顺路</td>
+    </tr>
+    <tr>
+      <th>1024922</th>
+      <td>铁面人</td>
+    </tr>
+    <tr>
+      <th>1024923</th>
+      <td>焦急</td>
+    </tr>
+    <tr>
+      <th>1024924</th>
+      <td>说道</td>
+    </tr>
+    <tr>
+      <th>1024925</th>
+      <td>一定</td>
+    </tr>
+    <tr>
+      <th>1024926</th>
+      <td>顺路</td>
+    </tr>
+    <tr>
+      <th>1024927</th>
+      <td>一定</td>
+    </tr>
+    <tr>
+      <th>1024928</th>
+      <td>顺路</td>
+    </tr>
+    <tr>
+      <th>1024929</th>
+      <td>就算</td>
+    </tr>
+    <tr>
+      <th>1024930</th>
+      <td>地狱</td>
+    </tr>
+    <tr>
+      <th>1024931</th>
+      <td>毫不犹豫</td>
+    </tr>
+    <tr>
+      <th>1024932</th>
+      <td>跟随</td>
+    </tr>
+    <tr>
+      <th>1024933</th>
+      <td>脚步</td>
+    </tr>
+    <tr>
+      <th>1024934</th>
+      <td>陈长生</td>
+    </tr>
+    <tr>
+      <th>1024935</th>
+      <td>说道</td>
+    </tr>
+    <tr>
+      <th>1024937</th>
+      <td>我要</td>
+    </tr>
+    <tr>
+      <th>1024938</th>
+      <td>地方</td>
+    </tr>
+    <tr>
+      <th>1024939</th>
+      <td>神国</td>
+    </tr>
+    <tr>
+      <th>1024940</th>
+      <td>全文</td>
+    </tr>
+    <tr>
+      <th>1024941</th>
+      <td>本章</td>
+    </tr>
+  </tbody>
+</table>
+<p>905949 rows × 1 columns</p>
+</div>
+
+<pre><code class="python">segStat = df.groupby(by=[&quot;segment&quot;])[&quot;segment&quot;].agg({&quot;count&quot;: np.size}).reset_index().sort_values(by=[&quot;count&quot;], ascending=False);
+segStat.head(20)
+</code></pre>
+
+<pre><code>e:\ProgramData\Anaconda3\lib\site-packages\ipykernel_launcher.py:1: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  """Entry point for launching an IPython kernel.
+</code></pre>
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>segment</th>
+      <th>count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>49602</th>
+      <td>陈长生</td>
+      <td>15939</td>
+    </tr>
+    <tr>
+      <th>31806</th>
+      <td>没有</td>
+      <td>13387</td>
+    </tr>
+    <tr>
+      <th>44735</th>
+      <td>说道</td>
+      <td>10080</td>
+    </tr>
+    <tr>
+      <th>36711</th>
+      <td>看着</td>
+      <td>6958</td>
+    </tr>
+    <tr>
+      <th>37136</th>
+      <td>知道</td>
+      <td>6245</td>
+    </tr>
+    <tr>
+      <th>19516</th>
+      <td>已经</td>
+      <td>4787</td>
+    </tr>
+    <tr>
+      <th>14009</th>
+      <td>国教</td>
+      <td>4271</td>
+    </tr>
+    <tr>
+      <th>4017</th>
+      <td>事情</td>
+      <td>4187</td>
+    </tr>
+    <tr>
+      <th>2416</th>
+      <td>不是</td>
+      <td>3760</td>
+    </tr>
+    <tr>
+      <th>1568</th>
+      <td>三十六</td>
+      <td>3686</td>
+    </tr>
+    <tr>
+      <th>17320</th>
+      <td>学院</td>
+      <td>3575</td>
+    </tr>
+    <tr>
+      <th>21252</th>
+      <td>徐有容</td>
+      <td>3339</td>
+    </tr>
+    <tr>
+      <th>21111</th>
+      <td>很多</td>
+      <td>3017</td>
+    </tr>
+    <tr>
+      <th>35031</th>
+      <td>现在</td>
+      <td>2969</td>
+    </tr>
+    <tr>
+      <th>543</th>
+      <td>一个</td>
+      <td>2819</td>
+    </tr>
+    <tr>
+      <th>41362</th>
+      <td>能够</td>
+      <td>2416</td>
+    </tr>
+    <tr>
+      <th>12033</th>
+      <td>可能</td>
+      <td>2403</td>
+    </tr>
+    <tr>
+      <th>20163</th>
+      <td>应该</td>
+      <td>2352</td>
+    </tr>
+    <tr>
+      <th>5529</th>
+      <td>仿佛</td>
+      <td>2170</td>
+    </tr>
+    <tr>
+      <th>36634</th>
+      <td>看到</td>
+      <td>2137</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<pre><code class="python">back_coloring = imread(u&quot;docs/assets/mask.jpg&quot;)
+
+wordcloud = WordCloud(font_path=u&quot;docs/assets/wqywmh.ttf&quot;, background_color=&quot;white&quot;, mask=back_coloring)
+plt.axis(&quot;off&quot;)
+wordcloud = wordcloud.fit_words(dict([(s, g) for s, g in segStat.head(20).itertuples(index=False)]))
+
+plt.imshow(wordcloud)
+</code></pre>
+
+<pre><code>&lt;matplotlib.image.AxesImage at 0x2c0c23986a0&gt;
+</code></pre>
+<p><img alt="png" src="../gensim_files/gensim_10_1.png" /></p>
+<pre><code class="python">import jieba.posseg as pseg
+
+words = pseg.cut(book[:100])
+for w in words:
+    if w.flag == 'nr':
+        print(w.word, w.flag, w)
+
+</code></pre>
+
+<pre><code>玄幻 nr 玄幻/nr
+石自 nr 石自/nr
+孤儿 nr 孤儿/nr
+</code></pre>
+<pre><code class="python">sentences = []
+for line in lines:
+    words = list(jieba.cut(line))
+    sentences.append(words)
+</code></pre>
+
+<pre><code class="python">考虑更加细腻的sentence
+</code></pre>
+
+<pre><code class="python">import gensim
+model = gensim.models.Word2Vec(sentences,size=200,window=5,min_count=5,workers=4)
+</code></pre>
+
+<pre><code>2017-12-25 15:56:37,001 : INFO : collecting all words and their counts
+2017-12-25 15:56:37,003 : INFO : PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2017-12-25 15:56:37,065 : INFO : PROGRESS: at sentence #10000, processed 260578 words, keeping 18494 word types
+2017-12-25 15:56:37,123 : INFO : PROGRESS: at sentence #20000, processed 542096 words, keeping 27616 word types
+2017-12-25 15:56:37,177 : INFO : PROGRESS: at sentence #30000, processed 847726 words, keeping 35161 word types
+2017-12-25 15:56:37,232 : INFO : PROGRESS: at sentence #40000, processed 1116154 words, keeping 40354 word types
+2017-12-25 15:56:37,275 : INFO : PROGRESS: at sentence #50000, processed 1347282 words, keeping 44113 word types
+2017-12-25 15:56:37,325 : INFO : PROGRESS: at sentence #60000, processed 1570782 words, keeping 47817 word types
+2017-12-25 15:56:37,376 : INFO : PROGRESS: at sentence #70000, processed 1784533 words, keeping 51083 word types
+2017-12-25 15:56:37,415 : INFO : PROGRESS: at sentence #80000, processed 1967748 words, keeping 53288 word types
+2017-12-25 15:56:37,450 : INFO : collected 55415 word types from a corpus of 2123096 raw words and 87625 sentences
+2017-12-25 15:56:37,451 : INFO : Loading a fresh vocabulary
+2017-12-25 15:56:37,599 : INFO : min_count=5 retains 16452 unique words (29% of original 55415, drops 38963)
+2017-12-25 15:56:37,600 : INFO : min_count=5 leaves 2060983 word corpus (97% of original 2123096, drops 62113)
+2017-12-25 15:56:37,749 : INFO : deleting the raw counts dictionary of 55415 items
+2017-12-25 15:56:37,752 : INFO : sample=0.001 downsamples 40 most-common words
+2017-12-25 15:56:37,754 : INFO : downsampling leaves estimated 1500692 word corpus (72.8% of prior 2060983)
+2017-12-25 15:56:37,755 : INFO : estimated required memory for 16452 words and 200 dimensions: 34549200 bytes
+2017-12-25 15:56:37,845 : INFO : resetting layer weights
+2017-12-25 15:56:38,082 : INFO : training model with 4 workers on 16452 vocabulary and 200 features, using sg=0 hs=0 sample=0.001 negative=5 window=5
+2017-12-25 15:56:39,091 : INFO : PROGRESS: at 13.98% examples, 1130832 words/s, in_qsize 7, out_qsize 0
+2017-12-25 15:56:40,094 : INFO : PROGRESS: at 32.37% examples, 1257027 words/s, in_qsize 7, out_qsize 0
+2017-12-25 15:56:41,099 : INFO : PROGRESS: at 49.64% examples, 1273680 words/s, in_qsize 7, out_qsize 0
+2017-12-25 15:56:42,103 : INFO : PROGRESS: at 68.29% examples, 1303971 words/s, in_qsize 7, out_qsize 0
+2017-12-25 15:56:43,108 : INFO : PROGRESS: at 86.07% examples, 1302467 words/s, in_qsize 7, out_qsize 0
+2017-12-25 15:56:43,882 : INFO : worker thread finished; awaiting finish of 3 more threads
+2017-12-25 15:56:43,884 : INFO : worker thread finished; awaiting finish of 2 more threads
+2017-12-25 15:56:43,891 : INFO : worker thread finished; awaiting finish of 1 more threads
+2017-12-25 15:56:43,898 : INFO : worker thread finished; awaiting finish of 0 more threads
+2017-12-25 15:56:43,899 : INFO : training on 10615480 raw words (7502987 effective words) took 5.8s, 1291613 effective words/s
+</code></pre>
+<pre><code class="python">for k, s in model.most_similar(positive=[u&quot;圣后&quot;]):
+    print(k, s)
+</code></pre>
+
+<pre><code>e:\ProgramData\Anaconda3\lib\site-packages\ipykernel_launcher.py:1: DeprecationWarning: Call to deprecated `most_similar` (Method will be removed in 4.0.0, use self.wv.most_similar() instead).
+  """Entry point for launching an IPython kernel.
+2017-12-25 15:58:02,828 : INFO : precomputing L2-norms of word weight vectors
+
+
+胜雪 0.806833028793335
+皇后 0.7890491485595703
+承武 0.7554647326469421
+承文 0.7192850708961487
+家 0.7164201736450195
+沾衣 0.6703976392745972
+朝 0.6002320051193237
+先帝 0.5968987345695496
+白帝 0.5489777326583862
+旨意 0.5485547184944153
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../cn/" class="btn btn-neutral float-right" title="中文扩展用法">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../jieba/" class="btn btn-neutral" title="结巴分词"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../jieba/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../cn/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
+
+</body>
+</html>

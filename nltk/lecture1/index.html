@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>语言处理与Python - Python自然语言处理笔记</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u8bed\u8a00\u5904\u7406\u4e0ePython";
+    var mkdocs_page_input_path = "lecture1.md";
+    var mkdocs_page_url = "/lecture1/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Python自然语言处理笔记</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">关于课程</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">语言处理与Python</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#python">第一章 语言处理与Python</a></li>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lecture2/">获得文本语料和词汇资源</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lecture3/">处理原始文本</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lecture4/">编写结构化程序</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lecture5/">分类和标注词汇</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lecture6/">学习分类文本</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lecture7/">从文本提取信息</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lecture8/">分析句子结构</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lecture9/">建立基于特征的文法</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lecture10/">分析语句的含义</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lecture11/">语言数据管理</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../jieba/">结巴分词</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../gensim/">Gensim</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../cn/">中文扩展用法</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sentdex/">NLTK参考视频笔记</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Python自然语言处理笔记</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>语言处理与Python</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="python">第一章 语言处理与Python</h1>
+<p>先搞个小计算</p>
+<pre><code>1+5*2-3
+</code></pre>
+
+<pre><code>8
+</code></pre>
+<p>有什么书呢？</p>
+<pre><code>from nltk.book import *
+</code></pre>
+
+<pre><code>*** Introductory Examples for the NLTK Book ***
+Loading text1, ..., text9 and sent1, ..., sent9
+Type the name of the text or sentence to view it.
+Type: 'texts()' or 'sents()' to list the materials.
+text1: Moby Dick by Herman Melville 1851
+text2: Sense and Sensibility by Jane Austen 1811
+text3: The Book of Genesis
+text4: Inaugural Address Corpus
+text5: Chat Corpus
+text6: Monty Python and the Holy Grail
+text7: Wall Street Journal
+text8: Personals Corpus
+text9: The Man Who Was Thursday by G . K . Chesterton 1908
+</code></pre>
+<p>看一看</p>
+<pre><code>text1
+</code></pre>
+
+<pre><code>&lt;Text: Moby Dick by Herman Melville 1851&gt;
+</code></pre>
+<pre><code>text2
+</code></pre>
+
+<pre><code>&lt;Text: Sense and Sensibility by Jane Austen 1811&gt;
+</code></pre>
+<pre><code>text1.concordance(&quot;monstrous&quot;)
+</code></pre>
+
+<pre><code>Displaying 11 of 11 matches:
+ong the former , one was of a most monstrous size . ... This came towards us , 
+ON OF THE PSALMS . " Touching that monstrous bulk of the whale or ork we have r
+ll over with a heathenish array of monstrous clubs and spears . Some were thick
+d as you gazed , and wondered what monstrous cannibal and savage could ever hav
+that has survived the flood ; most monstrous and most mountainous ! That Himmal
+they might scout at Moby Dick as a monstrous fable , or still worse and more de
+th of Radney .'" CHAPTER 55 Of the Monstrous Pictures of Whales . I shall ere l
+ing Scenes . In connexion with the monstrous pictures of whales , I am strongly
+ere to enter upon those still more monstrous stories of them which are to be fo
+ght have been rummaged out of this monstrous cabinet there is no telling . But 
+of Whale - Bones ; for Whales of a monstrous size are oftentimes cast up dead u
+</code></pre>
+<pre><code>text1.similar(&quot;monstrous&quot;)
+</code></pre>
+
+<pre><code>true contemptible christian abundant few part mean careful puzzled
+mystifying passing curious loving wise doleful gamesome singular
+delightfully perilous fearless
+</code></pre>
+<pre><code>text2.similar(&quot;monstrous&quot;)
+</code></pre>
+
+<pre><code>very so exceedingly heartily a as good great extremely remarkably
+sweet vast amazingly
+</code></pre>
+<pre><code>text2.common_contexts([&quot;monstrous&quot;, &quot;very&quot;])
+</code></pre>
+
+<pre><code>a_pretty am_glad a_lucky is_pretty be_glad
+</code></pre>
+<pre><code>text4.dispersion_plot([&quot;citizens&quot;, &quot;democracy&quot;, &quot;freedom&quot;, &quot;duties&quot;, &quot;America&quot;])
+</code></pre>
+
+<p><img alt="png" src="../lecture1_files/lecture1_12_0.png" /></p>
+<p>图太小不好看，调一调</p>
+<pre><code>import pylab
+pylab.rcParams['figure.figsize'] = (15.0, 8.0)
+text4.dispersion_plot([&quot;citizens&quot;, &quot;democracy&quot;, &quot;freedom&quot;, &quot;duties&quot;, &quot;America&quot;])
+</code></pre>
+
+<p><img alt="png" src="../lecture1_files/lecture1_14_0.png" /></p>
+<pre><code>len(text3)
+</code></pre>
+
+<pre><code>44764
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../lecture2/" class="btn btn-neutral float-right" title="获得文本语料和词汇资源">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="关于课程"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../lecture2/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
+
+</body>
+</html>
