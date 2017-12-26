@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "East196.github.io\n\n\n\u9010\u98ce\u8005\n\n\n\u9879\u76ee\u7f51\u7ad9\n\n\n\u6df1\u5ea6\u5b66\u4e60\u5165\u5751\u6307\u5317\n\n\nPython\u81ea\u7136\u8bed\u8a00\u5904\u7406\u7b14\u8bb0\n\n\n\u725b\u6d25\u5927\u5b66xDeepMind\u81ea\u7136\u8bed\u8a00\u5904\u7406\u8bfe\u7a0b\u7b14\u8bb0\n\n\n\u65af\u5766\u798f\u6df1\u5ea6\u5b66\u4e60\u81ea\u7136\u8bed\u8a00\u5904\u7406\u8bfe\u7a0b\u7b14\u8bb0\n\n\nNotes\n\n\n\u4e0a\u4f20\u540e\u6bcf5\u5206\u949f?\u54cd\u5e94\u5237\u65b0\u9875\u9762\n\n\n\u73b0\u5728\u7684\u6784\u5efa\u65b9\u6cd5\u6ca1\u6709\u6309github\u7684\u5957\u8def\u8d70\uff0c\u54c8\u54c8\n\n\n\u6784\u5efa\u8bf4\u660e\n\n\npip install mkdocs fabric3\n python3\u5b89\u88c5mkdocs\u548cfabric3\n\n\npip install mkdocs fabric\n python2\u5b89\u88c5mkdocs\u548cfabric\n\n\nfab build\n \u6784\u5efa\u5e76copy\u81f3\u4e2a\u4eba\u4e3b\u9875\u9879\u76ee\n\n\nfab serve\n \u5f00\u542f\u670d\u52a1\n\n\nNotes\n\n\nmkdocs\u7684search\u4e2d\u6587\u662f\u65e0\u6548\u7684\n\n\nchange log\n\n\n2017/12/24: add nltk and home\n\n\n2017/12/17: add cs224n\n\n\n2017/12/19: add oxdeepnlp\n\n\n2017/12/19: add notebook",
+            "text": "East196.github.io\n\n\n\u9010\u98ce\u8005\n\n\n\u9879\u76ee\u7f51\u7ad9\n\n\n\u6df1\u5ea6\u5b66\u4e60\u5165\u5751\u6307\u5317\n\n\nPython\u81ea\u7136\u8bed\u8a00\u5904\u7406\u7b14\u8bb0\n\n\n\u725b\u6d25\u5927\u5b66xDeepMind\u81ea\u7136\u8bed\u8a00\u5904\u7406\u8bfe\u7a0b\u7b14\u8bb0\n\n\n\u65af\u5766\u798f\u6df1\u5ea6\u5b66\u4e60\u81ea\u7136\u8bed\u8a00\u5904\u7406\u8bfe\u7a0b\u7b14\u8bb0\n\n\nNotes\n\n\n\u4e0a\u4f20\u540e\u6bcf5\u5206\u949f?\u54cd\u5e94\u5237\u65b0\u9875\u9762\n\n\n\u73b0\u5728\u7684\u6784\u5efa\u65b9\u6cd5\u6ca1\u6709\u6309github\u7684\u5957\u8def\u8d70\uff0c\u54c8\u54c8\n\n\n\u6784\u5efa\u8bf4\u660e\n\n\npip install mkdocs fabric3\n python3\u5b89\u88c5mkdocs\u548cfabric3\n\n\npip install mkdocs fabric\n python2\u5b89\u88c5mkdocs\u548cfabric\n\n\nfab build\n \u6784\u5efa\u5e76copy\u81f3\u4e2a\u4eba\u4e3b\u9875\u9879\u76ee\n\n\nfab serve\n \u5f00\u542f\u670d\u52a1\n\n\nNotes\n\n\nmkdocs\u7684search\u4e2d\u6587\u662f\u65e0\u6548\u7684~~~\u76f4\u63a5\u641c\u82f1\u6587\u5173\u952e\u8bcd\u5427~~~\n\n\nchange log\n\n\n2017/12/24: add nltk and home\n\n\n2017/12/17: add cs224n\n\n\n2017/12/19: add oxdeepnlp\n\n\n2017/12/19: add notebook",
             "title": "East196.github.io"
         },
         {
@@ -27,7 +27,7 @@
         },
         {
             "location": "/#notes_1",
-            "text": "mkdocs\u7684search\u4e2d\u6587\u662f\u65e0\u6548\u7684",
+            "text": "mkdocs\u7684search\u4e2d\u6587\u662f\u65e0\u6548\u7684~~~\u76f4\u63a5\u641c\u82f1\u6587\u5173\u952e\u8bcd\u5427~~~",
             "title": "Notes"
         },
         {

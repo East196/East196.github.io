@@ -3,9 +3,9 @@ from fabric.api import local, lcd
 
 def build():
     with lcd("..\\reveal-show\\reveal-deeplearning"):
-        local("xcopy deeplearning-slides.html ..\East196.github.io\dlshow\index.html")
-        local("xcopy assets ..\East196.github.io\dlshow\ /s /e")
-        local("xcopy revealjs_deps ..\East196.github.io\dlshow\ /s /e")
+        local("xcopy deeplearning-slides.html ..\..\East196.github.io\dlshow\index.html")
+        local("xcopy assets ..\..\East196.github.io\dlshow\\assets\ /s /e")
+        local("xcopy revealjs_deps ..\..\East196.github.io\dlshow\\revealjs_deps\ /s /e")
 
     with lcd("..\\nltk-book-2nd"):
         local("fab build")

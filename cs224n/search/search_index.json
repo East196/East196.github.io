@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "stanford-cs224n-winter-2017\n\n\n\u65af\u5766\u798f2017\u51ac\u5b63cs224n\u8bfe\u7a0b\u7b14\u8bb0\n\n\n\u8bfe\u7a0b\u540d\u79f0\n\n\nNatural Language Processing with Deep Learning\n\n\n\u65af\u5766\u798f\u6df1\u5ea6\u5b66\u4e60\u81ea\u7136\u8bed\u8a00\u5904\u7406\n\n\n\u8bfe\u7a0b\u8d44\u6e90\n\n\n\u5b98\u7f51\n\n\n\u89c6\u9891\n\n\n\u76f8\u5173\u8d44\u6e90\n\n\n\u7801\u519c\u573a\n \u5185\u542bcs224n\u7b14\u8bb0\n\n\n\u6211\u7231\u81ea\u7136\u8bed\u8a00\u5904\u7406\n\n\n\u6784\u5efa\u8bf4\u660e\n\n\npip install mkdocs fabric3\n python3\u5b89\u88c5mkdocs\u548cfabric3\n\n\npip install mkdocs fabric\n python2\u5b89\u88c5mkdocs\u548cfabric\n\n\nfab build\n \u6784\u5efa\u5e76copy\u81f3\u4e2a\u4eba\u4e3b\u9875\u9879\u76ee\n\n\nfab serve\n \u5f00\u542f\u670d\u52a1\n\n\nNotes\n\n\nmkdocs\u7684search\u4e2d\u6587\u662f\u65e0\u6548\u7684",
+            "text": "stanford-cs224n-winter-2017\n\n\n\u65af\u5766\u798f2017\u51ac\u5b63cs224n\u8bfe\u7a0b\u7b14\u8bb0\n\n\n\u8bfe\u7a0b\u540d\u79f0\n\n\nNatural Language Processing with Deep Learning\n\n\n\u65af\u5766\u798f\u6df1\u5ea6\u5b66\u4e60\u81ea\u7136\u8bed\u8a00\u5904\u7406\n\n\n\u8bfe\u7a0b\u8d44\u6e90\n\n\n\u5b98\u7f51\n\n\n\u89c6\u9891\n\n\n\u76f8\u5173\u8d44\u6e90\n\n\n\u6211\u7231\u81ea\u7136\u8bed\u8a00\u5904\u7406\n\n\n\u7801\u519c\u573acs224n\n\n\n\u4e0d\u4f1a\u505c\u7684\u8717\u725bcs224d\n\n\n\u6784\u5efa\u8bf4\u660e\n\n\npip install mkdocs fabric3\n python3\u5b89\u88c5mkdocs\u548cfabric3\n\n\npip install BeautifulSoup4\n\n\nfab download\n \u4e0b\u8f7d\u8bfe\u4ef6\n\n\nfab build\n \u6784\u5efa\u5e76copy\u81f3\u4e2a\u4eba\u4e3b\u9875\u9879\u76ee\n\n\nfab serve\n \u5f00\u542f\u670d\u52a1\n\n\nNotes\n\n\nmkdocs\u7684search\u4e2d\u6587\u662f\u65e0\u6548\u7684\uff0c\u76f4\u63a5\u641c\u82f1\u6587\u5173\u952e\u8bcd\u5427~~~",
             "title": "\u5173\u4e8e\u8bfe\u7a0b"
         },
         {
@@ -22,28 +22,118 @@
         },
         {
             "location": "/#_3",
-            "text": "\u7801\u519c\u573a  \u5185\u542bcs224n\u7b14\u8bb0  \u6211\u7231\u81ea\u7136\u8bed\u8a00\u5904\u7406",
+            "text": "\u6211\u7231\u81ea\u7136\u8bed\u8a00\u5904\u7406  \u7801\u519c\u573acs224n  \u4e0d\u4f1a\u505c\u7684\u8717\u725bcs224d",
             "title": "\u76f8\u5173\u8d44\u6e90"
         },
         {
             "location": "/#_4",
-            "text": "pip install mkdocs fabric3  python3\u5b89\u88c5mkdocs\u548cfabric3  pip install mkdocs fabric  python2\u5b89\u88c5mkdocs\u548cfabric  fab build  \u6784\u5efa\u5e76copy\u81f3\u4e2a\u4eba\u4e3b\u9875\u9879\u76ee  fab serve  \u5f00\u542f\u670d\u52a1",
+            "text": "pip install mkdocs fabric3  python3\u5b89\u88c5mkdocs\u548cfabric3  pip install BeautifulSoup4  fab download  \u4e0b\u8f7d\u8bfe\u4ef6  fab build  \u6784\u5efa\u5e76copy\u81f3\u4e2a\u4eba\u4e3b\u9875\u9879\u76ee  fab serve  \u5f00\u542f\u670d\u52a1",
             "title": "\u6784\u5efa\u8bf4\u660e"
         },
         {
             "location": "/#notes",
-            "text": "mkdocs\u7684search\u4e2d\u6587\u662f\u65e0\u6548\u7684",
+            "text": "mkdocs\u7684search\u4e2d\u6587\u662f\u65e0\u6548\u7684\uff0c\u76f4\u63a5\u641c\u82f1\u6587\u5173\u952e\u8bcd\u5427~~~",
             "title": "Notes"
         },
         {
             "location": "/lecture1/",
-            "text": "\u81ea\u7136\u8bed\u8a00\u5904\u7406\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7b80\u4ecb",
+            "text": "Natural Language Processing With Deep Learning\n\n\nCS224n / Ling284\n\n\nChristopher Manning\n and Richard Socher\n\n\nLecture 1: Introduction\n\n\n\n\n\nLecture Plan\n\n\n\n\n\n\nWhat is Natural Language Processing\uff1f\n\n\n\n\n\n\nWhat is Deep Learning?\n\n\n\n\n\n\nCourse logistics\n\n\n\n\n\n\nWhy is language understanding difficult?\n\n\n\n\n\n\nIntro to the application of Deep Learning to NLP\n\n\n\n\n\n\n\n\n\n1. What is Natural Language Processing (NLP)?\n\n\nNatural Language Processing\n is a field at the intersction of\n\n\n\n\ncomputer science\n\n\nartifical intelligence\n\n\nand linguistics\n\n\n\n\n\n\n\nGoal:\n for computers to process or \"understand\" natural language in order to perform tasks that are useful,e.g.,\n\n\n\n\nPerforming Tasks, like making appointments, buying things\n\n\nQustion Answering\n\n\nSiri,Google Assistant,Facebook M,Cortana...thank you,mobile!!!\n\n\n\n\n\n\n\n\n\n\n\nFully \nunderstanding and representing\n the \nmeaning\n of language(or even defining it) is a difficult goal.\n\n\n\n\nPerfect language understanding is AI-complete\n\n\n\n\n\n\n\nNLP Levels\n\n\n\n\n\n\n\n(A tiny sample of) NLP Applications\n\n\nApplications range from simple to complex:\n\n\n\n\nSpell checking,keyword search,finding synonyms\n\n\nExtracting information form websites such as\n\n\nproduct price,dates,location,people or company names\n\n\n\n\n\n\nClassify: reading level of school texts,positive/negative sentiment of longer documents\n\n\nMachine translation\n\n\nSpoken dialog systems\n\n\nComplex question answering\n\n\n\n\n\n\n\nNLP in industry ... is taking off\n\n\n\n\nSearch (written and spoken)\n\n\nOnline adventisement matching\n\n\nAutomated / Assisted translation\n\n\nSentiment analysis for marketing or finance/trading\n\n\nSpeech recognition\n\n\nChatbots / Dialog agents\n\n\nAutomating customer supoort\n\n\nControlling devices\n\n\nOrdering goods\n\n\n\n\n\n\n\nWhat's special about human language\n\n\nA human language is a system \nspcifically constructed to convey the speaker/writers meaning\n\n\n\n\nNot just an environmental signal,it's a deliberate communication\n\n\nUsing an encoding which little kids can quickly learn(amazingly!)\n\n\n\n\n\n\n\nA human language is a discrete/symbolic/categorical signaling system\n\n\n\n\nrokect violin\n\n\nwith very minor exceptions for expressive signaling\n    (\"I loooove it.\" \"Whooomppaaa\")\n\n\npresumably because of greater signaling reliability\n\n\nsymbols are not just an invention of logic /classical AI!\n\n\n\n\n\n\n\nthe categorical symbols of a language can be encoded as a signal for communication in several ways:\n\n\n\n\nsound\n\n\ngesture\n\n\nimages(writing)\n\n\nthe symbols is invarient across different encodings!\n\n\n\n\n\n\n\n\n\n\na human language is a symolic/categorical signaling system\n\n\nhowever,a brain encoding appears to be a continuous pattern of activation,and the symbols are transmitted vua continuous signals of sounds/vision\n\n\nWe will explore a continuous encoding pattern of thought\n\n\nthe large vocabulary, symbolic encoding of words creates a problem for machine learning - sparsity!\n\n\n\n\n\n\n\n\n2. What's Deep Learning(DL)?\n\n\nDeep Learning\n is a subfield of machine learning\n\n\n\n\n\nmost machine Learning methods work well because of \nhuman-designed representations\n and input features\n\n\n\n\nfor example:features for finding named entities like locations or organization names(Finkel et al.,2010)\n\n\nmachine learning becomes just optimizing weights to best make a final prediction\n\n\n\n\n\n\n\nmachine learning vs deep learning\n\n\n\n\n\n\n\n\n\n\n\nRepresentation learning\n attempts to automatically learn good features or representations\n\n\n\n\n\n\nDeep Learning\n algorithms attempts to learn(multiple levels of) representation and an output\n\n\n\n\n\n\nFrom \"raw\" inputs \nx\n\n  (e.g.,sound,characters,or words)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOn the history of and term \"Deep Learning\"\n\n\n\n\nWe will focus on different kinds of neural networks\n\n\nThe dominant model family inside deep learning\n\n\nOnly clever terminology fot sy\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRepresentations of NLP Levels: Semantics\n\n\n\n\n\nNLP Applications: Sentiment Analysis\n\n\n\n\n\nQustion Answering\n\n\n\n\n\nDialog agents/Response Generation\n\n- A simple, successful example is the auto-replies available in the Google Inbox app\n- A application of the powerful, general technique of \nNeural Language Models\n, which are an instance of Recurrent Neural Networks\n\n\n\n\n\n\n\n\n\n\nNeural Machine Translation\n\n- Many levels of translation have been tried in the past:\n\n\n\n\n\n\n\n\n\nTraditional MT systems are very large complex systems\n\n\nWhat do you think is the interlingua for the DL approach to translation?\n\n\nSource sentence is mapped to a \nvector\n ,then output sentence generated\n  [Sutskever    et  al. 2014,   Bahdanau    et  al. 2014,   Luong   and Manning 2016]\n\n\n\n\n\n\nNow live for some languages in Google Translate(etc.),with big error reductions!\n\n\n\n\n\nConclusion: Representation for all levels? Vectors\n\n\n\n\n\n\nWe will study in the next lecture how we can learn vector representations for words and what they actually \nrepresent\n\n\n\n\n\n\nNext week: how neural networks work and how they can use these vectors for all NLP levels and many different applications",
             "title": "\u81ea\u7136\u8bed\u8a00\u5904\u7406\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7b80\u4ecb"
         },
         {
-            "location": "/lecture1/#_1",
+            "location": "/lecture1/#natural-language-processing-with-deep-learning",
+            "text": "CS224n / Ling284  Christopher Manning  and Richard Socher  Lecture 1: Introduction",
+            "title": "Natural Language Processing With Deep Learning"
+        },
+        {
+            "location": "/lecture1/#lecture-plan",
+            "text": "What is Natural Language Processing\uff1f    What is Deep Learning?    Course logistics    Why is language understanding difficult?    Intro to the application of Deep Learning to NLP",
+            "title": "Lecture Plan"
+        },
+        {
+            "location": "/lecture1/#1-what-is-natural-language-processing-nlp",
             "text": "",
-            "title": "\u81ea\u7136\u8bed\u8a00\u5904\u7406\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7b80\u4ecb"
+            "title": "1. What is Natural Language Processing (NLP)?"
+        },
+        {
+            "location": "/lecture1/#natural-language-processing-is-a-field-at-the-intersction-of",
+            "text": "computer science  artifical intelligence  and linguistics",
+            "title": "Natural Language Processing is a field at the intersction of"
+        },
+        {
+            "location": "/lecture1/#goal-for-computers-to-process-or-understand-natural-language-in-order-to-perform-tasks-that-are-usefuleg",
+            "text": "Performing Tasks, like making appointments, buying things  Qustion Answering  Siri,Google Assistant,Facebook M,Cortana...thank you,mobile!!!",
+            "title": "Goal: for computers to process or \"understand\" natural language in order to perform tasks that are useful,e.g.,"
+        },
+        {
+            "location": "/lecture1/#fully-understanding-and-representing-the-meaning-of-languageor-even-defining-it-is-a-difficult-goal",
+            "text": "Perfect language understanding is AI-complete",
+            "title": "Fully understanding and representing the meaning of language(or even defining it) is a difficult goal."
+        },
+        {
+            "location": "/lecture1/#nlp-levels",
+            "text": "",
+            "title": "NLP Levels"
+        },
+        {
+            "location": "/lecture1/#a-tiny-sample-of-nlp-applications",
+            "text": "",
+            "title": "(A tiny sample of) NLP Applications"
+        },
+        {
+            "location": "/lecture1/#applications-range-from-simple-to-complex",
+            "text": "Spell checking,keyword search,finding synonyms  Extracting information form websites such as  product price,dates,location,people or company names    Classify: reading level of school texts,positive/negative sentiment of longer documents  Machine translation  Spoken dialog systems  Complex question answering",
+            "title": "Applications range from simple to complex:"
+        },
+        {
+            "location": "/lecture1/#nlp-in-industry-is-taking-off",
+            "text": "Search (written and spoken)  Online adventisement matching  Automated / Assisted translation  Sentiment analysis for marketing or finance/trading  Speech recognition  Chatbots / Dialog agents  Automating customer supoort  Controlling devices  Ordering goods",
+            "title": "NLP in industry ... is taking off"
+        },
+        {
+            "location": "/lecture1/#whats-special-about-human-language",
+            "text": "",
+            "title": "What's special about human language"
+        },
+        {
+            "location": "/lecture1/#a-human-language-is-a-system-spcifically-constructed-to-convey-the-speakerwriters-meaning",
+            "text": "Not just an environmental signal,it's a deliberate communication  Using an encoding which little kids can quickly learn(amazingly!)",
+            "title": "A human language is a system spcifically constructed to convey the speaker/writers meaning"
+        },
+        {
+            "location": "/lecture1/#a-human-language-is-a-discretesymboliccategorical-signaling-system",
+            "text": "rokect violin  with very minor exceptions for expressive signaling\n    (\"I loooove it.\" \"Whooomppaaa\")  presumably because of greater signaling reliability  symbols are not just an invention of logic /classical AI!",
+            "title": "A human language is a discrete/symbolic/categorical signaling system"
+        },
+        {
+            "location": "/lecture1/#the-categorical-symbols-of-a-language-can-be-encoded-as-a-signal-for-communication-in-several-ways",
+            "text": "sound  gesture  images(writing)  the symbols is invarient across different encodings!     a human language is a symolic/categorical signaling system  however,a brain encoding appears to be a continuous pattern of activation,and the symbols are transmitted vua continuous signals of sounds/vision  We will explore a continuous encoding pattern of thought  the large vocabulary, symbolic encoding of words creates a problem for machine learning - sparsity!",
+            "title": "the categorical symbols of a language can be encoded as a signal for communication in several ways:"
+        },
+        {
+            "location": "/lecture1/#2-whats-deep-learningdl",
+            "text": "",
+            "title": "2. What's Deep Learning(DL)?"
+        },
+        {
+            "location": "/lecture1/#deep-learning-is-a-subfield-of-machine-learning",
+            "text": "",
+            "title": "Deep Learning is a subfield of machine learning"
+        },
+        {
+            "location": "/lecture1/#most-machine-learning-methods-work-well-because-of-human-designed-representations-and-input-features",
+            "text": "for example:features for finding named entities like locations or organization names(Finkel et al.,2010)  machine learning becomes just optimizing weights to best make a final prediction",
+            "title": "most machine Learning methods work well because of human-designed representations and input features"
+        },
+        {
+            "location": "/lecture1/#machine-learning-vs-deep-learning",
+            "text": "Representation learning  attempts to automatically learn good features or representations    Deep Learning  algorithms attempts to learn(multiple levels of) representation and an output    From \"raw\" inputs  x \n  (e.g.,sound,characters,or words)",
+            "title": "machine learning vs deep learning"
+        },
+        {
+            "location": "/lecture1/#on-the-history-of-and-term-deep-learning",
+            "text": "We will focus on different kinds of neural networks  The dominant model family inside deep learning  Only clever terminology fot sy        Representations of NLP Levels: Semantics   NLP Applications: Sentiment Analysis   Qustion Answering   Dialog agents/Response Generation \n- A simple, successful example is the auto-replies available in the Google Inbox app\n- A application of the powerful, general technique of  Neural Language Models , which are an instance of Recurrent Neural Networks     Neural Machine Translation \n- Many levels of translation have been tried in the past:     Traditional MT systems are very large complex systems  What do you think is the interlingua for the DL approach to translation?  Source sentence is mapped to a  vector  ,then output sentence generated\n  [Sutskever    et  al. 2014,   Bahdanau    et  al. 2014,   Luong   and Manning 2016]   \nNow live for some languages in Google Translate(etc.),with big error reductions!   Conclusion: Representation for all levels? Vectors    We will study in the next lecture how we can learn vector representations for words and what they actually  represent    Next week: how neural networks work and how they can use these vectors for all NLP levels and many different applications",
+            "title": "On the history of and term \"Deep Learning\""
         },
         {
             "location": "/lecture2/",
