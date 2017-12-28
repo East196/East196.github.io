@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Atom - 随笔</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">随笔</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">主页</a>
+                    </li>
+                    <li >
+                        <a href="../../study/how2ask/">提问的智慧</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Python <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../python/python/">Python</a>
+</li>
+                            
+<li >
+    <a href="../../python/tkinter/">Tkinter</a>
+</li>
+                            
+<li >
+    <a href="../../python/jieba/">Jieba</a>
+</li>
+                            
+<li >
+    <a href="../../python/virtualenv/">Virtualenv</a>
+</li>
+                            
+<li >
+    <a href="../../python/matplotlib/">Matplotlib</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Web <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../web/angular1/">Angular1</a>
+</li>
+                            
+<li >
+    <a href="../../web/angular2/">Angular2</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">XD <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../bigdata/elasticserach/">Elasticserach</a>
+</li>
+                            
+<li >
+    <a href="../../bigdata/elk/">Elk</a>
+</li>
+                            
+<li >
+    <a href="../../bigdata/hadoop/">Hadoop</a>
+</li>
+                            
+<li >
+    <a href="../../bigdata/hbase/">Hbase</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tool <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li class="active">
+    <a href="./">Atom</a>
+</li>
+                            
+<li >
+    <a href="../gitlab/">Gitlab</a>
+</li>
+                            
+<li >
+    <a href="../sdkman/">Sdkman</a>
+</li>
+                            
+<li >
+    <a href="../svn/">Svn</a>
+</li>
+                            
+<li >
+    <a href="../graphviz/">Graphviz</a>
+</li>
+                            
+<li >
+    <a href="../nexus/">Nexus</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../java/java/">Java</a>
+</li>
+                            
+<li >
+    <a href="../../java/jhispter/">Jhispter</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">DB <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../db/mongodb/">Mongodb</a>
+</li>
+                            
+<li >
+    <a href="../../db/mysql/">Mysql</a>
+</li>
+                            
+<li >
+    <a href="../../db/redis/">Redis</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../other/nginx/">Nginx</a>
+</li>
+                            
+<li >
+    <a href="../../other/three/">Three</a>
+</li>
+                        </ul>
+                    </li>
+                    <li >
+                        <a href="../../about/">关于</a>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../../bigdata/hbase/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../gitlab/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#atom">Atom插件安装指南</a></li>
+            <li><a href="#markdown-preview-enhanced">markdown-preview-enhanced</a></li>
+            <li><a href="#autocomplete-paths">autocomplete-paths</a></li>
+            <li><a href="#atom-beautify">atom-beautify</a></li>
+            <li><a href="#atom-script">atom-script</a></li>
+            <li><a href="#atom-terminal">atom-terminal</a></li>
+            <li><a href="#terminal-plus">terminal-plus</a></li>
+            <li><a href="#pdf-view">pdf-view</a></li>
+            <li><a href="#minimap">minimap</a></li>
+            <li><a href="#atom-figlet">atom-figlet</a></li>
+            <li><a href="#atom-pigments">atom-pigments</a></li>
+            <li><a href="#atom-ternjs">atom-ternjs</a></li>
+            <li><a href="#angular">angular</a></li>
+            <li><a href="#less-autocompile">less-autocompile</a></li>
+            <li><a href="#atom-coffee-compile">atom-coffee-compile</a></li>
+            <li><a href="#atom-typescript">atom-typescript</a></li>
+            <li><a href="#emmet">emmet</a></li>
+        <li class="main "><a href="#hydrogen">hydrogen</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<div class="toc">
+<ul>
+<li><a href="#atom">Atom插件安装指南</a><ul>
+<li><a href="#markdown-preview-enhanced">markdown-preview-enhanced</a></li>
+<li><a href="#autocomplete-paths">autocomplete-paths</a></li>
+<li><a href="#atom-beautify">atom-beautify</a></li>
+<li><a href="#atom-script">atom-script</a></li>
+<li><a href="#atom-terminal">atom-terminal</a></li>
+<li><a href="#terminal-plus">terminal-plus</a></li>
+<li><a href="#pdf-view">pdf-view</a></li>
+<li><a href="#minimap">minimap</a></li>
+<li><a href="#atom-figlet">atom-figlet</a></li>
+<li><a href="#atom-pigments">atom-pigments</a></li>
+<li><a href="#atom-ternjs">atom-ternjs</a></li>
+<li><a href="#angular">angular</a></li>
+<li><a href="#less-autocompile">less-autocompile</a></li>
+<li><a href="#atom-coffee-compile">atom-coffee-compile</a></li>
+<li><a href="#atom-typescript">atom-typescript</a></li>
+<li><a href="#emmet">emmet</a></li>
+</ul>
+</li>
+<li><a href="#hydrogen">hydrogen</a></li>
+</ul>
+</div>
+<h1 id="atom">Atom插件安装指南</h1>
+<p>if atom install fail,伟大的墙分分钟让你怀疑人生
+apm fail,命令行不是万能的
+we still have github^~^手工下？npm install？勤奋的孩子</p>
+<p>see
+apm help install
+!!!
+apm install <git_remote></p>
+<h2 id="markdown-preview-enhanced">markdown-preview-enhanced</h2>
+<p>漂亮的atom markdown插件，支持许多匪夷所思的功能，比如画uml图
+当然，那样的话要装软件的
+https://github.com/shd101wyy/markdown-preview-enhanced</p>
+<h2 id="autocomplete-paths">autocomplete-paths</h2>
+<p>自动完成路径
+https://github.com/atom-community/autocomplete-paths</p>
+<h2 id="atom-beautify">atom-beautify</h2>
+<p>美化代码
+https://github.com/Glavin001/atom-beautify</p>
+<h2 id="atom-script">atom-script</h2>
+<p>运行代码
+https://github.com/rgbkrk/atom-script</p>
+<h2 id="atom-terminal">atom-terminal</h2>
+<p>从atom项目根目录下打开命令行
+https://github.com/karan/atom-terminal</p>
+<h2 id="terminal-plus">terminal-plus</h2>
+<p>号称可以替代命令行...
+但是你无法装成功...
+https://github.com/jeremyramin/terminal-plus</p>
+<h2 id="pdf-view">pdf-view</h2>
+<p>看个pdf，没毛病
+https://atom.io/packages/pdf-view</p>
+<h2 id="minimap">minimap</h2>
+<p>代码缩略图，爽的不要不要的...
+https://github.com/atom-minimap/minimap</p>
+<p>然而多产的 abe33 早已美化了一切</p>
+<h2 id="atom-figlet">atom-figlet</h2>
+<p>直接出ascii-art字体
+https://github.com/abe33/atom-figlet</p>
+<h2 id="atom-pigments">atom-pigments</h2>
+<p>写啥颜色出啥颜色，有点漂亮
+https://github.com/abe33/atom-pigments
+https://github.com/abe33/minimap-pigments</p>
+<p><strong>自此开启前端模式</strong></p>
+<h2 id="atom-ternjs">atom-ternjs</h2>
+<p>js代码提示
+https://github.com/tststs/atom-ternjs</p>
+<h2 id="angular">angular</h2>
+<p>angular的提示，有点快捷哦
+https://github.com/angular-ui/AngularJS-Atom</p>
+<h2 id="less-autocompile">less-autocompile</h2>
+<p>需要配置，要不你会以为auto是假的
+https://github.com/lohek/less-autocompile</p>
+<h2 id="atom-coffee-compile">atom-coffee-compile</h2>
+<p>使用coffeescript有年头了，用aptana的时候起，历经brackets，atom，vscode，第一件事就是装coffee插件...
+话说coffeescript也是大神作品，你听说过mvc先（xian）驱（lie）backbone，万能工具underscore没？
+https://github.com/adrianlee44/atom-coffee-compile</p>
+<h2 id="atom-typescript">atom-typescript</h2>
+<p>typescript是有类型的javascript，又称提示之王，你懂的
+https://github.com/TypeStrong/atom-typescript</p>
+<h2 id="emmet">emmet</h2>
+<p>前端只有这个才算神器
+https://github.com/emmetio/emmet-atom</p>
+<h1 id="hydrogen">hydrogen</h1>
+<p>你以为ipython就是神器了？
+这个你装不成功的
+https://github.com/nteract/hydrogen</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/require.js"></script>
+        <script src="../../search/search.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&larr;</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </body>
+</html>

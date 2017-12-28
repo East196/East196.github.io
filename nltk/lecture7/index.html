@@ -87,6 +87,19 @@
     <a class="current" href="./">从文本提取信息</a>
     <ul class="subnav">
             
+    <li class="toctree-l2"><a href="#7">7. 从文本提取信息</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#_1">待回答的问题？</a></li>
+        
+            <li><a class="toctree-l3" href="#71">7.1 信息提取</a></li>
+        
+            <li><a class="toctree-l3" href="#72">7.2 分块</a></li>
+        
+        </ul>
+    
+
     </ul>
 	    </li>
           
@@ -162,7 +175,32 @@
           <div role="main">
             <div class="section">
               
-                
+                <h1 id="7">7. 从文本提取信息</h1>
+<h2 id="_1">待回答的问题？</h2>
+<ol>
+<li>
+<p>提取结构化数据</p>
+</li>
+<li>
+<p>识别实体与关系</p>
+</li>
+<li>
+<p>合适的语料库</p>
+</li>
+</ol>
+<h2 id="71">7.1 信息提取</h2>
+<p>分句 - 分词 - 词性标注</p>
+<pre><code>import nltk
+
+
+def ie_preprocess(document):
+    sentences = nltk.sent_tokenize(document)  # 分句             
+    sentences = [nltk.word_tokenize(sent) for sent in sentences]  # 分词
+    sentences = [nltk.pos_tag(sent) for sent in sentences]  # 词性标注
+    return sentences
+</code></pre>
+
+<h2 id="72">7.2 分块</h2>
               
             </div>
           </div>

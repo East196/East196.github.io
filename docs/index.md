@@ -1,6 +1,6 @@
 # East196.github.io
 
-[逐风者](https://east196.github.io)
+[结网](https://east196.github.io)
 
 ## 项目网站
 

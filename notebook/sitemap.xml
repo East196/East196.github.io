@@ -4,7 +4,15 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-12-19</lastmod>
+     <lastmod>2017-12-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/study/how2ask/</loc>
+     <lastmod>2017-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,26 +20,32 @@
     
         
     <url>
+     <loc>/python/python/</loc>
+     <lastmod>2017-12-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>/python/tkinter/</loc>
-     <lastmod>2017-12-19</lastmod>
+     <lastmod>2017-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/python/jieba/</loc>
-     <lastmod>2017-12-19</lastmod>
+     <lastmod>2017-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/python/virtualenv/</loc>
-     <lastmod>2017-12-19</lastmod>
+     <lastmod>2017-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/python/matplotlib/</loc>
-     <lastmod>2017-12-19</lastmod>
+     <lastmod>2017-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -40,116 +54,136 @@
     
         
     <url>
-     <loc>/other/angular1/</loc>
-     <lastmod>2017-12-19</lastmod>
+     <loc>/web/angular1/</loc>
+     <lastmod>2017-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/other/angular2/</loc>
-     <lastmod>2017-12-19</lastmod>
+     <loc>/web/angular2/</loc>
+     <lastmod>2017-12-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/bigdata/elasticserach/</loc>
+     <lastmod>2017-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/other/atom/</loc>
-     <lastmod>2017-12-19</lastmod>
+     <loc>/bigdata/elk/</loc>
+     <lastmod>2017-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/other/elasticserach/</loc>
-     <lastmod>2017-12-19</lastmod>
+     <loc>/bigdata/hadoop/</loc>
+     <lastmod>2017-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/other/elk/</loc>
-     <lastmod>2017-12-19</lastmod>
+     <loc>/bigdata/hbase/</loc>
+     <lastmod>2017-12-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/tool/atom/</loc>
+     <lastmod>2017-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/other/gitlab/</loc>
-     <lastmod>2017-12-19</lastmod>
+     <loc>/tool/gitlab/</loc>
+     <lastmod>2017-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/other/hadoop/</loc>
-     <lastmod>2017-12-19</lastmod>
+     <loc>/tool/sdkman/</loc>
+     <lastmod>2017-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/other/hbase/</loc>
-     <lastmod>2017-12-19</lastmod>
+     <loc>/tool/svn/</loc>
+     <lastmod>2017-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/other/java/</loc>
-     <lastmod>2017-12-19</lastmod>
+     <loc>/tool/graphviz/</loc>
+     <lastmod>2017-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/other/jhispter/</loc>
-     <lastmod>2017-12-19</lastmod>
+     <loc>/tool/nexus/</loc>
+     <lastmod>2017-12-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/java/java/</loc>
+     <lastmod>2017-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/other/mongodb/</loc>
-     <lastmod>2017-12-19</lastmod>
+     <loc>/java/jhispter/</loc>
+     <lastmod>2017-12-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/db/mongodb/</loc>
+     <lastmod>2017-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/other/mysql/</loc>
-     <lastmod>2017-12-19</lastmod>
+     <loc>/db/mysql/</loc>
+     <lastmod>2017-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/other/nexus/</loc>
-     <lastmod>2017-12-19</lastmod>
+     <loc>/db/redis/</loc>
+     <lastmod>2017-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    
+
+    
         
     <url>
      <loc>/other/nginx/</loc>
-     <lastmod>2017-12-19</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/other/python/</loc>
-     <lastmod>2017-12-19</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/other/redis/</loc>
-     <lastmod>2017-12-19</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/other/sdkman/</loc>
-     <lastmod>2017-12-19</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/other/svn/</loc>
-     <lastmod>2017-12-19</lastmod>
+     <lastmod>2017-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/other/three/</loc>
-     <lastmod>2017-12-19</lastmod>
+     <lastmod>2017-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -158,7 +192,7 @@
     
     <url>
      <loc>/about/</loc>
-     <lastmod>2017-12-19</lastmod>
+     <lastmod>2017-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
