@@ -30,7 +30,7 @@
 
 # Notes
 
-mkdocs的search中文是无效的~~~直接搜英文关键词吧~~~
+mkdocs的search中文是无效的，直接搜英文关键词吧~~~
 
 ## change log
 
