@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "\u968f\u7b14\n\n\n\u968f\u624b\u8bb0\u7684\u4e00\u4e9b\u6563\u4e71\u7684\u4e1c\u897f\uff0c\u5148\u653e\u8fd9\u91cc\uff0c\u6162\u6162\u6574\u7406\u3002\n\n\nNotes\n\n\n\u8b66\u60d5\u5217\u8868\uff0c\u957f\u5217\u8868\u65e0\u610f\u4e49\u4e14\u4f1a\u5e26\u6765\u7126\u8651\u611f\u3002",
+            "text": "\u968f\u7b14\n\n\n\u968f\u624b\u8bb0\u7684\u4e00\u4e9b\u6563\u4e71\u7684\u4e1c\u897f\uff0c\u5148\u653e\u8fd9\u91cc\uff0c\u6162\u6162\u6574\u7406\u3002\n\n\n\u53c2\u8003\n\n\nMarkdown Preview Enhanced\n\n\n\u4e2d\u6587\u6587\u6848\u6392\u7248\u6307\u5317\n\n\nNotes\n\n\n2018\u5e74\u5f00\u59cb\u6bcf\u5929\u8bb0\u4e00\u4e9b\u611f\u60f3\n\n\n\u8b66\u60d5\u5217\u8868\uff0c\u957f\u5217\u8868\u65e0\u610f\u4e49\u4e14\u4f1a\u5e26\u6765\u7126\u8651\u611f\u3002",
             "title": "\u4e3b\u9875"
         },
         {
@@ -11,8 +11,13 @@
             "title": "\u968f\u7b14"
         },
         {
+            "location": "/#_2",
+            "text": "Markdown Preview Enhanced  \u4e2d\u6587\u6587\u6848\u6392\u7248\u6307\u5317",
+            "title": "\u53c2\u8003"
+        },
+        {
             "location": "/#notes",
-            "text": "\u8b66\u60d5\u5217\u8868\uff0c\u957f\u5217\u8868\u65e0\u610f\u4e49\u4e14\u4f1a\u5e26\u6765\u7126\u8651\u611f\u3002",
+            "text": "2018\u5e74\u5f00\u59cb\u6bcf\u5929\u8bb0\u4e00\u4e9b\u611f\u60f3  \u8b66\u60d5\u5217\u8868\uff0c\u957f\u5217\u8868\u65e0\u610f\u4e49\u4e14\u4f1a\u5e26\u6765\u7126\u8651\u611f\u3002",
             "title": "Notes"
         },
         {
@@ -429,6 +434,71 @@
             "location": "/tool/graphviz/",
             "text": "digraph G { bgcolor=\"yellow:red\"\n  subgraph cluster1 {fillcolor=\"blue:green\" style=\"filled\"\n        node [ fillcolor=\"gold:brown\" style=\"radial\" gradientangle=180]\n        a0 [label=<\n <TABLE border=\"10\" cellspacing=\"10\" cellpadding=\"10\" style=\"rounded\" bgcolor=\"/rdylgn11/1:/rdylgn11/11\" gradientangle=\"315\">\n    <TR><TD border=\"3\"  bgcolor=\"/rdylgn11/1:/rdylgn11/2\">00</TD>\n    <TD border=\"3\"  bgcolor=\"/rdylgn11/2:/rdylgn11/3\">01</TD>\n    <TD border=\"3\"  bgcolor=\"/rdylgn11/3:/rdylgn11/4\">02</TD>\n    <TD border=\"3\"  bgcolor=\"/rdylgn11/4:/rdylgn11/5\">03</TD>\n    </TR>\n\n    <TR><TD border=\"3\" bgcolor=\"/rdylgn11/1:/rdylgn11/6\" gradientangle=\"270\">10</TD>\n    <TD border=\"3\" rowspan=\"2\"  bgcolor=\"/rdylgn11/3:/rdylgn11/9\" gradientangle=\"270\">11</TD>\n    <TD border=\"3\"  bgcolor=\"/rdylgn11/3:/rdylgn11/8\" gradientangle=\"270\">12</TD>\n    <TD border=\"3\"  bgcolor=\"/rdylgn11/4:/rdylgn11/9\" gradientangle=\"270\">13</TD>\n    </TR>\n\n    <TR><TD border=\"3\"  bgcolor=\"/rdylgn11/6:/rdylgn11/9\" gradientangle=\"270\">20</TD>\n    <TD border=\"3\" colspan=\"2\"  bgcolor=\"/rdylgn11/9:/rdylgn11/11\">22</TD>\n    </TR>\n\n    <TR><TD border=\"3\" style=\"radial\" bgcolor=\"/rdylgn11/1:/rdylgn11/8\">30</TD>\n    <TD border=\"3\" style=\"radial\" bgcolor=\"/rdylgn11/1:/rdylgn11/8\" gradientangle=\"45\">31</TD>\n    <TD border=\"3\" style=\"radial\" bgcolor=\"/rdylgn11/1:/rdylgn11/8\" gradientangle=\"90\" >32</TD>\n    <TD border=\"3\" style=\"radial\" bgcolor=\"/rdylgn11/1:/rdylgn11/8\" gradientangle=\"180\">33</TD>\n    </TR>\n\n</TABLE>>];\n\n}\n\n}",
             "title": "Graphviz"
+        },
+        {
+            "location": "/daily/review2017/",
+            "text": "2017 \u590d\u76d8\n\n\n\n\n\u6280\u672f\u65b9\u5411\n\n\n\u524d\u534a\u5e74\n\n\n\u7cbe\u529b\u4e3b\u8981\u653e\u5728\u516c\u53f8\u9879\u76ee/\u4f01\u4e1a\u5e94\u7528\u65b9\u9762\n\n\n\u540e\u534a\u5e74\n\n\n\n\n6\u30017\u6708\uff1a \u53ef\u89c6\u5316\u548c\u6e38\u620f\n\n\n8\u6708\uff1a\u91cd\u65b0\u601d\u8003\u524d\u8fdb\u65b9\u5411\n\n\n9\u6708\uff1a \u521b\u610f\u5199\u4f5c\n\n\n10\u6708\uff1a \u5c0f\u8bf4\u751f\u6210\u5668\u7f16\u5199\n\n\n11\u300112\u6708\uff1a\u7531\u4e8eNLP\u4e0a\u7684\u4e00\u4e9b\u95ee\u9898\uff0c\u5165\u5751DeepLearning\n\n\n\n\n\u603b\u7684\u6765\u8bf49\u6708\u4ee5\u540e\u7684\u65b9\u5411\u662f\u660e\u786e\u7684\uff0c\u4f46\u662f\u6709\u6269\u5927\u5316\u7684\u8d8b\u52bf\u3002\n\n\n\u5148\u96c6\u4e2d\u7cbe\u529b\u51fa\u4e00\u4e2a\u6700\u5c0f\u53ef\u7528\u4ea7\u54c1\u624d\u662f\u738b\u9053\u3002\n\n\n\u53cd\u601d\n\n\n\u5c0f\u8bf4\u751f\u6210\u5668\u7684\u65b9\u5411\u662f\u6b63\u786e\u7684\u3002\n\n\n\u4f46\u662f\u5982\u679c\u51fa\u666e\u901a\u7248\u672c\u65e9\u5c31\u5e94\u8be5\u51fa\u4e86\uff0c\u4e3a\u4ec0\u4e48\uff1f\n\n\n\u67b6\u6784\u65b9\u9762\u4e0d\u592a\u517c\u5bb9\u662f\u4e00\u65b9\u9762\uff0c\u60f3\u4e00\u52b3\u6c38\u9038\u4e5f\u662f\u4e00\u65b9\u9762\u3002\n\n\nReference\n\n\n\u590d\u76d8",
+            "title": "review2017"
+        },
+        {
+            "location": "/daily/review2017/#2017",
+            "text": "",
+            "title": "2017 \u590d\u76d8"
+        },
+        {
+            "location": "/daily/review2017/#_1",
+            "text": "",
+            "title": "\u6280\u672f\u65b9\u5411"
+        },
+        {
+            "location": "/daily/review2017/#_2",
+            "text": "\u7cbe\u529b\u4e3b\u8981\u653e\u5728\u516c\u53f8\u9879\u76ee/\u4f01\u4e1a\u5e94\u7528\u65b9\u9762",
+            "title": "\u524d\u534a\u5e74"
+        },
+        {
+            "location": "/daily/review2017/#_3",
+            "text": "6\u30017\u6708\uff1a \u53ef\u89c6\u5316\u548c\u6e38\u620f  8\u6708\uff1a\u91cd\u65b0\u601d\u8003\u524d\u8fdb\u65b9\u5411  9\u6708\uff1a \u521b\u610f\u5199\u4f5c  10\u6708\uff1a \u5c0f\u8bf4\u751f\u6210\u5668\u7f16\u5199  11\u300112\u6708\uff1a\u7531\u4e8eNLP\u4e0a\u7684\u4e00\u4e9b\u95ee\u9898\uff0c\u5165\u5751DeepLearning   \u603b\u7684\u6765\u8bf49\u6708\u4ee5\u540e\u7684\u65b9\u5411\u662f\u660e\u786e\u7684\uff0c\u4f46\u662f\u6709\u6269\u5927\u5316\u7684\u8d8b\u52bf\u3002  \u5148\u96c6\u4e2d\u7cbe\u529b\u51fa\u4e00\u4e2a\u6700\u5c0f\u53ef\u7528\u4ea7\u54c1\u624d\u662f\u738b\u9053\u3002",
+            "title": "\u540e\u534a\u5e74"
+        },
+        {
+            "location": "/daily/review2017/#_4",
+            "text": "\u5c0f\u8bf4\u751f\u6210\u5668\u7684\u65b9\u5411\u662f\u6b63\u786e\u7684\u3002  \u4f46\u662f\u5982\u679c\u51fa\u666e\u901a\u7248\u672c\u65e9\u5c31\u5e94\u8be5\u51fa\u4e86\uff0c\u4e3a\u4ec0\u4e48\uff1f  \u67b6\u6784\u65b9\u9762\u4e0d\u592a\u517c\u5bb9\u662f\u4e00\u65b9\u9762\uff0c\u60f3\u4e00\u52b3\u6c38\u9038\u4e5f\u662f\u4e00\u65b9\u9762\u3002",
+            "title": "\u53cd\u601d"
+        },
+        {
+            "location": "/daily/review2017/#reference",
+            "text": "\u590d\u76d8",
+            "title": "Reference"
+        },
+        {
+            "location": "/daily/plan2018/",
+            "text": "2018 \u8ba1\u5212",
+            "title": "plan2018"
+        },
+        {
+            "location": "/daily/plan2018/#2018",
+            "text": "",
+            "title": "2018 \u8ba1\u5212"
+        },
+        {
+            "location": "/book/how_to_read_a_book/",
+            "text": "\u5982\u4f55\u9605\u8bfb\u4e00\u672c\u4e66\n\n\n\u6982\u89c8\n\n\n\n\n\u5206\u6790\u9605\u8bfb\n\n\n\n\n\n\nBy Xmind",
+            "title": "\u5982\u4f55\u9605\u8bfb\u4e00\u672c\u4e66"
+        },
+        {
+            "location": "/book/how_to_read_a_book/#_1",
+            "text": "",
+            "title": "\u5982\u4f55\u9605\u8bfb\u4e00\u672c\u4e66"
+        },
+        {
+            "location": "/book/how_to_read_a_book/#_2",
+            "text": "",
+            "title": "\u6982\u89c8"
+        },
+        {
+            "location": "/book/how_to_read_a_book/#_3",
+            "text": "By Xmind",
+            "title": "\u5206\u6790\u9605\u8bfb"
         },
         {
             "location": "/about/",
