@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2018-01-03</lastmod>
+     <lastmod>2018-01-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>/study/how2ask/</loc>
-     <lastmod>2018-01-03</lastmod>
+     <lastmod>2018-01-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -21,25 +21,25 @@
         
     <url>
      <loc>/python/python/</loc>
-     <lastmod>2018-01-03</lastmod>
+     <lastmod>2018-01-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/python/tkinter/</loc>
-     <lastmod>2018-01-03</lastmod>
+     <lastmod>2018-01-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/python/virtualenv/</loc>
-     <lastmod>2018-01-03</lastmod>
+     <lastmod>2018-01-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/python/matplotlib/</loc>
-     <lastmod>2018-01-03</lastmod>
+     <lastmod>2018-01-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -49,19 +49,19 @@
         
     <url>
      <loc>/tool/atom/</loc>
-     <lastmod>2018-01-03</lastmod>
+     <lastmod>2018-01-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/tool/sdkman/</loc>
-     <lastmod>2018-01-03</lastmod>
+     <lastmod>2018-01-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/tool/graphviz/</loc>
-     <lastmod>2018-01-03</lastmod>
+     <lastmod>2018-01-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -71,13 +71,13 @@
         
     <url>
      <loc>/daily/review2017/</loc>
-     <lastmod>2018-01-03</lastmod>
+     <lastmod>2018-01-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/daily/plan2018/</loc>
-     <lastmod>2018-01-03</lastmod>
+     <lastmod>2018-01-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -87,7 +87,13 @@
         
     <url>
      <loc>/book/how_to_read_a_book/</loc>
-     <lastmod>2018-01-03</lastmod>
+     <lastmod>2018-01-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/book/fupan/</loc>
+     <lastmod>2018-01-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -96,7 +102,7 @@
     
     <url>
      <loc>/about/</loc>
-     <lastmod>2018-01-03</lastmod>
+     <lastmod>2018-01-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     

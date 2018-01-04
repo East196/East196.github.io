@@ -501,6 +501,21 @@
             "title": "\u5206\u6790\u9605\u8bfb"
         },
         {
+            "location": "/book/fupan/",
+            "text": "\u590d\u76d8\n\n\n\n\nPDF\n\n\n\n\npreview\n\n\ndo\n\n\nfupan",
+            "title": "\u590d\u76d8"
+        },
+        {
+            "location": "/book/fupan/#_1",
+            "text": "",
+            "title": "\u590d\u76d8"
+        },
+        {
+            "location": "/book/fupan/#pdf",
+            "text": "preview  do  fupan",
+            "title": "PDF"
+        },
+        {
             "location": "/about/",
             "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.\n\n\n\nTheme\n\n\nin mkdocs.yml\nadd\n\n\ntheme: readthedocs\n\n\n\n\n\u4f46\u662f\u8fd9\u4e2anotebook\u7528\u9ed8\u8ba4\u5c31\u597d\uff0c\u4e2a\u4eba\u611f\u89c9readthedocs\u6bd4\u8f83\u9002\u5408\u6280\u672f\u6587\u6863",
             "title": "\u5173\u4e8e"
