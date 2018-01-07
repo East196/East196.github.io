@@ -145,19 +145,39 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#_1">复盘</a></li>
-            <li><a href="#pdf">PDF</a></li>
+            <li><a href="#pdcapdf">PDCA/PDF</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
 <h1 id="_1">复盘</h1>
 <p><img alt="fupan" src="../../assets/fupan.png" /></p>
-<h2 id="pdf">PDF</h2>
+<h2 id="pdcapdf">PDCA/PDF</h2>
+<h3 id="pdca">PDCA</h3>
 <ul>
-<li>preview</li>
-<li>do</li>
-<li>fupan</li>
-</ul></div>
+<li>plan 计划</li>
+<li>do 做</li>
+<li>check 检查</li>
+<li>action 改善</li>
+</ul>
+<pre><code class="mermaid">graph LR;  
+　　plan --&gt;do;    
+　　do --&gt;check;  
+　　check--&gt;action;  
+　　action--&gt;plan;  
+</code></pre>
+
+<h3 id="pdf">PDF</h3>
+<ul>
+<li>preview 沙盘</li>
+<li>do 做</li>
+<li>fupan 复盘</li>
+</ul>
+<pre><code class="mermaid">graph LR;  
+    preview --&gt;do;    
+　　do --&gt;fupan;  
+　　fupan--&gt;preview;  
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">
