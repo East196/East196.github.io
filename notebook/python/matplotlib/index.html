@@ -60,7 +60,7 @@
 </li>
                             
 <li >
-    <a href="../tkinter/">Tkinter</a>
+    <a href="../pygame/">PyGame</a>
 </li>
                             
 <li >
@@ -69,6 +69,10 @@
                             
 <li class="active">
     <a href="./">Matplotlib</a>
+</li>
+                            
+<li >
+    <a href="../tensorflow/">Tensorflow</a>
 </li>
                         </ul>
                     </li>
@@ -82,10 +86,6 @@
                             
 <li >
     <a href="../../tool/sdkman/">Sdkman</a>
-</li>
-                            
-<li >
-    <a href="../../tool/graphviz/">Graphviz</a>
 </li>
                         </ul>
                     </li>
@@ -132,7 +132,7 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../../tool/atom/">
+                        <a rel="prev" href="../tensorflow/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -145,6 +145,7 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#matplotlib">matplotlib</a></li>
+            <li><a href="#import">import</a></li>
             <li><a href="#in-py">in .py</a></li>
             <li><a href="#in-ipynb">in .ipynb</a></li>
     </ul>
@@ -152,6 +153,11 @@
                 <div class="col-md-9" role="main">
 
 <h1 id="matplotlib">matplotlib</h1>
+<h2 id="import">import</h2>
+<pre><code>import matplotlib
+import matplotlib.pyplot as plt
+</code></pre>
+
 <h2 id="in-py">in .py</h2>
 <pre><code class="python">#指定默认字体，在~/.matplotlib/fontList.json中发现simhei
 matplotlib.rcParams['font.family']='simhei'  

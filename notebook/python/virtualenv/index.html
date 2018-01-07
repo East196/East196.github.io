@@ -60,7 +60,7 @@
 </li>
                             
 <li >
-    <a href="../tkinter/">Tkinter</a>
+    <a href="../pygame/">PyGame</a>
 </li>
                             
 <li class="active">
@@ -69,6 +69,10 @@
                             
 <li >
     <a href="../matplotlib/">Matplotlib</a>
+</li>
+                            
+<li >
+    <a href="../tensorflow/">Tensorflow</a>
 </li>
                         </ul>
                     </li>
@@ -82,10 +86,6 @@
                             
 <li >
     <a href="../../tool/sdkman/">Sdkman</a>
-</li>
-                            
-<li >
-    <a href="../../tool/graphviz/">Graphviz</a>
 </li>
                         </ul>
                     </li>
@@ -127,7 +127,7 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../tkinter/">
+                        <a rel="next" href="../pygame/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
@@ -155,21 +155,27 @@
 
 <h1 id="virtualenv">virtualenv</h1>
 <h2 id="install">install</h2>
-<p>pip install virtualenv</p>
-<p>virtualenv test_env --no-site-packages</p>
-<p>cd test_env/Scripts</p>
+<pre><code>pip install virtualenv
+
+virtualenv test_env --no-site-packages
+
+cd test_env/Scripts
+</code></pre>
+
 <p>activate 进入虚拟环境
 deactivate 退出虚拟环境</p>
 <h2 id="windows">windows:</h2>
-<p>pip install virtualenvwrapper-win
+<p><code>pip install virtualenvwrapper-win</code>
 设置环境变量 WORKON_HOME</p>
 <p>使用<code>mkvirtual test_env</code>创建干净的python环境，并且自动进入</p>
-<p>workon 得到列表
-workon test_env
-deactivate</p>
+<p>workon 得到列表</p>
+<pre><code>workon test_env
+deactivate
+</code></pre>
+
 <h2 id="anaconda">anaconda</h2>
 <p>conda的方式简单粗暴
-conda -n envname install alib blib clib</p>
+<code>conda -n envname install alib blib clib</code></p>
 <h2 id="pycharm">pycharm</h2>
 <p>使用pycharm在内部打开terminal就是在所在env下，无需担心，直接pip即可</p></div>
         </div>

@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Graphviz - 随笔</title>
+        <title>PyGame - 随笔</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -51,41 +51,41 @@
                     <li >
                         <a href="../../study/how2ask/">提问的智慧</a>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Python <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
 <li >
-    <a href="../../python/python/">Python</a>
+    <a href="../python/">Python</a>
+</li>
+                            
+<li class="active">
+    <a href="./">PyGame</a>
 </li>
                             
 <li >
-    <a href="../../python/tkinter/">Tkinter</a>
+    <a href="../virtualenv/">Virtualenv</a>
 </li>
                             
 <li >
-    <a href="../../python/virtualenv/">Virtualenv</a>
+    <a href="../matplotlib/">Matplotlib</a>
 </li>
                             
 <li >
-    <a href="../../python/matplotlib/">Matplotlib</a>
+    <a href="../tensorflow/">Tensorflow</a>
 </li>
                         </ul>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tool <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
 <li >
-    <a href="../atom/">Atom</a>
+    <a href="../../tool/atom/">Atom</a>
 </li>
                             
 <li >
-    <a href="../sdkman/">Sdkman</a>
-</li>
-                            
-<li class="active">
-    <a href="./">Graphviz</a>
+    <a href="../../tool/sdkman/">Sdkman</a>
 </li>
                         </ul>
                     </li>
@@ -127,12 +127,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../sdkman/">
+                        <a rel="next" href="../python/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../../daily/review2017/">
+                        <a rel="prev" href="../virtualenv/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -144,43 +144,40 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#pygame">pygame</a></li>
+            <li><a href="#api">如何记忆API？</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<pre><code class="dot">digraph G { bgcolor=&quot;yellow:red&quot;
-  subgraph cluster1 {fillcolor=&quot;blue:green&quot; style=&quot;filled&quot;
-        node [ fillcolor=&quot;gold:brown&quot; style=&quot;radial&quot; gradientangle=180]
-        a0 [label=&lt;
- &lt;TABLE border=&quot;10&quot; cellspacing=&quot;10&quot; cellpadding=&quot;10&quot; style=&quot;rounded&quot; bgcolor=&quot;/rdylgn11/1:/rdylgn11/11&quot; gradientangle=&quot;315&quot;&gt;
-    &lt;TR&gt;&lt;TD border=&quot;3&quot;  bgcolor=&quot;/rdylgn11/1:/rdylgn11/2&quot;&gt;00&lt;/TD&gt;
-    &lt;TD border=&quot;3&quot;  bgcolor=&quot;/rdylgn11/2:/rdylgn11/3&quot;&gt;01&lt;/TD&gt;
-    &lt;TD border=&quot;3&quot;  bgcolor=&quot;/rdylgn11/3:/rdylgn11/4&quot;&gt;02&lt;/TD&gt;
-    &lt;TD border=&quot;3&quot;  bgcolor=&quot;/rdylgn11/4:/rdylgn11/5&quot;&gt;03&lt;/TD&gt;
-    &lt;/TR&gt;
+<h1 id="pygame">pygame</h1>
+<p>pygame是python界老牌的游戏框架。</p>
+<pre><code class="mermaid">graph LR;  
+  pygame --&gt; display;  
+  pygame --&gt; time;  
+  pygame --&gt; event;  
+  event --&gt; mouse;  
+  event --&gt; key;  
+  event --&gt; joystick;  
+  pygame --&gt; font;  
+  pygame--&gt; image;  
+  pygame--&gt; surface;  
+  image--&gt; load;
+  surface--&gt; blit;
+  pygame --&gt; mixer;
+  pygame --&gt; rect;
+  rect --&gt; collidepoint;
+  rect --&gt; colliderect;
+  surface --&gt; rect;
+  mixer --&gt; music;
+  pygame--&gt; transform;
+  transform--&gt; scale;
+  transform--&gt; rotate;
+  pygame--&gt; sprite;  
+  pygame--&gt; draw;  
+</code></pre>
 
-    &lt;TR&gt;&lt;TD border=&quot;3&quot; bgcolor=&quot;/rdylgn11/1:/rdylgn11/6&quot; gradientangle=&quot;270&quot;&gt;10&lt;/TD&gt;
-    &lt;TD border=&quot;3&quot; rowspan=&quot;2&quot;  bgcolor=&quot;/rdylgn11/3:/rdylgn11/9&quot; gradientangle=&quot;270&quot;&gt;11&lt;/TD&gt;
-    &lt;TD border=&quot;3&quot;  bgcolor=&quot;/rdylgn11/3:/rdylgn11/8&quot; gradientangle=&quot;270&quot;&gt;12&lt;/TD&gt;
-    &lt;TD border=&quot;3&quot;  bgcolor=&quot;/rdylgn11/4:/rdylgn11/9&quot; gradientangle=&quot;270&quot;&gt;13&lt;/TD&gt;
-    &lt;/TR&gt;
-
-    &lt;TR&gt;&lt;TD border=&quot;3&quot;  bgcolor=&quot;/rdylgn11/6:/rdylgn11/9&quot; gradientangle=&quot;270&quot;&gt;20&lt;/TD&gt;
-    &lt;TD border=&quot;3&quot; colspan=&quot;2&quot;  bgcolor=&quot;/rdylgn11/9:/rdylgn11/11&quot;&gt;22&lt;/TD&gt;
-    &lt;/TR&gt;
-
-    &lt;TR&gt;&lt;TD border=&quot;3&quot; style=&quot;radial&quot; bgcolor=&quot;/rdylgn11/1:/rdylgn11/8&quot;&gt;30&lt;/TD&gt;
-    &lt;TD border=&quot;3&quot; style=&quot;radial&quot; bgcolor=&quot;/rdylgn11/1:/rdylgn11/8&quot; gradientangle=&quot;45&quot;&gt;31&lt;/TD&gt;
-    &lt;TD border=&quot;3&quot; style=&quot;radial&quot; bgcolor=&quot;/rdylgn11/1:/rdylgn11/8&quot; gradientangle=&quot;90&quot; &gt;32&lt;/TD&gt;
-    &lt;TD border=&quot;3&quot; style=&quot;radial&quot; bgcolor=&quot;/rdylgn11/1:/rdylgn11/8&quot; gradientangle=&quot;180&quot;&gt;33&lt;/TD&gt;
-    &lt;/TR&gt;
-
-&lt;/TABLE&gt;&gt;];
-
-}
-
-}
-</code></pre></div>
+<h2 id="api">如何记忆API？</h2></div>
         </div>
 
         <footer class="col-md-12">
