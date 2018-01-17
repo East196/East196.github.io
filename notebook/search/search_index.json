@@ -282,7 +282,7 @@
         },
         {
             "location": "/python/virtualenv/",
-            "text": "virtualenv\n\n\ninstall\n\n\npip install virtualenv\n\nvirtualenv test_env --no-site-packages\n\ncd test_env/Scripts\n\n\n\n\nactivate \u8fdb\u5165\u865a\u62df\u73af\u5883\ndeactivate \u9000\u51fa\u865a\u62df\u73af\u5883\n\n\nwindows:\n\n\npip install virtualenvwrapper-win\n\n\u8bbe\u7f6e\u73af\u5883\u53d8\u91cf WORKON_HOME\n\n\n\u4f7f\u7528\nmkvirtual test_env\n\u521b\u5efa\u5e72\u51c0\u7684python\u73af\u5883\uff0c\u5e76\u4e14\u81ea\u52a8\u8fdb\u5165\n\n\nworkon \u5f97\u5230\u5217\u8868\n\n\nworkon test_env\ndeactivate\n\n\n\n\nanaconda\n\n\nconda\u7684\u65b9\u5f0f\u7b80\u5355\u7c97\u66b4\n\nconda -n envname install alib blib clib\n\n\npycharm\n\n\n\u4f7f\u7528pycharm\u5728\u5185\u90e8\u6253\u5f00terminal\u5c31\u662f\u5728\u6240\u5728env\u4e0b\uff0c\u65e0\u9700\u62c5\u5fc3\uff0c\u76f4\u63a5pip\u5373\u53ef",
+            "text": "virtualenv\n\n\ninstall\n\n\npip install virtualenv\n\nvirtualenv test_env --no-site-packages\n\ncd test_env/Scripts\n\n\n\n\nactivate \u8fdb\u5165\u865a\u62df\u73af\u5883\ndeactivate \u9000\u51fa\u865a\u62df\u73af\u5883\n\n\nwindows:\n\n\npip install virtualenvwrapper-win\n\n\u8bbe\u7f6e\u73af\u5883\u53d8\u91cf WORKON_HOME\n\n\n\u4f7f\u7528\nmkvirtual test_env\n\u521b\u5efa\u5e72\u51c0\u7684python\u73af\u5883\uff0c\u5e76\u4e14\u81ea\u52a8\u8fdb\u5165\n\n\nworkon \u5f97\u5230\u5217\u8868\n\n\nworkon test_env\ndeactivate\n\n\n\n\nanaconda\n\n\nconda\u7684\u65b9\u5f0f\u7b80\u5355\u7c97\u66b4\n\nconda create -n envname python=3.5.1\n\n\nconda -n envname install alib blib clib\n\n\npycharm\n\n\n\u4f7f\u7528pycharm\u5728\u5185\u90e8\u6253\u5f00terminal\u5c31\u662f\u5728\u6240\u5728env\u4e0b\uff0c\u65e0\u9700\u62c5\u5fc3\uff0c\u76f4\u63a5pip\u5373\u53ef",
             "title": "Virtualenv"
         },
         {
@@ -302,7 +302,7 @@
         },
         {
             "location": "/python/virtualenv/#anaconda",
-            "text": "conda\u7684\u65b9\u5f0f\u7b80\u5355\u7c97\u66b4 conda -n envname install alib blib clib",
+            "text": "conda\u7684\u65b9\u5f0f\u7b80\u5355\u7c97\u66b4 conda create -n envname python=3.5.1  conda -n envname install alib blib clib",
             "title": "anaconda"
         },
         {
@@ -342,12 +342,12 @@
         },
         {
             "location": "/python/tensorflow/",
-            "text": "install\n\n\n\u53c2\u8003\uff1a\nhttp://blog.csdn.net/u010099080/article/details/53418159\n\n\ncuda8.0 \u76f4\u63a5\u6267\u884c\ncudnnv7 bin+path\npip install tensorflow-gpu\n\n\npip \u4e2d\u79d1\u5927\u7684\u6e90\n\n\n~/pip/pip.ini\n[global]\nindex-url = https://mirrors.ustc.edu.cn/pypi/web/simple/\n\n\npip install tensorflow-gpu\n\n\ntf.contrib\n\n\n\u4e00\u4e9b\u9ad8\u5c42\u65b9\u6cd5\uff0c\u65b0\u7248keras\u4e5f\u5728\u5176\u4e2d\n\n\nkeras\n\n\nkeras\u4e2d\u6587\u6587\u6863\n\n\u4ece TensorFlow 1.2 \u7248\u672c\u5f00\u59cb\uff0cKeras API \u53ef\u4f5c\u4e3a TensorFlow \u7684\u4e00\u90e8\u5206\u76f4\u63a5\u4f7f\u7528\uff0c\u8fd9\u662f TensorFlow \u5728\u5411\u6570\u767e\u4e07\u65b0\u7528\u6237\u5f00\u6e90\u7684\u9053\u8def\u4e0a\u8fc8\u51fa\u7684\u4e00\u5927\u6b65\u3002\n\n\nKeras \u8f83\u597d\u88ab\u7406\u89e3\u4e3a\u4e00\u4e2a API \u6280\u672f\u89c4\u8303\uff0c\u800c\u4e0d\u662f\u4e00\u4e2a\u7279\u6b8a\u7684\u4ee3\u7801\u5e93\u3002\u4e8b\u5b9e\u4e0a\uff0c\u7ee7\u7eed\u53d1\u5c55\u5c06\u4f1a\u51fa\u73b0 Keras \u6280\u672f\u89c4\u8303\u7684\u4e24\u4e2a\u4e0d\u540c\u5b9e\u73b0\uff1a\uff08a\uff09TensorFlow \u7684\u5185\u90e8\u5b9e\u73b0\uff08\u5982 tf.keras\uff09\uff0c\u7eaf\u7531 TensorFlow \u5199\u6210\uff0c\u4e0e TensorFlow \u7684\u6240\u6709\u529f\u80fd\u6df1\u5ea6\u517c\u5bb9\uff1b\uff08b\uff09\u5916\u90e8\u7684\u591a\u540e\u53f0\u5b9e\u73b0\uff0c\u540c\u65f6\u652f\u6301 Theano \u548c TensorFlow\uff08\u5e76\u53ef\u80fd\u5728\u672a\u6765\u6709\u66f4\u591a\u7684\u540e\u53f0\uff09\u3002\n\n\n\u7c7b\u4f3c\u7684\uff0cSkymind \u6b63\u5728\u7528 Scala \u5b9e\u73b0 Keras \u4efd\u989d\u90e8\u5206\u89c4\u8303\uff0c\u5982 ScalNet\u3002\u4e3a\u4e86\u5728\u6d4f\u89c8\u5668\u4e2d\u8fd0\u884c\uff0cKeras.js \u6b63\u5728\u7528 JavaScript \u8fd0\u884c Keras \u7684\u90e8\u5206 API\u3002\u6b63\u56e0\u5982\u6b64\uff0cKeras API \u6ce8\u5b9a\u6210\u4e3a\u6df1\u5ea6\u5b66\u4e60\u4ece\u4e1a\u8005\u7684\u901a\u7528\u8bed\u8a00\uff0c\u5728\u4e0d\u540c\u7684\u5de5\u4f5c\u6d41\u7a0b\u4e2d\u5171\u4eab\u5e76\u72ec\u7acb\u4e8e\u5e95\u5c42\u5e73\u53f0\u3002\u50cf Keras \u8fd9\u6837\u7684\u7edf\u4e00 API \u89c4\u8303\u5c06\u4fc3\u8fdb\u4ee3\u7801\u5171\u4eab\uff0c\u63d0\u9ad8\u7814\u7a76\u7684\u518d\u751f\u4ea7\u7387\uff0c\u5e76\u5141\u8bb8\u66f4\u5927\u652f\u6301\u793e\u533a\u7684\u5b58\u5728\u3002",
+            "text": "install\n\n\n\u53c2\u8003\uff1a\nhttp://blog.csdn.net/u010099080/article/details/53418159\n\n\ncuda8.0 \u76f4\u63a5\u6267\u884c\ncudnnv7 bin+path\n\u6ce8\u610f\u8981\u8ba9\u73af\u5883\u53d8\u91cf\u751f\u6548\npip install tensorflow-gpu\n\n\npip \u4e2d\u79d1\u5927\u7684\u6e90\n\n\n~/pip/pip.ini\n[global]\nindex-url = https://mirrors.ustc.edu.cn/pypi/web/simple/\n\n\npip install tensorflow-gpu\n\n\ntf.contrib\n\n\n\u4e00\u4e9b\u9ad8\u5c42\u65b9\u6cd5\uff0c\u65b0\u7248keras\u4e5f\u5728\u5176\u4e2d\n\n\nkeras\n\n\nkeras\u4e2d\u6587\u6587\u6863\n\n\u4ece TensorFlow 1.2 \u7248\u672c\u5f00\u59cb\uff0cKeras API \u53ef\u4f5c\u4e3a TensorFlow \u7684\u4e00\u90e8\u5206\u76f4\u63a5\u4f7f\u7528\uff0c\u8fd9\u662f TensorFlow \u5728\u5411\u6570\u767e\u4e07\u65b0\u7528\u6237\u5f00\u6e90\u7684\u9053\u8def\u4e0a\u8fc8\u51fa\u7684\u4e00\u5927\u6b65\u3002\n\n\nKeras \u8f83\u597d\u88ab\u7406\u89e3\u4e3a\u4e00\u4e2a API \u6280\u672f\u89c4\u8303\uff0c\u800c\u4e0d\u662f\u4e00\u4e2a\u7279\u6b8a\u7684\u4ee3\u7801\u5e93\u3002\u4e8b\u5b9e\u4e0a\uff0c\u7ee7\u7eed\u53d1\u5c55\u5c06\u4f1a\u51fa\u73b0 Keras \u6280\u672f\u89c4\u8303\u7684\u4e24\u4e2a\u4e0d\u540c\u5b9e\u73b0\uff1a\uff08a\uff09TensorFlow \u7684\u5185\u90e8\u5b9e\u73b0\uff08\u5982 tf.keras\uff09\uff0c\u7eaf\u7531 TensorFlow \u5199\u6210\uff0c\u4e0e TensorFlow \u7684\u6240\u6709\u529f\u80fd\u6df1\u5ea6\u517c\u5bb9\uff1b\uff08b\uff09\u5916\u90e8\u7684\u591a\u540e\u53f0\u5b9e\u73b0\uff0c\u540c\u65f6\u652f\u6301 Theano \u548c TensorFlow\uff08\u5e76\u53ef\u80fd\u5728\u672a\u6765\u6709\u66f4\u591a\u7684\u540e\u53f0\uff09\u3002\n\n\n\u7c7b\u4f3c\u7684\uff0cSkymind \u6b63\u5728\u7528 Scala \u5b9e\u73b0 Keras \u4efd\u989d\u90e8\u5206\u89c4\u8303\uff0c\u5982 ScalNet\u3002\u4e3a\u4e86\u5728\u6d4f\u89c8\u5668\u4e2d\u8fd0\u884c\uff0cKeras.js \u6b63\u5728\u7528 JavaScript \u8fd0\u884c Keras \u7684\u90e8\u5206 API\u3002\u6b63\u56e0\u5982\u6b64\uff0cKeras API \u6ce8\u5b9a\u6210\u4e3a\u6df1\u5ea6\u5b66\u4e60\u4ece\u4e1a\u8005\u7684\u901a\u7528\u8bed\u8a00\uff0c\u5728\u4e0d\u540c\u7684\u5de5\u4f5c\u6d41\u7a0b\u4e2d\u5171\u4eab\u5e76\u72ec\u7acb\u4e8e\u5e95\u5c42\u5e73\u53f0\u3002\u50cf Keras \u8fd9\u6837\u7684\u7edf\u4e00 API \u89c4\u8303\u5c06\u4fc3\u8fdb\u4ee3\u7801\u5171\u4eab\uff0c\u63d0\u9ad8\u7814\u7a76\u7684\u518d\u751f\u4ea7\u7387\uff0c\u5e76\u5141\u8bb8\u66f4\u5927\u652f\u6301\u793e\u533a\u7684\u5b58\u5728\u3002",
             "title": "Tensorflow"
         },
         {
             "location": "/python/tensorflow/#install",
-            "text": "\u53c2\u8003\uff1a\nhttp://blog.csdn.net/u010099080/article/details/53418159  cuda8.0 \u76f4\u63a5\u6267\u884c\ncudnnv7 bin+path\npip install tensorflow-gpu",
+            "text": "\u53c2\u8003\uff1a\nhttp://blog.csdn.net/u010099080/article/details/53418159  cuda8.0 \u76f4\u63a5\u6267\u884c\ncudnnv7 bin+path\n\u6ce8\u610f\u8981\u8ba9\u73af\u5883\u53d8\u91cf\u751f\u6548\npip install tensorflow-gpu",
             "title": "install"
         },
         {
@@ -476,6 +476,11 @@
             "title": "Installation"
         },
         {
+            "location": "/tool/graphviz_/",
+            "text": "digraph G { bgcolor=\"yellow:red\"\n  subgraph cluster1 {fillcolor=\"blue:green\" style=\"filled\"\n        node [ fillcolor=\"gold:brown\" style=\"radial\" gradientangle=180]\n        a0 [label=<\n <TABLE border=\"10\" cellspacing=\"10\" cellpadding=\"10\" style=\"rounded\" bgcolor=\"/rdylgn11/1:/rdylgn11/11\" gradientangle=\"315\">\n    <TR><TD border=\"3\"  bgcolor=\"/rdylgn11/1:/rdylgn11/2\">00</TD>\n    <TD border=\"3\"  bgcolor=\"/rdylgn11/2:/rdylgn11/3\">01</TD>\n    <TD border=\"3\"  bgcolor=\"/rdylgn11/3:/rdylgn11/4\">02</TD>\n    <TD border=\"3\"  bgcolor=\"/rdylgn11/4:/rdylgn11/5\">03</TD>\n    </TR>\n\n    <TR><TD border=\"3\" bgcolor=\"/rdylgn11/1:/rdylgn11/6\" gradientangle=\"270\">10</TD>\n    <TD border=\"3\" rowspan=\"2\"  bgcolor=\"/rdylgn11/3:/rdylgn11/9\" gradientangle=\"270\">11</TD>\n    <TD border=\"3\"  bgcolor=\"/rdylgn11/3:/rdylgn11/8\" gradientangle=\"270\">12</TD>\n    <TD border=\"3\"  bgcolor=\"/rdylgn11/4:/rdylgn11/9\" gradientangle=\"270\">13</TD>\n    </TR>\n\n    <TR><TD border=\"3\"  bgcolor=\"/rdylgn11/6:/rdylgn11/9\" gradientangle=\"270\">20</TD>\n    <TD border=\"3\" colspan=\"2\"  bgcolor=\"/rdylgn11/9:/rdylgn11/11\">22</TD>\n    </TR>\n\n    <TR><TD border=\"3\" style=\"radial\" bgcolor=\"/rdylgn11/1:/rdylgn11/8\">30</TD>\n    <TD border=\"3\" style=\"radial\" bgcolor=\"/rdylgn11/1:/rdylgn11/8\" gradientangle=\"45\">31</TD>\n    <TD border=\"3\" style=\"radial\" bgcolor=\"/rdylgn11/1:/rdylgn11/8\" gradientangle=\"90\" >32</TD>\n    <TD border=\"3\" style=\"radial\" bgcolor=\"/rdylgn11/1:/rdylgn11/8\" gradientangle=\"180\">33</TD>\n    </TR>\n\n</TABLE>>];\n\n}\n\n}",
+            "title": "Graphviz"
+        },
+        {
             "location": "/daily/review2017/",
             "text": "2017 \u590d\u76d8\n\n\n\n\n\u6280\u672f\u65b9\u5411\n\n\n\u524d\u534a\u5e74\n\n\n\u7cbe\u529b\u4e3b\u8981\u653e\u5728\u516c\u53f8\u9879\u76ee/\u4f01\u4e1a\u5e94\u7528\u65b9\u9762\n\n\n\u540e\u534a\u5e74\n\n\n\n\n6\u30017\u6708\uff1a \u53ef\u89c6\u5316\u548c\u6e38\u620f\n\n\n\n\ngl\uff0ccocos\uff0cunity\n\n\n\n\n8\u6708\uff1a\u91cd\u65b0\u601d\u8003\u524d\u8fdb\u65b9\u5411\n\n\n\n\n\u90d1\u5dde\u966a\u5a03\uff0c\u786e\u5b9a\u6587\u5a31\u8def\u7ebf\n\n\n\n\n9\u6708\uff1a \u521b\u610f\u5199\u4f5c\n\n\n\n\n\u8bfb\u4e66\u8bfb\u4e66\u8bfb\u4e66\n\n\n\n\n10\u6708\uff1a \u5c0f\u8bf4\u751f\u6210\u5668\u7f16\u5199\n\n\n\n\n\u6700\u7b80\u5355\u7684\u751f\u6210\uff0c\u672a\u6210\u7cfb\u7edf\n\n\n\n\n11\u300112\u6708\uff1a\u7531\u4e8eNLP\u4e0a\u7684\u4e00\u4e9b\u95ee\u9898\uff0c\u5165\u5751DeepLearning\n\n\n\n\n\u539f\u7406\u7406\u89e3\uff0ctensorflow/keras/pytorch,deepnlp\n\n\n\u603b\u7684\u6765\u8bf49\u6708\u4ee5\u540e\u7684\u65b9\u5411\u662f\u660e\u786e\u7684\uff0c\u4f46\u662f\u6709\u6269\u5927\u5316\u7684\u8d8b\u52bf\u3002\n\n\n\u5148\u96c6\u4e2d\u7cbe\u529b\u51fa\u4e00\u4e2a\u6700\u5c0f\u53ef\u7528\u4ea7\u54c1\u624d\u662f\u738b\u9053(\u654f\u6377)\u3002\n\n\n\u53cd\u601d\n\n\n\u5c0f\u8bf4\u751f\u6210\u5668\u7684\u65b9\u5411\u662f\u6b63\u786e\u7684\u3002\n\n\n\u5982\u679c\u51fa\u666e\u901a\u7248\u672c\u65e9\u5c31\u5e94\u8be5\u51fa\u4e86\uff0c\u4e3a\u4ec0\u4e48\u62d6\u4e86\u4e24\u4e2a\u6708\uff1f\n\n\n\u67b6\u6784\u65b9\u9762\u4e0d\u592a\u517c\u5bb9\u662f\u4e00\u65b9\u9762\uff0c\u60f3\u4e00\u52b3\u6c38\u9038\u4e5f\u662f\u4e00\u65b9\u9762\u3002\n\n\n\u5b9e\u9645\u4e0a\uff0c\u6bd5\u5176\u529f\u4e8e\u4e00\u5f79\u7684\u60f3\u6cd5\u5728\u76ee\u524d\u662f\u65e0\u6cd5\u5b9e\u73b0\u7684\u3002\n\n\nReference\n\n\n\u590d\u76d8",
             "title": "review2017"
@@ -512,28 +517,63 @@
         },
         {
             "location": "/daily/plan2018/",
-            "text": "2018 \u8ba1\u5212\n\n\n\u6280\u672f\u7684\u5206\u5c42\n- \u6280\u672f\u5e94\u7528\u5c42\u9762\n- \u6280\u672f\u57fa\u7840\u5c42\u9762\n- \u7f16\u7a0b\u8bed\u8a00\u5c42\u9762\n\n\n++\n- \u5bb6\u5ead\u5173\u7cfb\n- \u4eba\u9645\u4ea4\u5f80\n\n\nnovel\n\n\n1-2\u6708 \u91cd\u5199\u5c0f\u8bf4\u751f\u6210\u5668\n\u76ee\u6807\uff1a\u80fd\u51fa\u7b80\u5355\u6587\u672c\n\u8fed\u4ee3\u6b65\u9aa4\uff1a\n1. \u4e8b\u4ef6\u6a21\u7248\n2. \u4e16\u754c\u8bbe\u5b9a\n3. \u6574\u5408\u4f18\u5316\n\n\n3-4\u6708\n\u4e13\u653brnn\uff0clstm attention\u7684\u76f8\u5173\u5e94\u7528\n\n\ndeeplearning\n\n\n1-2\u6708\n\u6253\u7262rnn\u548cgan\u7684\u57fa\u7840\n\n\npanda\n\n\n1-2\u6708\n\u8bfb\u8bd7\u8bb2\u6545\u4e8b\u7ed9\u5a03\u5a03\u542c\n\u600e\u6837\u8bfb\uff1f\u600e\u6837\u8bb2\uff1f",
+            "text": "2018 \u8ba1\u5212\n\n\nNovel\n\n\n1-2\u6708 \u91cd\u5199\u5c0f\u8bf4\u751f\u6210\u5668\n\n\n\u76ee\u6807\uff1a\u80fd\u51fa\u7b80\u5355\u6587\u672c\n\n\n\u8fed\u4ee3\u6b65\u9aa4\uff1a\n\n\n\n\n\u4e8b\u4ef6\u6a21\u7248\n\n\n\u4e16\u754c\u8bbe\u5b9a\n\n\n\u6574\u5408\u4f18\u5316\n\n\n\n\n3-4\u6708 \u4e13\u653brnn\uff0clstm attention\u7684\u76f8\u5173\u5e94\u7528\n\n\nDeeplearning\n\n\n1-2\u6708\n\n\n\u6253\u7262rnn\u548cgan\u7684\u57fa\u7840\n\n\nPanda\n\n\n1-2\u6708\n\n\n\u8bfb\u8bd7\u8bb2\u6545\u4e8b\u7ed9\u5a03\u5a03\u542c\n\n\n\n\n\u600e\u6837\u8bfb\uff1f\n\n\n\u600e\u6837\u8bb2\uff1f\n\n\n\n\nNotes\n\n\n\u6280\u672f\u7684\u5206\u5c42\n\n\n\n\n\u6280\u672f\u5e94\u7528\u5c42\u9762\n\n\n\u6280\u672f\u57fa\u7840\u5c42\u9762\n\n\n\u7f16\u7a0b\u8bed\u8a00\u5c42\u9762\n\n\n\n\n\u53ef\u4ee5\u8fdb\u884c\u7684\n\n\n\u4e0d\u8981\u5355\u7eaf reading & coding\n\n\n\u505a\u4e00\u4e2a\u6b63\u5e38\u7684\u4eba !!!\n\n\n++\n\n\n\n\n\u4eba\u9645\u4ea4\u5f80\u4e0e\u5bb6\u5ead\u5173\u7cfb\n\n\n\u5174\u8da3\u5a31\u4e50\u4f11\u95f2\n\n\n\u5065\u8eab",
             "title": "plan2018"
         },
         {
             "location": "/daily/plan2018/#2018",
-            "text": "\u6280\u672f\u7684\u5206\u5c42\n- \u6280\u672f\u5e94\u7528\u5c42\u9762\n- \u6280\u672f\u57fa\u7840\u5c42\u9762\n- \u7f16\u7a0b\u8bed\u8a00\u5c42\u9762  ++\n- \u5bb6\u5ead\u5173\u7cfb\n- \u4eba\u9645\u4ea4\u5f80",
+            "text": "",
             "title": "2018 \u8ba1\u5212"
         },
         {
             "location": "/daily/plan2018/#novel",
-            "text": "1-2\u6708 \u91cd\u5199\u5c0f\u8bf4\u751f\u6210\u5668\n\u76ee\u6807\uff1a\u80fd\u51fa\u7b80\u5355\u6587\u672c\n\u8fed\u4ee3\u6b65\u9aa4\uff1a\n1. \u4e8b\u4ef6\u6a21\u7248\n2. \u4e16\u754c\u8bbe\u5b9a\n3. \u6574\u5408\u4f18\u5316  3-4\u6708\n\u4e13\u653brnn\uff0clstm attention\u7684\u76f8\u5173\u5e94\u7528",
-            "title": "novel"
+            "text": "",
+            "title": "Novel"
+        },
+        {
+            "location": "/daily/plan2018/#1-2",
+            "text": "\u76ee\u6807\uff1a\u80fd\u51fa\u7b80\u5355\u6587\u672c  \u8fed\u4ee3\u6b65\u9aa4\uff1a   \u4e8b\u4ef6\u6a21\u7248  \u4e16\u754c\u8bbe\u5b9a  \u6574\u5408\u4f18\u5316",
+            "title": "1-2\u6708 \u91cd\u5199\u5c0f\u8bf4\u751f\u6210\u5668"
+        },
+        {
+            "location": "/daily/plan2018/#3-4-rnnlstm-attention",
+            "text": "",
+            "title": "3-4\u6708 \u4e13\u653brnn\uff0clstm attention\u7684\u76f8\u5173\u5e94\u7528"
         },
         {
             "location": "/daily/plan2018/#deeplearning",
-            "text": "1-2\u6708\n\u6253\u7262rnn\u548cgan\u7684\u57fa\u7840",
-            "title": "deeplearning"
+            "text": "",
+            "title": "Deeplearning"
+        },
+        {
+            "location": "/daily/plan2018/#1-2_1",
+            "text": "\u6253\u7262rnn\u548cgan\u7684\u57fa\u7840",
+            "title": "1-2\u6708"
         },
         {
             "location": "/daily/plan2018/#panda",
-            "text": "1-2\u6708\n\u8bfb\u8bd7\u8bb2\u6545\u4e8b\u7ed9\u5a03\u5a03\u542c\n\u600e\u6837\u8bfb\uff1f\u600e\u6837\u8bb2\uff1f",
-            "title": "panda"
+            "text": "",
+            "title": "Panda"
+        },
+        {
+            "location": "/daily/plan2018/#1-2_2",
+            "text": "\u8bfb\u8bd7\u8bb2\u6545\u4e8b\u7ed9\u5a03\u5a03\u542c   \u600e\u6837\u8bfb\uff1f  \u600e\u6837\u8bb2\uff1f",
+            "title": "1-2\u6708"
+        },
+        {
+            "location": "/daily/plan2018/#notes",
+            "text": "",
+            "title": "Notes"
+        },
+        {
+            "location": "/daily/plan2018/#_1",
+            "text": "\u6280\u672f\u5e94\u7528\u5c42\u9762  \u6280\u672f\u57fa\u7840\u5c42\u9762  \u7f16\u7a0b\u8bed\u8a00\u5c42\u9762",
+            "title": "\u6280\u672f\u7684\u5206\u5c42"
+        },
+        {
+            "location": "/daily/plan2018/#_2",
+            "text": "\u4e0d\u8981\u5355\u7eaf reading & coding  \u505a\u4e00\u4e2a\u6b63\u5e38\u7684\u4eba !!!  ++   \u4eba\u9645\u4ea4\u5f80\u4e0e\u5bb6\u5ead\u5173\u7cfb  \u5174\u8da3\u5a31\u4e50\u4f11\u95f2  \u5065\u8eab",
+            "title": "\u53ef\u4ee5\u8fdb\u884c\u7684"
         },
         {
             "location": "/book/how_to_read_a_book/",
@@ -584,6 +624,26 @@
             "location": "/book/fupan/#pdf",
             "text": "preview \u6c99\u76d8  do \u505a  fupan \u590d\u76d8   graph LR;  \n    preview -->do;    \n\u3000\u3000do -->fupan;  \n\u3000\u3000fupan-->preview;",
             "title": "PDF"
+        },
+        {
+            "location": "/book/\u6781\u7b80\u4e3b\u4e49/",
+            "text": "\u6781\u7b80\u4e3b\u4e49",
+            "title": "\u6781\u7b80\u4e3b\u4e49"
+        },
+        {
+            "location": "/book/\u6781\u7b80\u4e3b\u4e49/#_1",
+            "text": "",
+            "title": "\u6781\u7b80\u4e3b\u4e49"
+        },
+        {
+            "location": "/book/\u89e3\u51b3\u95ee\u9898\u6700\u7b80\u5355\u7684\u65b9\u6cd5/",
+            "text": "\u89e3\u51b3\u95ee\u9898\u6700\u7b80\u5355\u7684\u65b9\u6cd5",
+            "title": "\u89e3\u51b3\u95ee\u9898\u6700\u7b80\u5355\u7684\u65b9\u6cd5"
+        },
+        {
+            "location": "/book/\u89e3\u51b3\u95ee\u9898\u6700\u7b80\u5355\u7684\u65b9\u6cd5/#_1",
+            "text": "",
+            "title": "\u89e3\u51b3\u95ee\u9898\u6700\u7b80\u5355\u7684\u65b9\u6cd5"
         },
         {
             "location": "/about/",
