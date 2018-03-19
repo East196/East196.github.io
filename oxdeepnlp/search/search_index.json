@@ -2,103 +2,33 @@
     "docs": [
         {
             "location": "/",
-            "text": "oxford-cs-deepnlp-2017\n\n\n\u725b\u6d25\u5927\u5b66xDeepMind \u81ea\u7136\u8bed\u8a00\u5904\u7406\u8bfe\u7a0b\u7b14\u8bb0\n\n\n\u8bfe\u7a0b\u8d44\u6599\n\n\nlectures\n\n\n\u89c6\u9891\n\n\n\u725b\u6d25\u5927\u5b66xDeepMind \u81ea\u7136\u8bed\u8a00\u5904\u7406\uff08\u4e2d\u6587\u5b57\u5e55\uff0c\u53ea\u6709lecture1-11\uff09\n\n\n\u6df1\u5ea6\u5b66\u4e60NLP\uff08\u725b\u6d25\u5927\u5b66 2017\uff09\uff08\u82f1\u6587\u5b57\u5e55\uff09\n\n\n\u6784\u5efa\u8bf4\u660e\n\n\npip install mkdocs fabric3\n python3\u5b89\u88c5mkdocs\u548cfabric3\n\n\npip install mkdocs fabric\n python2\u5b89\u88c5mkdocs\u548cfabric\n\n\nfab build\n \u6784\u5efa\u5e76copy\u81f3\u4e2a\u4eba\u4e3b\u9875\u9879\u76ee\n\n\nfab serve\n \u5f00\u542f\u670d\u52a1\n\n\nNotes\n\n\nmkdocs\u7684search\u4e2d\u6587\u662f\u65e0\u6548\u7684~~~\u76f4\u63a5\u641c\u82f1\u6587\u5173\u952e\u8bcd\u5427~~~",
-            "title": "\u5173\u4e8e\u8bfe\u7a0b"
+            "text": "aispider\n\n\naispider,\u795e\u4e00\u6837\u7684\u722c\u866b\n\n\npip install fabric3\n\n\n\u89e3\u6790\n\n\npip install requests BeautifulSoup4 lxml\n\n\nlxml\u5b89\u88c5\u5931\u8d25\u53ef\u5c1d\u8bd5\u4f7f\u7528\u975e\u5b98\u65b9whl\n\n\nhttps://www.lfd.uci.edu/~gohlke/pythonlibs/#lxml\n\n\n\u6570\u636e\u5b58\u50a8\n\n\npip install happybase pymongo\n\n\n\u52a0\u5bc6\n\n\npip install pyDes",
+            "title": "\u5173\u4e8e"
         },
         {
-            "location": "/#oxford-cs-deepnlp-2017",
-            "text": "\u725b\u6d25\u5927\u5b66xDeepMind \u81ea\u7136\u8bed\u8a00\u5904\u7406\u8bfe\u7a0b\u7b14\u8bb0",
-            "title": "oxford-cs-deepnlp-2017"
+            "location": "/#aispider",
+            "text": "aispider,\u795e\u4e00\u6837\u7684\u722c\u866b  pip install fabric3",
+            "title": "aispider"
         },
         {
             "location": "/#_1",
-            "text": "lectures",
-            "title": "\u8bfe\u7a0b\u8d44\u6599"
+            "text": "pip install requests BeautifulSoup4 lxml",
+            "title": "\u89e3\u6790"
+        },
+        {
+            "location": "/#lxmlwhl",
+            "text": "https://www.lfd.uci.edu/~gohlke/pythonlibs/#lxml",
+            "title": "lxml\u5b89\u88c5\u5931\u8d25\u53ef\u5c1d\u8bd5\u4f7f\u7528\u975e\u5b98\u65b9whl"
         },
         {
             "location": "/#_2",
-            "text": "\u725b\u6d25\u5927\u5b66xDeepMind \u81ea\u7136\u8bed\u8a00\u5904\u7406\uff08\u4e2d\u6587\u5b57\u5e55\uff0c\u53ea\u6709lecture1-11\uff09  \u6df1\u5ea6\u5b66\u4e60NLP\uff08\u725b\u6d25\u5927\u5b66 2017\uff09\uff08\u82f1\u6587\u5b57\u5e55\uff09",
-            "title": "\u89c6\u9891"
+            "text": "pip install happybase pymongo",
+            "title": "\u6570\u636e\u5b58\u50a8"
         },
         {
             "location": "/#_3",
-            "text": "pip install mkdocs fabric3  python3\u5b89\u88c5mkdocs\u548cfabric3  pip install mkdocs fabric  python2\u5b89\u88c5mkdocs\u548cfabric  fab build  \u6784\u5efa\u5e76copy\u81f3\u4e2a\u4eba\u4e3b\u9875\u9879\u76ee  fab serve  \u5f00\u542f\u670d\u52a1",
-            "title": "\u6784\u5efa\u8bf4\u660e"
-        },
-        {
-            "location": "/#notes",
-            "text": "mkdocs\u7684search\u4e2d\u6587\u662f\u65e0\u6548\u7684~~~\u76f4\u63a5\u641c\u82f1\u6587\u5173\u952e\u8bcd\u5427~~~",
-            "title": "Notes"
-        },
-        {
-            "location": "/lecture1a/",
-            "text": "\u7b80\u4ecb",
-            "title": "\u7b80\u4ecb"
-        },
-        {
-            "location": "/lecture1a/#_1",
-            "text": "",
-            "title": "\u7b80\u4ecb"
-        },
-        {
-            "location": "/lecture1b/",
-            "text": "\u6df1\u5ea6\u795e\u7ecf\u7f51\u7edc\u662f\u6211\u4eec\u7684\u670b\u53cb",
-            "title": "\u6df1\u5ea6\u795e\u7ecf\u7f51\u7edc\u662f\u6211\u4eec\u7684\u670b\u53cb"
-        },
-        {
-            "location": "/lecture1b/#_1",
-            "text": "",
-            "title": "\u6df1\u5ea6\u795e\u7ecf\u7f51\u7edc\u662f\u6211\u4eec\u7684\u670b\u53cb"
-        },
-        {
-            "location": "/lecture2a/",
-            "text": "\u8bcd\u8bed\u7ea7\u522b\u7684\u8bed\u4e49",
-            "title": "\u8bcd\u8bed\u7ea7\u522b\u7684\u8bed\u4e49"
-        },
-        {
-            "location": "/lecture2a/#_1",
-            "text": "",
-            "title": "\u8bcd\u8bed\u7ea7\u522b\u7684\u8bed\u4e49"
-        },
-        {
-            "location": "/lecture2b/",
-            "text": "\u5b9e\u8df5\u8bfe\u6982\u89c8",
-            "title": "\u5b9e\u8df5\u8bfe\u6982\u89c8"
-        },
-        {
-            "location": "/lecture2b/#_1",
-            "text": "",
-            "title": "\u5b9e\u8df5\u8bfe\u6982\u89c8"
-        },
-        {
-            "location": "/lecture3/",
-            "text": "\u8bed\u8a00\u6a21\u578b\u4e0eRNN\u7b2c\u4e00\u90e8\u5206",
-            "title": "\u8bed\u8a00\u6a21\u578b\u4e0eRNN\u7b2c\u4e00\u90e8\u5206"
-        },
-        {
-            "location": "/lecture3/#rnn",
-            "text": "",
-            "title": "\u8bed\u8a00\u6a21\u578b\u4e0eRNN\u7b2c\u4e00\u90e8\u5206"
-        },
-        {
-            "location": "/lecture4/",
-            "text": "\u8bed\u8a00\u6a21\u578b\u4e0eRNN\u7b2c\u4e00\u90e8\u5206",
-            "title": "\u8bed\u8a00\u6a21\u578b\u4e0eRNN\u7b2c\u4e8c\u90e8\u5206"
-        },
-        {
-            "location": "/lecture4/#rnn",
-            "text": "",
-            "title": "\u8bed\u8a00\u6a21\u578b\u4e0eRNN\u7b2c\u4e00\u90e8\u5206"
-        },
-        {
-            "location": "/lecture5/",
-            "text": "\u5206\u7c7b",
-            "title": "\u5206\u7c7b"
-        },
-        {
-            "location": "/lecture5/#_1",
-            "text": "",
-            "title": "\u5206\u7c7b"
+            "text": "pip install pyDes",
+            "title": "\u52a0\u5bc6"
         }
     ]
 }

@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "\u968f\u7b14\n\n\n\u968f\u624b\u8bb0\u7684\u4e00\u4e9b\u6563\u4e71\u7684\u4e1c\u897f\uff0c\u5148\u653e\u8fd9\u91cc\uff0c\u6162\u6162\u6574\u7406\u3002\n\n\n\u53c2\u8003\n\n\nMarkdown Preview Enhanced\n\n\n\u4e2d\u6587\u6587\u6848\u6392\u7248\u6307\u5317\n\n\nNotes\n\n\n2018\u5e74\u5f00\u59cb\u6bcf\u5929\u8bb0\u4e00\u4e9b\u611f\u60f3\n\n\n\u8b66\u60d5\u5217\u8868\uff0c\u957f\u5217\u8868\u65e0\u610f\u4e49\u4e14\u4f1a\u5e26\u6765\u7126\u8651\u611f\u3002\n\n\n\u7b80\u5316\u7ec6\u5316\n\n\ngraph LR;\n  \u5b9a\u4f4d-->\u7cbe\u7b80\n  \u7cbe\u7b80-->\u81ea\u63a7\n  \u81ea\u63a7-->\u89e3\u653e",
+            "text": "\u968f\u7b14\n\n\n\u968f\u624b\u8bb0\u7684\u4e00\u4e9b\u6563\u4e71\u7684\u4e1c\u897f\uff0c\u5148\u653e\u8fd9\u91cc\uff0c\u6162\u6162\u6574\u7406\u3002\n\n\n\u53c2\u8003\n\n\nMarkdown Preview Enhanced\n\n\n\u4e2d\u6587\u6587\u6848\u6392\u7248\u6307\u5317\n\n\n\n\n\u8003\u8651\u5199\u4e2a\u4e2d\u6587\u683c\u5f0f\u5316\u63d2\u4ef6\uff1f\n\n\n\n\nNotes\n\n\n2018\u5e74\u5f00\u59cb\u6bcf\u5929\u8bb0\u4e00\u4e9b\u611f\u60f3\n\n\n\u8b66\u60d5\u5217\u8868\uff0c\u957f\u5217\u8868\u65e0\u610f\u4e49\u4e14\u4f1a\u5e26\u6765\u7126\u8651\u611f\u3002\n\n\n\u7b80\u5316\u7ec6\u5316\n\n\ngraph LR;\n  \u5b9a\u4f4d-->\u7cbe\u7b80\n  \u7cbe\u7b80-->\u81ea\u63a7\n  \u81ea\u63a7-->\u89e3\u653e",
             "title": "\u4e3b\u9875"
         },
         {
@@ -12,7 +12,7 @@
         },
         {
             "location": "/#_2",
-            "text": "Markdown Preview Enhanced  \u4e2d\u6587\u6587\u6848\u6392\u7248\u6307\u5317",
+            "text": "Markdown Preview Enhanced  \u4e2d\u6587\u6587\u6848\u6392\u7248\u6307\u5317   \u8003\u8651\u5199\u4e2a\u4e2d\u6587\u683c\u5f0f\u5316\u63d2\u4ef6\uff1f",
             "title": "\u53c2\u8003"
         },
         {
@@ -611,29 +611,14 @@
             "title": "\u4e3b\u9898\u9605\u8bfb"
         },
         {
-            "location": "/book/fupan/",
-            "text": "\u590d\u76d8\n\n\n\n\nPDCA/PDF\n\n\nPDCA\n\n\n\n\nplan \u8ba1\u5212\n\n\ndo \u505a\n\n\ncheck \u68c0\u67e5\n\n\naction \u6539\u5584\n\n\n\n\ngraph LR;  \n\u3000\u3000plan -->do;    \n\u3000\u3000do -->check;  \n\u3000\u3000check-->action;  \n\u3000\u3000action-->plan;  \n\n\n\n\nPDF\n\n\n\n\npreview \u6c99\u76d8\n\n\ndo \u505a\n\n\nfupan \u590d\u76d8\n\n\n\n\ngraph LR;  \n    preview -->do;    \n\u3000\u3000do -->fupan;  \n\u3000\u3000fupan-->preview;",
-            "title": "\u590d\u76d8"
+            "location": "/book/\u65ad\u820d\u79bb/",
+            "text": "\u65ad\u820d\u79bb",
+            "title": "\u65ad\u820d\u79bb"
         },
         {
-            "location": "/book/fupan/#_1",
+            "location": "/book/\u65ad\u820d\u79bb/#_1",
             "text": "",
-            "title": "\u590d\u76d8"
-        },
-        {
-            "location": "/book/fupan/#pdcapdf",
-            "text": "",
-            "title": "PDCA/PDF"
-        },
-        {
-            "location": "/book/fupan/#pdca",
-            "text": "plan \u8ba1\u5212  do \u505a  check \u68c0\u67e5  action \u6539\u5584   graph LR;  \n\u3000\u3000plan -->do;    \n\u3000\u3000do -->check;  \n\u3000\u3000check-->action;  \n\u3000\u3000action-->plan;",
-            "title": "PDCA"
-        },
-        {
-            "location": "/book/fupan/#pdf",
-            "text": "preview \u6c99\u76d8  do \u505a  fupan \u590d\u76d8   graph LR;  \n    preview -->do;    \n\u3000\u3000do -->fupan;  \n\u3000\u3000fupan-->preview;",
-            "title": "PDF"
+            "title": "\u65ad\u820d\u79bb"
         },
         {
             "location": "/book/\u7b80\u7ea6\u4e4b\u7f8e/",
@@ -664,6 +649,41 @@
             "location": "/book/\u89e3\u51b3\u95ee\u9898\u6700\u7b80\u5355\u7684\u65b9\u6cd5/#_1",
             "text": "",
             "title": "\u89e3\u51b3\u95ee\u9898\u6700\u7b80\u5355\u7684\u65b9\u6cd5"
+        },
+        {
+            "location": "/book/fupan/",
+            "text": "\u590d\u76d8\n\n\n\n\nPDCA/PDF\n\n\nPDCA\n\n\n\n\nplan \u8ba1\u5212\n\n\ndo \u505a\n\n\ncheck \u68c0\u67e5\n\n\naction \u6539\u5584\n\n\n\n\ngraph LR;  \n\u3000\u3000plan -->do;    \n\u3000\u3000do -->check;  \n\u3000\u3000check-->action;  \n\u3000\u3000action-->plan;  \n\n\n\n\nPDF\n\n\n\n\npreview \u6c99\u76d8\n\n\ndo \u505a\n\n\nfupan \u590d\u76d8\n\n\n\n\ngraph LR;  \n    preview -->do;    \n\u3000\u3000do -->fupan;  \n\u3000\u3000fupan-->preview;",
+            "title": "\u590d\u76d8"
+        },
+        {
+            "location": "/book/fupan/#_1",
+            "text": "",
+            "title": "\u590d\u76d8"
+        },
+        {
+            "location": "/book/fupan/#pdcapdf",
+            "text": "",
+            "title": "PDCA/PDF"
+        },
+        {
+            "location": "/book/fupan/#pdca",
+            "text": "plan \u8ba1\u5212  do \u505a  check \u68c0\u67e5  action \u6539\u5584   graph LR;  \n\u3000\u3000plan -->do;    \n\u3000\u3000do -->check;  \n\u3000\u3000check-->action;  \n\u3000\u3000action-->plan;",
+            "title": "PDCA"
+        },
+        {
+            "location": "/book/fupan/#pdf",
+            "text": "preview \u6c99\u76d8  do \u505a  fupan \u590d\u76d8   graph LR;  \n    preview -->do;    \n\u3000\u3000do -->fupan;  \n\u3000\u3000fupan-->preview;",
+            "title": "PDF"
+        },
+        {
+            "location": "/novel/\u5c0f\u8bf4\u7684\u9aa8\u67b6/",
+            "text": "\u5c0f\u8bf4\u7684\u9aa8\u67b6",
+            "title": "\u5c0f\u8bf4\u7684\u9aa8\u67b6"
+        },
+        {
+            "location": "/novel/\u5c0f\u8bf4\u7684\u9aa8\u67b6/#_1",
+            "text": "",
+            "title": "\u5c0f\u8bf4\u7684\u9aa8\u67b6"
         },
         {
             "location": "/about/",
