@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2018-03-19</lastmod>
+     <lastmod>2018-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>/study/how2ask/</loc>
-     <lastmod>2018-03-19</lastmod>
+     <lastmod>2018-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -21,31 +21,37 @@
         
     <url>
      <loc>/python/python/</loc>
-     <lastmod>2018-03-19</lastmod>
+     <lastmod>2018-03-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/python/python编码模式/</loc>
+     <lastmod>2018-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/python/pygame/</loc>
-     <lastmod>2018-03-19</lastmod>
+     <lastmod>2018-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/python/virtualenv/</loc>
-     <lastmod>2018-03-19</lastmod>
+     <lastmod>2018-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/python/matplotlib/</loc>
-     <lastmod>2018-03-19</lastmod>
+     <lastmod>2018-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/python/tensorflow/</loc>
-     <lastmod>2018-03-19</lastmod>
+     <lastmod>2018-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -55,19 +61,19 @@
         
     <url>
      <loc>/tool/atom/</loc>
-     <lastmod>2018-03-19</lastmod>
+     <lastmod>2018-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/tool/sdkman/</loc>
-     <lastmod>2018-03-19</lastmod>
+     <lastmod>2018-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/tool/graphviz_/</loc>
-     <lastmod>2018-03-19</lastmod>
+     <lastmod>2018-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -77,13 +83,13 @@
         
     <url>
      <loc>/daily/review2017/</loc>
-     <lastmod>2018-03-19</lastmod>
+     <lastmod>2018-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/daily/plan2018/</loc>
-     <lastmod>2018-03-19</lastmod>
+     <lastmod>2018-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -93,37 +99,37 @@
         
     <url>
      <loc>/book/how_to_read_a_book/</loc>
-     <lastmod>2018-03-19</lastmod>
+     <lastmod>2018-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/book/断舍离/</loc>
-     <lastmod>2018-03-19</lastmod>
+     <lastmod>2018-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/book/简约之美/</loc>
-     <lastmod>2018-03-19</lastmod>
+     <lastmod>2018-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/book/极简主义/</loc>
-     <lastmod>2018-03-19</lastmod>
+     <lastmod>2018-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/book/解决问题最简单的方法/</loc>
-     <lastmod>2018-03-19</lastmod>
+     <lastmod>2018-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/book/fupan/</loc>
-     <lastmod>2018-03-19</lastmod>
+     <lastmod>2018-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -133,7 +139,7 @@
         
     <url>
      <loc>/novel/小说的骨架/</loc>
-     <lastmod>2018-03-19</lastmod>
+     <lastmod>2018-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -142,7 +148,7 @@
     
     <url>
      <loc>/about/</loc>
-     <lastmod>2018-03-19</lastmod>
+     <lastmod>2018-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
