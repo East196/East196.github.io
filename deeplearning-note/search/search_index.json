@@ -1,0 +1,39 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "deeplearning-note\n\n\ndeeplearning.ai + \u7f51\u6613 \u6df1\u5ea6\u5b66\u4e60\u8bfe\u7a0b\u7b14\u8bb0",
+            "title": "\u4e3b\u9875"
+        },
+        {
+            "location": "/#deeplearning-note",
+            "text": "deeplearning.ai + \u7f51\u6613 \u6df1\u5ea6\u5b66\u4e60\u8bfe\u7a0b\u7b14\u8bb0",
+            "title": "deeplearning-note"
+        },
+        {
+            "location": "/about/",
+            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.\n\n\n\nTheme\n\n\nin mkdocs.yml\nadd\n\n\ntheme: readthedocs\n\n\n\n\n\u4f46\u662f\u8fd9\u4e2anotebook\u7528\u9ed8\u8ba4\u5c31\u597d\uff0c\u4e2a\u4eba\u611f\u89c9readthedocs\u6bd4\u8f83\u9002\u5408\u6280\u672f\u6587\u6863",
+            "title": "\u5173\u4e8e"
+        },
+        {
+            "location": "/about/#welcome-to-mkdocs",
+            "text": "For full documentation visit  mkdocs.org .",
+            "title": "Welcome to MkDocs"
+        },
+        {
+            "location": "/about/#commands",
+            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
+            "title": "Commands"
+        },
+        {
+            "location": "/about/#project-layout",
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "title": "Project layout"
+        },
+        {
+            "location": "/about/#theme",
+            "text": "in mkdocs.yml\nadd  theme: readthedocs  \u4f46\u662f\u8fd9\u4e2anotebook\u7528\u9ed8\u8ba4\u5c31\u597d\uff0c\u4e2a\u4eba\u611f\u89c9readthedocs\u6bd4\u8f83\u9002\u5408\u6280\u672f\u6587\u6863",
+            "title": "Theme"
+        }
+    ]
+}
