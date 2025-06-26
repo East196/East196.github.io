@@ -1,168 +1,496 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>郑东 - 行业智能体解决方案专家</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         
+        * {
+            font-family: 'Inter', sans-serif;
+        }
         
-        <link rel="shortcut icon" href="./img/favicon.ico">
-        <title>结网</title>
-        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="./css/font-awesome-4.5.0.css" rel="stylesheet">
-        <link href="./css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="./css/highlight.css">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->
-
-        <script src="./js/jquery-1.10.2.min.js"></script>
-        <script src="./js/bootstrap-3.0.3.min.js"></script>
-        <script src="./js/highlight.pack.js"></script> 
-    </head>
-
-    <body class="homepage">
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <a class="navbar-brand" href=".">结网</a>
-        </div>
-
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                        <i class="fa fa-search"></i> Search
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-        <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#east196githubio">East196.github.io</a></li>
-            <li><a href="#_1">项目网站</a></li>
-            <li><a href="#notes">Notes</a></li>
-        <li class="main "><a href="#_2">构建说明</a></li>
-        <li class="main "><a href="#notes_1">Notes</a></li>
-            <li><a href="#change-log">change log</a></li>
-    </ul>
-</div></div>
-                <div class="col-md-9" role="main">
-
-<h1 id="east196githubio">East196.github.io</h1>
-<p><a href="https://east196.github.io">结网</a></p>
-<h2 id="_1">项目网站</h2>
-<p><a href="https://east196.github.io/dlshow">深度学习入坑指北</a></p>
-<p><a href="https://east196.github.io/nltk">Python自然语言处理笔记</a></p>
-<p><a href="https://east196.github.io/oxdeepnlp">牛津大学xDeepMind自然语言处理课程笔记</a></p>
-<p><a href="https://east196.github.io/cs224n">斯坦福深度学习自然语言处理课程笔记</a></p>
-<h2 id="notes">Notes</h2>
-<p>上传后每5分钟?响应刷新页面</p>
-<p>现在的构建方法没有按github的套路走，哈哈</p>
-<h1 id="_2">构建说明</h1>
-<p><code>pip install mkdocs fabric3</code> python3安装mkdocs和fabric3</p>
-<p><code>pip install mkdocs fabric</code> python2安装mkdocs和fabric</p>
-<p><code>fab build</code> 构建并copy至个人主页项目</p>
-<p><code>fab serve</code> 开启服务</p>
-<h1 id="notes_1">Notes</h1>
-<p>mkdocs的search中文是无效的，直接搜英文关键词吧~~~</p>
-<h2 id="change-log">change log</h2>
-<p>2017/12/24: add nltk and home</p>
-<p>2017/12/17: add cs224n</p>
-<p>2017/12/19: add oxdeepnlp</p>
-<p>2017/12/19: add notebook</p></div>
-        </div>
-
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>var base_url = '.';</script>
-        <script src="./js/base.js"></script>
-        <script src="./search/require.js"></script>
-        <script src="./search/search.js"></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            min-height: 100vh;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .glass-card {
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        .glass-nav {
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .glow-text {
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        }
+        
+        .pulse-glow {
+            animation: pulseGlow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes pulseGlow {
+            from { box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); }
+            to { box-shadow: 0 0 40px rgba(255, 255, 255, 0.4); }
+        }
+        
+        .skill-bar {
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57);
+            background-size: 200% 200%;
+            animation: skillBarFlow 3s ease infinite;
+        }
+        
+        @keyframes skillBarFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+        
+        .text-rainbow {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57, #ff9ff3, #54a0ff);
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: rainbowText 4s ease infinite;
+        }
+        
+        @keyframes rainbowText {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .stat-number {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body class="text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-rainbow">
+                    郑东
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-white/80 hover:text-white transition-colors">关于我</a>
+                    <a href="#skills" class="text-white/80 hover:text-white transition-colors">技能</a>
+                    <a href="#services" class="text-white/80 hover:text-white transition-colors">服务</a>
+                    <a href="#contact" class="text-white/80 hover:text-white transition-colors">联系我</a>
+                </div>
+                <button class="md:hidden text-white">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form role="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="floating mb-8">
+                    <div class="w-32 h-32 mx-auto glass-card rounded-full p-1 pulse-glow">
+                        <img src="https://picsum.photos/300/300?random=avatar" alt="郑东头像" 
+                             class="w-full h-full rounded-full object-cover">
                     </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
+                </div>
+                
+                <h1 class="text-5xl lg:text-7xl font-bold mb-6 glow-text">
+                    你好，我是 <span class="text-rainbow">郑东</span>
+                </h1>
+                
+                <div class="glass-card rounded-2xl p-8 max-w-4xl mx-auto mb-8">
+                    <p class="text-2xl lg:text-3xl mb-4 text-white/90">
+                        行业智能体解决方案专家
+                    </p>
+                    <p class="text-lg text-white/70 mb-6">
+                        📍 深圳 | 专注于智能体技术与企业数字化转型
+                    </p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 text-left">
+                        <div>
+                            <h3 class="text-xl font-bold mb-3 text-rainbow">🎯 核心能力</h3>
+                            <ul class="space-y-2 text-white/80">
+                                <li>• 全栈技术 + 智能体(Coze/Dify/LangChain)</li>
+                                <li>• 小程序 + 工信部智能体工程师</li>
+                                <li>• 影刀RPA高阶玩家 (高级认证+优质开发者)</li>
+                                <li>• PMP项目管理专家</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-bold mb-3 text-rainbow">🚀 我能提供</h3>
+                            <ul class="space-y-2 text-white/80">
+                                <li>✅ 智能体咨询、定制开发与部署实施</li>
+                                <li>✅ 小程序部署与集成服务</li>
+                                <li>✅ 行业智能体落地实战经验交流</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#services" class="glass-card px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition-all card-hover">
+                        查看服务
+                    </a>
+                    <a href="#contact" class="bg-gradient-to-r from-purple-500 to-pink-500 px-8 py-4 rounded-full font-semibold hover:from-purple-600 hover:to-pink-600 transition-all card-hover">
+                        开始合作
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 text-rainbow">技术栈</h2>
+                <p class="text-xl text-white/80">专业的技术能力，助力企业智能化转型</p>
             </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td><kbd>&larr;</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td><kbd>&rarr;</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="glass-card rounded-2xl p-6 card-hover">
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto mb-4 glass-card rounded-xl flex items-center justify-center">
+                            <i class="fas fa-robot text-2xl text-blue-400"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">智能体开发</h3>
+                        <p class="text-white/70 text-sm mb-4">Coze/Dify/LangChain</p>
+                        <div class="skill-bar h-2 rounded-full"></div>
+                    </div>
+                </div>
+                
+                <div class="glass-card rounded-2xl p-6 card-hover">
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto mb-4 glass-card rounded-xl flex items-center justify-center">
+                            <i class="fas fa-mobile-alt text-2xl text-green-400"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">小程序开发</h3>
+                        <p class="text-white/70 text-sm mb-4">微信/支付宝/百度小程序</p>
+                        <div class="skill-bar h-2 rounded-full"></div>
+                    </div>
+                </div>
+                
+                <div class="glass-card rounded-2xl p-6 card-hover">
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto mb-4 glass-card rounded-xl flex items-center justify-center">
+                            <i class="fas fa-cogs text-2xl text-purple-400"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">RPA自动化</h3>
+                        <p class="text-white/70 text-sm mb-4">影刀RPA高级认证</p>
+                        <div class="skill-bar h-2 rounded-full"></div>
+                    </div>
+                </div>
+                
+                <div class="glass-card rounded-2xl p-6 card-hover">
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto mb-4 glass-card rounded-xl flex items-center justify-center">
+                            <i class="fas fa-project-diagram text-2xl text-orange-400"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">项目管理</h3>
+                        <p class="text-white/70 text-sm mb-4">PMP认证专家</p>
+                        <div class="skill-bar h-2 rounded-full"></div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 text-rainbow">核心服务</h2>
+                <p class="text-xl text-white/80">为企业提供全方位的智能化解决方案</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="glass-card rounded-2xl p-8 card-hover">
+                    <div class="w-16 h-16 mb-6 glass-card rounded-xl flex items-center justify-center">
+                        <i class="fas fa-brain text-3xl text-blue-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">智能体解决方案</h3>
+                    <p class="text-white/70 mb-6">
+                        提供Coze、Dify、LangChain等平台的智能体咨询、定制开发与部署实施服务，助力企业实现AI驱动的业务流程优化。
+                    </p>
+                    <ul class="space-y-2 text-white/60">
+                        <li>• 智能体架构设计</li>
+                        <li>• 定制化开发</li>
+                        <li>• 部署与运维</li>
+                    </ul>
+                </div>
+                
+                <div class="glass-card rounded-2xl p-8 card-hover">
+                    <div class="w-16 h-16 mb-6 glass-card rounded-xl flex items-center justify-center">
+                        <i class="fas fa-mobile-alt text-3xl text-green-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">小程序集成服务</h3>
+                    <p class="text-white/70 mb-6">
+                        专业的小程序开发与AI智能体集成服务，让您的业务在移动端拥有更智能的用户体验。
+                    </p>
+                    <ul class="space-y-2 text-white/60">
+                        <li>• 小程序开发</li>
+                        <li>• AI功能集成</li>
+                        <li>• 用户体验优化</li>
+                    </ul>
+                </div>
+                
+                <div class="glass-card rounded-2xl p-8 card-hover">
+                    <div class="w-16 h-16 mb-6 glass-card rounded-xl flex items-center justify-center">
+                        <i class="fas fa-lightbulb text-3xl text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">实战经验分享</h3>
+                    <p class="text-white/70 mb-6">
+                        基于丰富的行业智能体落地经验，为您的团队提供技术咨询、培训和最佳实践指导。
+                    </p>
+                    <ul class="space-y-2 text-white/60">
+                        <li>• 技术选型咨询</li>
+                        <li>• 团队培训</li>
+                        <li>• 最佳实践分享</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </body>
+    <!-- Stats Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card rounded-3xl p-12">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-rainbow mb-4">专业认证 & 成就</h2>
+                </div>
+                
+                <div class="grid md:grid-cols-4 gap-8 text-center">
+                    <div class="glass-card rounded-2xl p-6 card-hover">
+                        <div class="text-4xl font-bold mb-2 stat-number">
+                            <i class="fas fa-certificate text-blue-400"></i>
+                        </div>
+                        <div class="text-lg text-white/80">工信部智能体工程师</div>
+                    </div>
+                    <div class="glass-card rounded-2xl p-6 card-hover">
+                        <div class="text-4xl font-bold mb-2 stat-number">
+                            <i class="fas fa-award text-purple-400"></i>
+                        </div>
+                        <div class="text-lg text-white/80">影刀RPA高级认证</div>
+                    </div>
+                    <div class="glass-card rounded-2xl p-6 card-hover">
+                        <div class="text-4xl font-bold mb-2 stat-number">
+                            <i class="fas fa-medal text-green-400"></i>
+                        </div>
+                        <div class="text-lg text-white/80">PMP项目管理</div>
+                    </div>
+                    <div class="glass-card rounded-2xl p-6 card-hover">
+                        <div class="text-4xl font-bold mb-2 stat-number">
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                        <div class="text-lg text-white/80">优质开发者</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4 text-rainbow">我的圈子</h2>
+                <p class="text-xl text-white/80">活跃在AI技术社区，持续学习与分享</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="glass-card rounded-2xl p-8 card-hover text-center">
+                    <div class="w-20 h-20 mx-auto mb-6 glass-card rounded-full flex items-center justify-center">
+                        <i class="fas fa-users text-3xl text-blue-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">一堂</h3>
+                    <p class="text-white/70">AI学习与实践社区</p>
+                </div>
+                
+                <div class="glass-card rounded-2xl p-8 card-hover text-center">
+                    <div class="w-20 h-20 mx-auto mb-6 glass-card rounded-full flex items-center justify-center">
+                        <i class="fas fa-rocket text-3xl text-purple-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">AI破局</h3>
+                    <p class="text-white/70">AI技术破局与创新</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 text-rainbow">让我们开始合作</h2>
+                <p class="text-xl text-white/80">
+                    🤝 欢迎交流：智能体应用场景、企业流程自动化、AI技术选型！
+                </p>
+            </div>
+            
+            <div class="glass-card rounded-3xl p-12 max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-3 gap-8 text-center mb-12">
+                    <div class="card-hover">
+                        <div class="w-16 h-16 mx-auto mb-4 glass-card rounded-full flex items-center justify-center pulse-glow">
+                            <i class="fab fa-weixin text-2xl text-green-400"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">微信咨询</h3>
+                        <p class="text-white/70">添加微信深度交流</p>
+                    </div>
+                    
+                    <div class="card-hover">
+                        <div class="w-16 h-16 mx-auto mb-4 glass-card rounded-full flex items-center justify-center pulse-glow">
+                            <i class="fas fa-envelope text-2xl text-blue-400"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">邮件联系</h3>
+                        <p class="text-white/70">商务合作洽谈</p>
+                    </div>
+                    
+                    <div class="card-hover">
+                        <a href="https://github.com/east196" target="_blank" class="block">
+                            <div class="w-16 h-16 mx-auto mb-4 glass-card rounded-full flex items-center justify-center pulse-glow">
+                                <i class="fab fa-github text-2xl text-purple-400"></i>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">GitHub</h3>
+                            <p class="text-white/70">开源项目与代码</p>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <p class="text-lg text-white/80 mb-6">
+                        专业的智能体解决方案，助力您的企业数字化转型
+                    </p>
+                    <button class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 px-12 py-4 rounded-full font-bold text-lg hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 transition-all card-hover">
+                        立即咨询
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card rounded-2xl p-8">
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-rainbow mb-4">郑东</div>
+                    <p class="text-white/80 mb-6">
+                        行业智能体解决方案专家 · 深圳
+                    </p>
+                    <div class="flex justify-center space-x-6 mb-6">
+                        <a href="https://github.com/east196" target="_blank" class="text-white/60 hover:text-white transition-colors">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-white/60 hover:text-white transition-colors">
+                            <i class="fab fa-weixin text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-white/60 hover:text-white transition-colors">
+                            <i class="fas fa-envelope text-2xl"></i>
+                        </a>
+                    </div>
+                    <div class="pt-6 border-t border-white/20">
+                        <p class="text-white/60 text-sm">
+                            © 2025 郑东. All rights reserved. Made with 💜 and AI.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.style.background = 'rgba(0, 0, 0, 0.4)';
+            } else {
+                nav.style.background = 'rgba(0, 0, 0, 0.2)';
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
 </html>
-
-<!--
-MkDocs version : 0.17.2
-Build Date UTC : 2017-12-29 14:06:57
--->
